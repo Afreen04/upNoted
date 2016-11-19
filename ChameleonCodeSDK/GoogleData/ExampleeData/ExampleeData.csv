@@ -1,5 +1,0 @@
-Name,Description,Type,GoogleKey,GID,IsActiveDownload
-Settings,Global settings for the entire TicTacToe project,GSheet,1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0,0,FALSE
-AdditionalResources,A list of additional resources used by the project,GSheet,1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0,1887184744,FALSE
-ProjectIntro,An introduction to the project,GDoc,1IyzazNtsdfS3933tgg8KKvuAR-lmE-KLgT8ZdnqFzpQ,,TRUE
-Entities,"A list of entities in the project (Player, Opponent, Game, Mark, Win, Loss, etc)",GSheet,1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0,0,FALSE

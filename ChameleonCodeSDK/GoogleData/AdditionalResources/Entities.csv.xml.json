@@ -2,89 +2,273 @@
   "Entities": {
     "Entity": [
       {
-        "Name": "PrimaryGSheetKey",
-        "Value": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
-        "Description": "The primary (default) Google Sheet Key (with infered gid of 0)"
+        "Name": "AppUser",
+        "DisplayName": "AppUser",
+        "Description": "A user within the app",
+        "EntityType": "Primary",
+        "AttributesGoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
+        "AttributesGID": "1769909430",
+        "SampleValuesGoogleKey": "1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY",
+        "SampleValuesGID": "1992169427",
+        "OriginalSortOrder": "27"
       },
       {
-        "Name": "ProjectName",
-        "Value": "ARTreasureHunt",
-        "Description": "The name of the project"
+        "Name": "GeographicLocation",
+        "DisplayName": "Geographic Location",
+        "Description": "A location (with a longitude/latitude)",
+        "EntityType": "Primary",
+        "OriginalSortOrder": "2"
       },
       {
-        "Name": "DisplayName",
-        "Value": "For a friendly",
+        "Name": "GeographicLocationType",
+        "DisplayName": "Geographic Location Type",
+        "Description": "A type of location (park, field, room, business, landmark,etc)",
+        "EntityType": "Primary",
+        "OriginalSortOrder": "2"
+      },
+      {
+        "Name": "UserVerificationRequest",
+        "DisplayName": "User Verification Request",
+        "Description": "A user requests verification of a clue",
+        "EntityType": "Primary",
+        "OriginalSortOrder": "3"
+      },
+      {
+        "Name": "Puzzle",
+        "DisplayName": "Puzzle",
+        "Description": "A clue, or puzzle in a game",
+        "EntityType": "Primary",
+        "AttributesGoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
+        "AttributesGID": "1308029725",
+        "OriginalSortOrder": "5"
+      },
+      {
+        "Name": "TreasureHunt",
+        "DisplayName": "Treasure Hunt",
         "Description": {
-          "#cdata-section": "A \"friendly\" display name for the project which can be changed at any time."
-        }
+          "#cdata-section": "A game with a specific start date, and list of \"clues\""
+        },
+        "EntityType": "Primary",
+        "AttributesGoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
+        "AttributesGID": "1669262400",
+        "SampleValuesGoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
+        "SampleValuesGID": "1663244018",
+        "OriginalSortOrder": "6"
       },
       {
-        "Name": "BaseNamespace",
-        "Value": "CODEiverse.Projects.SampleProject",
-        "Description": "A reasonable base Namespace (to be used as a base namespace for code)"
+        "Name": "CharacterProfile",
+        "DisplayName": "Character Profile",
+        "Description": {
+          "#cdata-section": "A description of a specific user, which is based on a Character, but has been \"customized\" in some way"
+        },
+        "EntityType": "Primary",
+        "OriginalSortOrder": "7"
       },
       {
-        "Name": "GoogleResourceList",
-        "Value": "Descriptions",
-        "Description": "A list of description resources",
-        "Prefix": "Description",
-        "GoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
-        "GID": "1887184744",
-        "IsActiveDownload": "FALSE"
+        "Name": "CharacterTemplate",
+        "DisplayName": "CharacterTemplate",
+        "Description": "A character (with a particular vice)",
+        "EntityType": "Primary",
+        "AttributesGoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
+        "AttributesGID": "1830181720",
+        "SampleValuesGoogleKey": "1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY",
+        "SampleValuesGID": "645911934",
+        "OriginalSortOrder": "8"
       },
       {
-        "Name": "GoogleResourceList",
-        "Value": "Properties",
-        "Description": "A list of attribute resource",
-        "Prefix": "Attributes",
-        "GoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
-        "GID": "1887184744",
-        "IsActiveDownload": "FALSE"
+        "Name": "LocalBusinesse",
+        "DisplayName": "Local Businesse",
+        "Description": "A business which is somehow involved in the the hunt",
+        "EntityType": "Primary",
+        "OriginalSortOrder": "9"
       },
       {
-        "Name": "GoogleResourceList",
-        "Value": "ExampleeData",
-        "Description": "A list of sample values",
-        "Prefix": "SampleValues",
-        "GoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
-        "GID": "1887184744",
-        "IsActiveDownload": "FALSE"
+        "Name": "UserAnswer",
+        "DisplayName": "User Answer",
+        "Description": "An answer to a specific",
+        "EntityType": "Primary",
+        "OriginalSortOrder": "17"
       },
       {
-        "Name": "GoogleResourceList",
-        "Value": "AdditionalResources",
-        "Description": "A list of additional resources",
-        "GoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
-        "GID": "1887184744",
-        "IsActiveDownload": "FALSE"
+        "Name": "CorrectAnswer",
+        "DisplayName": "Correct Answer",
+        "Description": "A correct answer for a Clue",
+        "EntityType": "Primary",
+        "OriginalSortOrder": "19"
       },
       {
-        "Name": "ChameleonCodeHostUri",
-        "Value": "https://eejai42.sdks.codeiverse.com/",
-        "Description": "The root path to the SDK Doc Host"
+        "Name": "GpsLocation",
+        "DisplayName": "Gps Location",
+        "Description": "A specific GpsPoint, with a radious.  Same as Georgraphical Location",
+        "EntityType": "Primary",
+        "OriginalSortOrder": "25"
       },
       {
-        "Name": "ChameleonCodeSDKUri",
-        "Value": "ARTreasureHuntSDK/",
-        "Description": "The relative path within the dochost",
-        "Default Value": "ChameleonCode/"
+        "Name": "ClueDestination",
+        "DisplayName": "Clue Destination",
+        "Description": "A destination for a particular clue",
+        "EntityType": "Primary",
+        "OriginalSortOrder": "26"
       },
       {
-        "Name": "ChameleonCodeSDKPath",
-        "Value": "AR-Treasure-Hunt/ChameleonCodeSDK/",
-        "Description": "The physical path to the doc host folder relative to the CODEE_ROOT_PATH",
-        "Default Value": "ChameleonCodeSDK/"
+        "Name": "Risk",
+        "DisplayName": "Risk",
+        "Description": "Different kinds of risk which would probably require insurance",
+        "EntityType": "Future",
+        "OriginalSortOrder": "38"
       },
       {
-        "Name": "Language1",
-        "Value": "EN",
-        "Description": "The primary language",
-        "Default Value": "EN"
+        "Name": "App",
+        "DisplayName": "App",
+        "Description": "The App",
+        "EntityType": "Future",
+        "OriginalSortOrder": "1"
       },
       {
-        "Name": "Language2",
-        "Description": "Additional languages",
-        "Default Value": "NA"
+        "Name": "StoryDevelopment",
+        "DisplayName": "StoryDevelopment",
+        "Description": "This is a basically what Olivia and Theo have been doing today",
+        "EntityType": "Future",
+        "OriginalSortOrder": "4"
+      },
+      {
+        "Name": "GameRecharge",
+        "DisplayName": "GameRecharge",
+        "Description": "A game induced delay in play of some kind, which",
+        "EntityType": "Future",
+        "OriginalSortOrder": "11"
+      },
+      {
+        "Name": "Read",
+        "DisplayName": "Read",
+        "Description": "A type of action?",
+        "EntityType": "NotEntity",
+        "OriginalSortOrder": "14"
+      },
+      {
+        "Name": "CrypticDirection",
+        "DisplayName": "CrypticDirection",
+        "Description": "A cryptic version of a clue",
+        "EntityType": "Future",
+        "OriginalSortOrder": "16"
+      },
+      {
+        "Name": "PuzzleQuestion",
+        "DisplayName": "PuzzleQuestion",
+        "Description": "A question",
+        "EntityType": "Future",
+        "OriginalSortOrder": "18"
+      },
+      {
+        "Name": "VideoGame",
+        "DisplayName": "VideoGame",
+        "Description": "A type of challenge?",
+        "EntityType": "NotEntity"
+      },
+      {
+        "Name": "PhysicalAction",
+        "DisplayName": "PhysicalAction",
+        "Description": "Some physical action which must be takne plac",
+        "EntityType": "Future",
+        "OriginalSortOrder": "24"
+      },
+      {
+        "Name": "RevenueOpportunity",
+        "DisplayName": "RevenueOpportunity",
+        "Description": "Different ways that this model could be monitized",
+        "EntityType": "Future",
+        "OriginalSortOrder": "29"
+      },
+      {
+        "Name": "PrizeLevel",
+        "DisplayName": "PrizeLevel",
+        "Description": "A level of primary (1st, 2nd, 3rd, general, etc)",
+        "EntityType": "Future",
+        "OriginalSortOrder": "31"
+      },
+      {
+        "Name": "Prize",
+        "DisplayName": "Prize",
+        "Description": "A prize",
+        "EntityType": "Future",
+        "OriginalSortOrder": "31"
+      },
+      {
+        "Name": "SubjectMatter",
+        "DisplayName": "SubjectMatter",
+        "Description": "Content for a particular Treasure Hunt (or might be shared",
+        "EntityType": "Future",
+        "OriginalSortOrder": "33"
+      },
+      {
+        "Name": "MultipleChoiceAnswer",
+        "DisplayName": "MultipleChoiceAnswer",
+        "Description": "A possible answer to a multiple choice question",
+        "EntityType": "Future",
+        "OriginalSortOrder": "34"
+      },
+      {
+        "Name": "CodeVerification",
+        "DisplayName": "CodeVerification",
+        "Description": "A verification code",
+        "EntityType": "Future",
+        "OriginalSortOrder": "36"
+      },
+      {
+        "Name": "Cheating",
+        "DisplayName": "Cheating",
+        "Description": "Do we want to formally track cheating?  It's pretty central",
+        "EntityType": "Future",
+        "OriginalSortOrder": "39"
+      },
+      {
+        "Name": "Website",
+        "DisplayName": "Website",
+        "Description": "A website with information on it",
+        "EntityType": "Future",
+        "OriginalSortOrder": "40"
+      },
+      {
+        "Name": "Room",
+        "DisplayName": "Room",
+        "Description": "Is this just a type of GeorgraphicLocation",
+        "EntityType": "NoEntity",
+        "OriginalSortOrder": "42"
+      },
+      {
+        "Name": "Talk",
+        "DisplayName": "Talk",
+        "Description": "A type of action?",
+        "EntityType": "NotEntity",
+        "OriginalSortOrder": "43"
+      },
+      {
+        "Name": "Experiment",
+        "DisplayName": "Experiment",
+        "Description": "An experiment?",
+        "EntityType": "Future",
+        "OriginalSortOrder": "45"
+      },
+      {
+        "Name": "Bound",
+        "DisplayName": "Bound",
+        "Description": "A boundary for a particular area",
+        "EntityType": "Future",
+        "OriginalSortOrder": "46"
+      },
+      {
+        "Name": "Sector",
+        "DisplayName": "Sector",
+        "Description": "A georgraphica location",
+        "EntityType": "NotEntity",
+        "OriginalSortOrder": "49"
+      },
+      {
+        "Name": "VerificationRequest",
+        "DisplayName": "VerificationRequest",
+        "Description": "A veritifcation reqeust",
+        "EntityType": "Future",
+        "OriginalSortOrder": "51"
       }
     ]
   }

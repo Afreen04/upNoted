@@ -1,0 +1,23 @@
+<CharacterTemplates>
+  <CharacterTemplate>
+    <Name>Name</Name>
+    <Description>A name for the character</Description>
+    <SampleValue>Joe Coffee</SampleValue>
+    <IsOptional>FALSE</IsOptional>
+    <DataType>string</DataType>
+  </CharacterTemplate>
+  <CharacterTemplate>
+    <Name>Vice</Name>
+    <Description>A description of the vice for this character</Description>
+    <SampleValue>Cofffee</SampleValue>
+    <IsOptional>FALSE</IsOptional>
+    <DataType>string</DataType>
+  </CharacterTemplate>
+  <CharacterTemplate>
+    <Name>Description</Name>
+    <Description>A description of the charcers</Description>
+    <SampleValue>A high strung melenial</SampleValue>
+    <IsOptional>FALSE</IsOptional>
+    <DataType>string</DataType>
+  </CharacterTemplate>
+</CharacterTemplates>

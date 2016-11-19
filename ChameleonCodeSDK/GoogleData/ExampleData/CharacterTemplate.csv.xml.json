@@ -1,0 +1,33 @@
+{
+  "CharacterTemplates": {
+    "CharacterTemplate": [
+      {
+        "Name": "Character1",
+        "Character": "Barista who was always nice to him",
+        "Bio": "bio1",
+        "Icon": "name of file?",
+        "Vice": "coffee"
+      },
+      {
+        "Name": "Character2",
+        "Character": "His favorite singer in a local band",
+        "Vice": "local music"
+      },
+      {
+        "Name": "Character3",
+        "Character": "Butler",
+        "Vice": "cocktails"
+      },
+      {
+        "Name": "Character4",
+        "Character": "Estranged god-daughter",
+        "Vice": "beauty products"
+      },
+      {
+        "Name": "Character5",
+        "Character": "Trucker he talked to in a bar one time",
+        "Vice": "beer"
+      }
+    ]
+  }
+}

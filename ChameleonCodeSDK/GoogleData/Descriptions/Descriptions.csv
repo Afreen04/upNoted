@@ -1,5 +1,37 @@
-Name,Description,Type,GoogleKey,GID,IsActiveDownload
-Settings,Global settings for the entire TicTacToe project,GSheet,1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0,0,FALSE
-AdditionalResources,A list of additional resources used by the project,GSheet,1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0,1887184744,FALSE
-ProjectIntro,An introduction to the project,GDoc,1IyzazNtsdfS3933tgg8KKvuAR-lmE-KLgT8ZdnqFzpQ,,TRUE
-Entities,"A list of entities in the project (Player, Opponent, Game, Mark, Win, Loss, etc)",GSheet,1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0,0,FALSE
+Name,DisplayName,Description,EntityType,AttributesGoogleKey,AttributesGID,SampleValuesGoogleKey,SampleValuesGID,OriginalSortOrder
+AppUser,AppUser,A user within the app,Primary,1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0,1769909430,1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY,1992169427,27
+GeographicLocation,Geographic Location,A location (with a longitude/latitude),Primary,,,,,2
+GeographicLocationType,Geographic Location Type,"A type of location (park, field, room, business, landmark,etc)",Primary,,,,,2
+UserVerificationRequest,User Verification Request,A user requests verification of a clue,Primary,,,,,3
+Puzzle,Puzzle,"A clue, or puzzle in a game",Primary,1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0,1308029725,,,5
+TreasureHunt,Treasure Hunt,"A game with a specific start date, and list of ""clues""",Primary,1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0,1669262400,1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0,1663244018,6
+CharacterProfile,Character Profile,"A description of a specific user, which is based on a Character, but has been ""customized"" in some way",Primary,,,,,7
+CharacterTemplate,CharacterTemplate,A character (with a particular vice),Primary,1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0,1830181720,1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY,645911934,8
+LocalBusinesse,Local Businesse,A business which is somehow involved in the the hunt,Primary,,,,,9
+UserAnswer,User Answer,An answer to a specific,Primary,,,,,17
+CorrectAnswer,Correct Answer,A correct answer for a Clue,Primary,,,,,19
+GpsLocation,Gps Location,"A specific GpsPoint, with a radious.  Same as Georgraphical Location",Primary,,,,,25
+ClueDestination,Clue Destination,A destination for a particular clue,Primary,,,,,26
+Risk,Risk,Different kinds of risk which would probably require insurance,Future,,,,,38
+App,App,The App,Future,,,,,1
+StoryDevelopment,StoryDevelopment,This is a basically what Olivia and Theo have been doing today,Future,,,,,4
+GameRecharge,GameRecharge,"A game induced delay in play of some kind, which ",Future,,,,,11
+Read,Read,A type of action?,NotEntity,,,,,14
+CrypticDirection,CrypticDirection,A cryptic version of a clue,Future,,,,,16
+PuzzleQuestion,PuzzleQuestion,A question,Future,,,,,18
+VideoGame,VideoGame,A type of challenge?,NotEntity,,,,,
+PhysicalAction,PhysicalAction,Some physical action which must be takne plac,Future,,,,,24
+RevenueOpportunity,RevenueOpportunity,Different ways that this model could be monitized,Future,,,,,29
+PrizeLevel,PrizeLevel,"A level of primary (1st, 2nd, 3rd, general, etc)",Future,,,,,31
+Prize,Prize,A prize ,Future,,,,,31
+SubjectMatter,SubjectMatter,Content for a particular Treasure Hunt (or might be shared,Future,,,,,33
+MultipleChoiceAnswer,MultipleChoiceAnswer,A possible answer to a multiple choice question,Future,,,,,34
+CodeVerification,CodeVerification,A verification code,Future,,,,,36
+Cheating,Cheating,Do we want to formally track cheating?  It's pretty central,Future,,,,,39
+Website,Website,A website with information on it,Future,,,,,40
+Room,Room,Is this just a type of GeorgraphicLocation,NoEntity,,,,,42
+Talk,Talk,A type of action?,NotEntity,,,,,43
+Experiment,Experiment,An experiment?,Future,,,,,45
+Bound,Bound,A boundary for a particular area,Future,,,,,46
+Sector,Sector,A georgraphica location,NotEntity,,,,,49
+VerificationRequest,VerificationRequest,A veritifcation reqeust,Future,,,,,51

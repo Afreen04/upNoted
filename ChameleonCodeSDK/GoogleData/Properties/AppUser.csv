@@ -1,0 +1,3 @@
+Name,SampleValue,Description,IsOptional,DataType
+Username,bob_jones,A username for the user,FALSE,string
+EmailAddress,bob_jones@example.com,An email address for the user,FALSE,string

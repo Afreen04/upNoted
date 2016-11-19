@@ -1,0 +1,16 @@
+<AppUsers>
+  <AppUser>
+    <Name>Username</Name>
+    <SampleValue>bob_jones</SampleValue>
+    <Description>A username for the user</Description>
+    <IsOptional>FALSE</IsOptional>
+    <DataType>string</DataType>
+  </AppUser>
+  <AppUser>
+    <Name>EmailAddress</Name>
+    <SampleValue>bob_jones@example.com</SampleValue>
+    <Description>An email address for the user</Description>
+    <IsOptional>FALSE</IsOptional>
+    <DataType>string</DataType>
+  </AppUser>
+</AppUsers>

@@ -1,0 +1,29 @@
+<CharacterTemplates>
+  <CharacterTemplate>
+    <Name>Character1</Name>
+    <Character>Barista who was always nice to him</Character>
+    <Bio>bio1</Bio>
+    <Icon>name of file?</Icon>
+    <Vice>coffee</Vice>
+  </CharacterTemplate>
+  <CharacterTemplate>
+    <Name>Character2</Name>
+    <Character>His favorite singer in a local band</Character>
+    <Vice>local music</Vice>
+  </CharacterTemplate>
+  <CharacterTemplate>
+    <Name>Character3</Name>
+    <Character>Butler</Character>
+    <Vice>cocktails</Vice>
+  </CharacterTemplate>
+  <CharacterTemplate>
+    <Name>Character4</Name>
+    <Character>Estranged god-daughter</Character>
+    <Vice>beauty products</Vice>
+  </CharacterTemplate>
+  <CharacterTemplate>
+    <Name>Character5</Name>
+    <Character>Trucker he talked to in a bar one time</Character>
+    <Vice>beer</Vice>
+  </CharacterTemplate>
+</CharacterTemplates>

@@ -1,0 +1,20 @@
+<AppUsers>
+  <AppUser>
+    <Name>Barrymore Theater</Name>
+    <Longitude>43.05336</Longitude>
+    <RadiusMeters>10</RadiusMeters>
+  </AppUser>
+  <AppUser>
+    <Name>Stone Fence</Name>
+    <Latitude><![CDATA[89°20'51.2"W]]></Latitude>
+  </AppUser>
+  <AppUser>
+    <Name>One Barrel</Name>
+  </AppUser>
+  <AppUser>
+    <Name>Alchemy</Name>
+  </AppUser>
+  <AppUser>
+    <Name>The Mermaid Cafe</Name>
+  </AppUser>
+</AppUsers>

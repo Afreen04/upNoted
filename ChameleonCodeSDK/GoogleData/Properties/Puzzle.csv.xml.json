@@ -1,0 +1,20 @@
+{
+  "Puzzles": {
+    "Puzzle": [
+      {
+        "Name": "TreasureHunt",
+        "SampleValue": "MVP Test Hunt",
+        "Description": "The hunt associated",
+        "IsOptional": "FALSE",
+        "DataType": "string"
+      },
+      {
+        "Name": "Name",
+        "SampleValue": "Some puzzle",
+        "Description": "a puzzle",
+        "IsOptional": "FALSE",
+        "DataType": "string"
+      }
+    ]
+  }
+}

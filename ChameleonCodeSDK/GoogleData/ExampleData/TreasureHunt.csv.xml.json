@@ -1,0 +1,15 @@
+{
+  "TreasureHunts": {
+    "TreasureHunt": {
+      "Name": "MVP Hunt",
+      "IsTest": "TRUE",
+      "GSheet": "1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY",
+      "ClueGID": "0",
+      "ClueGoogleKey": "1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY",
+      "LocationsGoogleKey": "1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY",
+      "LocationsGID": "1992169427",
+      "CharactersGoogleKey": "1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY",
+      "CharactersGID": "1992169427"
+    }
+  }
+}

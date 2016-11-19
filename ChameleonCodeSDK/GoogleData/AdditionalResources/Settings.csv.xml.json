@@ -29,7 +29,7 @@
         "Description": "A list of description resources",
         "Prefix": "Description",
         "GoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
-        "GID": "1887184744",
+        "GID": "631430883",
         "IsActiveDownload": "FALSE"
       },
       {
@@ -38,16 +38,16 @@
         "Description": "A list of attribute resource",
         "Prefix": "Attributes",
         "GoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
-        "GID": "1887184744",
+        "GID": "631430883",
         "IsActiveDownload": "FALSE"
       },
       {
         "Name": "GoogleResourceList",
-        "Value": "ExampleeData",
+        "Value": "ExampleData",
         "Description": "A list of sample values",
         "Prefix": "SampleValues",
         "GoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
-        "GID": "1887184744",
+        "GID": "631430883",
         "IsActiveDownload": "FALSE"
       },
       {

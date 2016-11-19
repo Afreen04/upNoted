@@ -1,0 +1,3 @@
+Name,SampleValue,Description,IsOptional,DataType
+TreasureHunt,MVP Test Hunt,The hunt associated,FALSE,string
+Name,Some puzzle,a puzzle ,FALSE,string

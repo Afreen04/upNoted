@@ -1,0 +1,26 @@
+{
+  "AppUsers": {
+    "AppUser": [
+      {
+        "Name": "Barrymore Theater",
+        "Longitude": "43.05336",
+        "RadiusMeters": "10"
+      },
+      {
+        "Name": "Stone Fence",
+        "Latitude": {
+          "#cdata-section": "89°20'51.2\"W"
+        }
+      },
+      {
+        "Name": "One Barrel"
+      },
+      {
+        "Name": "Alchemy"
+      },
+      {
+        "Name": "The Mermaid Cafe"
+      }
+    ]
+  }
+}

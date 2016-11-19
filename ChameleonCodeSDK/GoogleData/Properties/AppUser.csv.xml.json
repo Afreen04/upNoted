@@ -1,0 +1,20 @@
+{
+  "AppUsers": {
+    "AppUser": [
+      {
+        "Name": "Username",
+        "SampleValue": "bob_jones",
+        "Description": "A username for the user",
+        "IsOptional": "FALSE",
+        "DataType": "string"
+      },
+      {
+        "Name": "EmailAddress",
+        "SampleValue": "bob_jones@example.com",
+        "Description": "An email address for the user",
+        "IsOptional": "FALSE",
+        "DataType": "string"
+      }
+    ]
+  }
+}

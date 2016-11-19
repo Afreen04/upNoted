@@ -1,0 +1,37 @@
+<TreasureHunts>
+  <TreasureHunt>
+    <Name>Name</Name>
+    <SampleValue>MVP Test Hunt</SampleValue>
+    <Description>A name for the hunt</Description>
+    <IsOptional>FALSE</IsOptional>
+    <DataType>string</DataType>
+  </TreasureHunt>
+  <TreasureHunt>
+    <Name>City</Name>
+    <SampleValue>Madison</SampleValue>
+    <Description>A city that the hunt takes place in.</Description>
+    <IsOptional>FALSE</IsOptional>
+    <DataType>string</DataType>
+  </TreasureHunt>
+  <TreasureHunt>
+    <Name>State</Name>
+    <SampleValue>WI</SampleValue>
+    <Description>A state where the hunt takes place</Description>
+    <IsOptional>FALSE</IsOptional>
+    <DataType>string</DataType>
+  </TreasureHunt>
+  <TreasureHunt>
+    <Name>StartDate</Name>
+    <SampleValue>11/19/2016</SampleValue>
+    <Description>Date that the hunt starts</Description>
+    <IsOptional>FALSE</IsOptional>
+    <DataType>datetime</DataType>
+  </TreasureHunt>
+  <TreasureHunt>
+    <Name>Prize</Name>
+    <SampleValue>$1,000</SampleValue>
+    <Description>A description for the price</Description>
+    <IsOptional>FALSE</IsOptional>
+    <DataType>string</DataType>
+  </TreasureHunt>
+</TreasureHunts>
