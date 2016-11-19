@@ -1,85 +1,33 @@
 <Descriptions>
   <Description>
-    <Name>PrimaryGSheetKey</Name>
-    <Value>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</Value>
-    <Description>The primary (default) Google Sheet Key (with infered gid of 0)</Description>
-  </Description>
-  <Description>
-    <Name>ProjectName</Name>
-    <Value>ARTreasureHunt</Value>
-    <Description>The name of the project</Description>
-  </Description>
-  <Description>
-    <Name>DisplayName</Name>
-    <Value>For a friendly</Value>
-    <Description><![CDATA[A "friendly" display name for the project which can be changed at any time.]]></Description>
-  </Description>
-  <Description>
-    <Name>BaseNamespace</Name>
-    <Value>CODEiverse.Projects.SampleProject</Value>
-    <Description>A reasonable base Namespace (to be used as a base namespace for code)</Description>
-  </Description>
-  <Description>
-    <Name>GoogleResourceList</Name>
-    <Value>Descriptions</Value>
-    <Description>A list of description resources</Description>
-    <Prefix>Description</Prefix>
+    <Name>Settings</Name>
+    <Description>Global settings for the entire TicTacToe project</Description>
+    <Type>GSheet</Type>
     <GoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</GoogleKey>
     <GID>0</GID>
     <IsActiveDownload>FALSE</IsActiveDownload>
   </Description>
   <Description>
-    <Name>GoogleResourceList</Name>
-    <Value>Properties</Value>
-    <Description>A list of attribute resource</Description>
-    <Prefix>Attributes</Prefix>
-    <GoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</GoogleKey>
-    <GID>0</GID>
-    <IsActiveDownload>FALSE</IsActiveDownload>
-  </Description>
-  <Description>
-    <Name>GoogleResourceList</Name>
-    <Value>ExampleeData</Value>
-    <Description>A list of sample values</Description>
-    <Prefix>SampleValues</Prefix>
-    <GoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</GoogleKey>
-    <GID>0</GID>
-    <IsActiveDownload>FALSE</IsActiveDownload>
-  </Description>
-  <Description>
-    <Name>GoogleResourceList</Name>
-    <Value>AdditionalResources</Value>
-    <Description>A list of additional resources</Description>
+    <Name>AdditionalResources</Name>
+    <Description>A list of additional resources used by the project</Description>
+    <Type>GSheet</Type>
     <GoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</GoogleKey>
     <GID>1887184744</GID>
     <IsActiveDownload>FALSE</IsActiveDownload>
   </Description>
   <Description>
-    <Name>ChameleonCodeHostUri</Name>
-    <Value>https://eejai42.sdks.codeiverse.com/</Value>
-    <Description>The root path to the SDK Doc Host</Description>
+    <Name>ProjectIntro</Name>
+    <Description>An introduction to the project</Description>
+    <Type>GDoc</Type>
+    <GoogleKey>1IyzazNtsdfS3933tgg8KKvuAR-lmE-KLgT8ZdnqFzpQ</GoogleKey>
+    <IsActiveDownload>TRUE</IsActiveDownload>
   </Description>
   <Description>
-    <Name>ChameleonCodeSDKUri</Name>
-    <Value>ARTreasureHuntSDK/</Value>
-    <Description>The relative path within the dochost</Description>
-    <Default_x0020_Value>ChameleonCode/</Default_x0020_Value>
-  </Description>
-  <Description>
-    <Name>ChameleonCodeSDKPath</Name>
-    <Value>AR-Treasure-Hunt/ChameleonCodeSDK/</Value>
-    <Description>The physical path to the doc host folder relative to the CODEE_ROOT_PATH</Description>
-    <Default_x0020_Value>ChameleonCodeSDK/</Default_x0020_Value>
-  </Description>
-  <Description>
-    <Name>Language1</Name>
-    <Value>EN</Value>
-    <Description>The primary language</Description>
-    <Default_x0020_Value>EN</Default_x0020_Value>
-  </Description>
-  <Description>
-    <Name>Language2</Name>
-    <Description>Additional languages</Description>
-    <Default_x0020_Value>NA</Default_x0020_Value>
+    <Name>Entities</Name>
+    <Description>A list of entities in the project (Player, Opponent, Game, Mark, Win, Loss, etc)</Description>
+    <Type>GSheet</Type>
+    <GoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</GoogleKey>
+    <GID>0</GID>
+    <IsActiveDownload>FALSE</IsActiveDownload>
   </Description>
 </Descriptions>

@@ -25,7 +25,7 @@
     <Description>A list of description resources</Description>
     <Prefix>Description</Prefix>
     <GoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</GoogleKey>
-    <GID>0</GID>
+    <GID>1887184744</GID>
     <IsActiveDownload>FALSE</IsActiveDownload>
   </Entity>
   <Entity>
@@ -34,7 +34,7 @@
     <Description>A list of attribute resource</Description>
     <Prefix>Attributes</Prefix>
     <GoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</GoogleKey>
-    <GID>0</GID>
+    <GID>1887184744</GID>
     <IsActiveDownload>FALSE</IsActiveDownload>
   </Entity>
   <Entity>
@@ -43,7 +43,7 @@
     <Description>A list of sample values</Description>
     <Prefix>SampleValues</Prefix>
     <GoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</GoogleKey>
-    <GID>0</GID>
+    <GID>1887184744</GID>
     <IsActiveDownload>FALSE</IsActiveDownload>
   </Entity>
   <Entity>
