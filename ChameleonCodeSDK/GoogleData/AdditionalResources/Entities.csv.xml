@@ -1,0 +1,85 @@
+<Entities>
+  <Entity>
+    <Name>PrimaryGSheetKey</Name>
+    <Value>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</Value>
+    <Description>The primary (default) Google Sheet Key (with infered gid of 0)</Description>
+  </Entity>
+  <Entity>
+    <Name>ProjectName</Name>
+    <Value>ARTreasureHunt</Value>
+    <Description>The name of the project</Description>
+  </Entity>
+  <Entity>
+    <Name>DisplayName</Name>
+    <Value>For a friendly</Value>
+    <Description><![CDATA[A "friendly" display name for the project which can be changed at any time.]]></Description>
+  </Entity>
+  <Entity>
+    <Name>BaseNamespace</Name>
+    <Value>CODEiverse.Projects.SampleProject</Value>
+    <Description>A reasonable base Namespace (to be used as a base namespace for code)</Description>
+  </Entity>
+  <Entity>
+    <Name>GoogleResourceList</Name>
+    <Value>Descriptions</Value>
+    <Description>A list of description resources</Description>
+    <Prefix>Description</Prefix>
+    <GoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</GoogleKey>
+    <GID>0</GID>
+    <IsActiveDownload>FALSE</IsActiveDownload>
+  </Entity>
+  <Entity>
+    <Name>GoogleResourceList</Name>
+    <Value>Properties</Value>
+    <Description>A list of attribute resource</Description>
+    <Prefix>Attributes</Prefix>
+    <GoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</GoogleKey>
+    <GID>0</GID>
+    <IsActiveDownload>FALSE</IsActiveDownload>
+  </Entity>
+  <Entity>
+    <Name>GoogleResourceList</Name>
+    <Value>ExampleeData</Value>
+    <Description>A list of sample values</Description>
+    <Prefix>SampleValues</Prefix>
+    <GoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</GoogleKey>
+    <GID>0</GID>
+    <IsActiveDownload>FALSE</IsActiveDownload>
+  </Entity>
+  <Entity>
+    <Name>GoogleResourceList</Name>
+    <Value>AdditionalResources</Value>
+    <Description>A list of additional resources</Description>
+    <GoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</GoogleKey>
+    <GID>1887184744</GID>
+    <IsActiveDownload>FALSE</IsActiveDownload>
+  </Entity>
+  <Entity>
+    <Name>ChameleonCodeHostUri</Name>
+    <Value>https://eejai42.sdks.codeiverse.com/</Value>
+    <Description>The root path to the SDK Doc Host</Description>
+  </Entity>
+  <Entity>
+    <Name>ChameleonCodeSDKUri</Name>
+    <Value>ARTreasureHuntSDK/</Value>
+    <Description>The relative path within the dochost</Description>
+    <Default_x0020_Value>ChameleonCode/</Default_x0020_Value>
+  </Entity>
+  <Entity>
+    <Name>ChameleonCodeSDKPath</Name>
+    <Value>AR-Treasure-Hunt/ChameleonCodeSDK/</Value>
+    <Description>The physical path to the doc host folder relative to the CODEE_ROOT_PATH</Description>
+    <Default_x0020_Value>ChameleonCodeSDK/</Default_x0020_Value>
+  </Entity>
+  <Entity>
+    <Name>Language1</Name>
+    <Value>EN</Value>
+    <Description>The primary language</Description>
+    <Default_x0020_Value>EN</Default_x0020_Value>
+  </Entity>
+  <Entity>
+    <Name>Language2</Name>
+    <Description>Additional languages</Description>
+    <Default_x0020_Value>NA</Default_x0020_Value>
+  </Entity>
+</Entities>

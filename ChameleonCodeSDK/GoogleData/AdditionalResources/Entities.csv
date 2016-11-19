@@ -1,0 +1,14 @@
+Name,Value,Description,Default Value,Prefix,GoogleKey,GID,IsActiveDownload
+PrimaryGSheetKey,1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0,The primary (default) Google Sheet Key (with infered gid of 0),,,,,
+ProjectName,ARTreasureHunt,The name of the project,,,,,
+DisplayName,For a friendly,"A ""friendly"" display name for the project which can be changed at any time.",,,,,
+BaseNamespace,CODEiverse.Projects.SampleProject,A reasonable base Namespace (to be used as a base namespace for code),,,,,
+GoogleResourceList,Descriptions,A list of description resources,,Description,1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0,0,FALSE
+GoogleResourceList,Properties,A list of attribute resource,,Attributes,1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0,0,FALSE
+GoogleResourceList,ExampleeData,A list of sample values,,SampleValues,1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0,0,FALSE
+GoogleResourceList,AdditionalResources,A list of additional resources,,,1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0,1887184744,FALSE
+ChameleonCodeHostUri,https://eejai42.sdks.codeiverse.com/,The root path to the SDK Doc Host,,,,,
+ChameleonCodeSDKUri,ARTreasureHuntSDK/,The relative path within the dochost,ChameleonCode/,,,,
+ChameleonCodeSDKPath,AR-Treasure-Hunt/ChameleonCodeSDK/,The physical path to the doc host folder relative to the CODEE_ROOT_PATH,ChameleonCodeSDK/,,,,
+Language1,EN,The primary language,EN,,,,
+Language2,,Additional languages,NA,,,,
