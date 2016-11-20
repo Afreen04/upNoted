@@ -22,7 +22,7 @@ function configureStates($stateProvider)
         views: {
         'menuContent': {
           templateUrl: 'templates/login.html',
-          controller: ''
+          controller: 'LoginController'
         }
       }
 
@@ -36,7 +36,7 @@ function configureStates($stateProvider)
         views: {
         'menuContent': {
           templateUrl: 'templates/story.html',
-          controller: ''
+          controller: 'StoryController'
         }
       }
 
@@ -50,7 +50,7 @@ function configureStates($stateProvider)
         views: {
         'menuContent': {
           templateUrl: 'templates/newuser.html',
-          controller: ''
+          controller: 'NewUserController'
         }
       }
 
@@ -64,7 +64,7 @@ function configureStates($stateProvider)
         views: {
         'menuContent': {
           templateUrl: 'templates/dashboard.html',
-          controller: ''
+          controller: 'DashboardController'
         }
       }
 
@@ -78,7 +78,7 @@ function configureStates($stateProvider)
         views: {
         'menuContent': {
           templateUrl: 'templates/puzzle.html',
-          controller: ''
+          controller: 'PuzzleController'
         }
       }
 
@@ -92,7 +92,7 @@ function configureStates($stateProvider)
         views: {
         'menuContent': {
           templateUrl: 'templates/treat.html',
-          controller: ''
+          controller: 'TreatController'
         }
       }
 
@@ -106,7 +106,7 @@ function configureStates($stateProvider)
         views: {
         'menuContent': {
           templateUrl: 'templates/gameover.html',
-          controller: ''
+          controller: 'GameOverController'
         }
       }
 
@@ -120,7 +120,7 @@ function configureStates($stateProvider)
         views: {
         'menuContent': {
           templateUrl: 'templates/settings.html',
-          controller: ''
+          controller: 'SettingsController'
         }
       }
 
@@ -134,7 +134,7 @@ function configureStates($stateProvider)
         views: {
         'menuContent': {
           templateUrl: 'templates/logout.html',
-          controller: ''
+          controller: 'LogoutController'
         }
       }
 
@@ -148,7 +148,7 @@ function configureStates($stateProvider)
         views: {
         'menuContent': {
           templateUrl: 'templates/leaderboard.html',
-          controller: ''
+          controller: 'LeaderboardController'
         }
       }
 
@@ -162,7 +162,7 @@ function configureStates($stateProvider)
         views: {
         'menuContent': {
           templateUrl: 'templates/lifecode.html',
-          controller: ''
+          controller: 'LifecodeController'
         }
       }
 
@@ -176,7 +176,7 @@ function configureStates($stateProvider)
         views: {
         'menuContent': {
           templateUrl: 'templates/redeem.html',
-          controller: ''
+          controller: 'RedeemController'
         }
       }
 
