@@ -1,0 +1,32 @@
+<Hunt2Locations>
+  <Hunt2Locations>
+    <Name>Barrymore Theater</Name>
+    <Longitude>-89.21075</Longitude>
+    <Latitude>43.05336</Latitude>
+    <RadiusMeters>10</RadiusMeters>
+  </Hunt2Locations>
+  <Hunt2Locations>
+    <Name>Stone Fence</Name>
+    <Longitude>-89.20512</Longitude>
+    <Latitude>43.05372</Latitude>
+    <RadiusMeters>10</RadiusMeters>
+  </Hunt2Locations>
+  <Hunt2Locations>
+    <Name>One Barrel</Name>
+    <Longitude>-89.355087</Longitude>
+    <Latitude>43.091936</Latitude>
+    <RadiusMeters>10</RadiusMeters>
+  </Hunt2Locations>
+  <Hunt2Locations>
+    <Name>Alchemy</Name>
+    <Longitude>-89.355273</Longitude>
+    <Latitude>43.092338</Latitude>
+    <RadiusMeters>10</RadiusMeters>
+  </Hunt2Locations>
+  <Hunt2Locations>
+    <Name>The Mermaid Cafe</Name>
+    <Longitude>-89.355784</Longitude>
+    <Latitude>43.091149</Latitude>
+    <RadiusMeters>10</RadiusMeters>
+  </Hunt2Locations>
+</Hunt2Locations>

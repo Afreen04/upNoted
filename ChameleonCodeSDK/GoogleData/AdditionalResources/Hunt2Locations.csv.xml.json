@@ -1,0 +1,36 @@
+{
+  "Hunt2Locations": {
+    "Hunt2Locations": [
+      {
+        "Name": "Barrymore Theater",
+        "Longitude": "-89.21075",
+        "Latitude": "43.05336",
+        "RadiusMeters": "10"
+      },
+      {
+        "Name": "Stone Fence",
+        "Longitude": "-89.20512",
+        "Latitude": "43.05372",
+        "RadiusMeters": "10"
+      },
+      {
+        "Name": "One Barrel",
+        "Longitude": "-89.355087",
+        "Latitude": "43.091936",
+        "RadiusMeters": "10"
+      },
+      {
+        "Name": "Alchemy",
+        "Longitude": "-89.355273",
+        "Latitude": "43.092338",
+        "RadiusMeters": "10"
+      },
+      {
+        "Name": "The Mermaid Cafe",
+        "Longitude": "-89.355784",
+        "Latitude": "43.091149",
+        "RadiusMeters": "10"
+      }
+    ]
+  }
+}

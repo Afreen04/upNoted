@@ -38,4 +38,34 @@
     <GID>671527018</GID>
     <IsActiveDownload>TRUE</IsActiveDownload>
   </AdditionalResource>
+  <AdditionalResource>
+    <Name>Hunt1Puzzles</Name>
+    <GoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</GoogleKey>
+    <GID>1806827157</GID>
+  </AdditionalResource>
+  <AdditionalResource>
+    <Name>Hunt2Puzzles</Name>
+    <GoogleKey>1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY</GoogleKey>
+    <GID>0</GID>
+  </AdditionalResource>
+  <AdditionalResource>
+    <Name>Hunt1Locations</Name>
+    <GoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</GoogleKey>
+    <GID>1825322207</GID>
+  </AdditionalResource>
+  <AdditionalResource>
+    <Name>Hunt2Locations</Name>
+    <GoogleKey>1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY</GoogleKey>
+    <GID>1992169427</GID>
+  </AdditionalResource>
+  <AdditionalResource>
+    <Name>Hunt1Characters</Name>
+    <GoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</GoogleKey>
+    <GID>1871536543</GID>
+  </AdditionalResource>
+  <AdditionalResource>
+    <Name>Hunt2Characters</Name>
+    <GoogleKey>1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY</GoogleKey>
+    <GID>1992169427</GID>
+  </AdditionalResource>
 </AdditionalResources>

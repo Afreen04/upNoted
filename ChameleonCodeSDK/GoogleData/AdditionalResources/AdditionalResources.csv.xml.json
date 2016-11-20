@@ -39,6 +39,36 @@
         "GoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
         "GID": "671527018",
         "IsActiveDownload": "TRUE"
+      },
+      {
+        "Name": "Hunt1Puzzles",
+        "GoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
+        "GID": "1806827157"
+      },
+      {
+        "Name": "Hunt2Puzzles",
+        "GoogleKey": "1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY",
+        "GID": "0"
+      },
+      {
+        "Name": "Hunt1Locations",
+        "GoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
+        "GID": "1825322207"
+      },
+      {
+        "Name": "Hunt2Locations",
+        "GoogleKey": "1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY",
+        "GID": "1992169427"
+      },
+      {
+        "Name": "Hunt1Characters",
+        "GoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
+        "GID": "1871536543"
+      },
+      {
+        "Name": "Hunt2Characters",
+        "GoogleKey": "1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY",
+        "GID": "1992169427"
       }
     ]
   }
