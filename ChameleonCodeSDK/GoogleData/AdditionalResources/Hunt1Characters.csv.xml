@@ -4,7 +4,7 @@
     <Name>Character1</Name>
     <Character>Writer - in the coffee shop all the time</Character>
     <Bio>[FILL ME]</Bio>
-    <Icon>Icon1</Icon>
+    <Icon>AnnaRodriguez.svg</Icon>
     <Vice>Coffee</Vice>
     <Token>Character1</Token>
   </Hunt1Characters>
@@ -13,7 +13,7 @@
     <Name>Character2</Name>
     <Character>Music super fan</Character>
     <Bio>[FILL ME]</Bio>
-    <Icon>Icon2</Icon>
+    <Icon>HalWhite.svg</Icon>
     <Vice>LocalMusic</Vice>
     <Token>Character2</Token>
   </Hunt1Characters>

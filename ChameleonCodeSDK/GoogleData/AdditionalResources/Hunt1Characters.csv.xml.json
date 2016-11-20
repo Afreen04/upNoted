@@ -6,7 +6,7 @@
         "Name": "Character1",
         "Character": "Writer - in the coffee shop all the time",
         "Bio": "[FILL ME]",
-        "Icon": "Icon1",
+        "Icon": "AnnaRodriguez.svg",
         "Vice": "Coffee",
         "Token": "Character1"
       },
@@ -15,7 +15,7 @@
         "Name": "Character2",
         "Character": "Music super fan",
         "Bio": "[FILL ME]",
-        "Icon": "Icon2",
+        "Icon": "HalWhite.svg",
         "Vice": "LocalMusic",
         "Token": "Character2"
       }

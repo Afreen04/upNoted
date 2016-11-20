@@ -2,7 +2,7 @@
   "Hunt2Puzzles": {
     "Hunt2Puzzles": [
       {
-        "HuntId": "1",
+        "HuntId": "2",
         "PuzzleId": "1",
         "LocationName": "One Barrel",
         "Story": "Arthur A. Reality lived in the Atwood Neighborhood in east Madison. No promises, but it might be a good idea to start your hunt there. I hope you're familiar with Wisconsin traditions!",
@@ -12,7 +12,7 @@
         "Answer": "Landjäger"
       },
       {
-        "HuntId": "1",
+        "HuntId": "2",
         "PuzzleId": "2",
         "LocationName": "Stone Fence",
         "Story": "Good job! Mr. Reality would be proud. This next test might require a thesaurus. You do carry one with you always, right?",
@@ -22,7 +22,7 @@
         "Answer": "6"
       },
       {
-        "HuntId": "1",
+        "HuntId": "2",
         "PuzzleId": "3",
         "LocationName": "Barrymore Theater",
         "Story": {
@@ -34,7 +34,7 @@
         "Answer": "Bad Dog Frida"
       },
       {
-        "HuntId": "1",
+        "HuntId": "2",
         "PuzzleId": "4",
         "LocationName": "The Mermaid Cafe",
         "Story": "Nice work! Did you know how old Mr. Reality was when he died? He was 104! What's his secret? Coffee, coffee, and more coffee.",
@@ -44,7 +44,7 @@
         "Answer": "33"
       },
       {
-        "HuntId": "1",
+        "HuntId": "2",
         "PuzzleId": "5",
         "LocationName": "Alchemy",
         "Story": "Sadly, Mr. Reality's recent death proves the following theory wrong, but he thought it was worth a try.",
@@ -52,26 +52,6 @@
         "Photo": "Puzzle5.jpg",
         "Question": "What color are the pants on the mural?",
         "Answer": "Blue"
-      },
-      {
-        "HuntId": "2",
-        "PuzzleId": "1"
-      },
-      {
-        "HuntId": "2",
-        "PuzzleId": "2"
-      },
-      {
-        "HuntId": "2",
-        "PuzzleId": "3"
-      },
-      {
-        "HuntId": "2",
-        "PuzzleId": "4"
-      },
-      {
-        "HuntId": "2",
-        "PuzzleId": "5"
       }
     ]
   }
