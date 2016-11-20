@@ -258,44 +258,38 @@ angular.module('starter.controllers', [])
   $scope.auth = Auth;
 }])
 
-.controller('NewUserCtrl', ['$scope', '$state', 'Auth', 'Settings', function($scope, $state, Auth, Settings) {
+
+.controller('StoryController', ['$scope', '$state', 'Auth', function($scope, $state, Auth) {
+  $scope.story = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+
+  $scope.continue = function() {
+    $state.go('app.newuser');
+  }
+}])
+
+.controller('NewUserController', ['$scope', '$state', 'Auth', 'Settings', function($scope, $state, Auth, Settings) {
   $scope.auth = Auth;
 
-  $scope.name = "";
+  $scope.characterName = "";
   $scope.currentIndex = 0;
   $scope.selectedIndex = 0;
 
-  $scope.characters = [
-    {
-      "name": "name1",
-      "image": "http://placehold.it/200x200",
-      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    },
-    {
-      "name": "name2",
-      "image": "http://placehold.it/200x200",
-      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    },
-    {
-      "name": "name3",
-      "image": "http://placehold.it/200x200",
-      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    }
-  ];
+  $scope.characters = app_config.characters;
 
   $scope.characterChanged = function(index) {
     $scope.currentIndex = index;
   }
 
   $scope.complete = function() {
+    console.log($scope)
+
     Settings().user = {
-      name: $scope.name,
-      characterIndex: $scope.characterIndex
+      characterName: $scope.characterName,
+      characterIndex: $scope.selectedIndex
     };
 
     Settings().$save();
-
-    $state.go('app.search');
+    $state.go('app.dashboard');
   }
 
   $scope.select = function(index) {
@@ -303,12 +297,10 @@ angular.module('starter.controllers', [])
   }
 }])
 
-.controller('StoryCtrl', ['$scope', '$state', 'Auth', function($scope, $state, Auth) {
-  $scope.story = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+.controller('DashboardController', ['$scope', 'Settings', function($scope, Settings) {
+  // Settings().$bindTo($scope, 'settings');
 
-  $scope.continue = function() {
-    $state.go('app.newuser');
-  }
+  $scope.character = app_config.characters[0]; //TODO: Fix the index, [Settings().user.characterIndex]
 }])
 
 ;
