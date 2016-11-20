@@ -157,6 +157,23 @@ var ionicApp = angular.module('starter', ['ionic', 'starter.controllers', 'start
       }
     })
 
+    .state('app.puzzle', {
+      url: '/puzzle',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/puzzle.html',
+          controller: 'PuzzleController'
+        }
+      },
+      resolve: {
+        'currentAuth': ['Auth', function(Auth) {
+          // $requireSignIn returns a promise so the resolve waits for it to complete
+          // If the promise is rejected, it will throw a $stateChangeError (see above)
+          return Auth.$requireSignIn();
+        }]
+      }
+    })
+
     .state('app.settings', {
       url: '/settings',
       views: {
@@ -177,7 +194,7 @@ var ionicApp = angular.module('starter', ['ionic', 'starter.controllers', 'start
     ;
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/login');
+  $urlRouterProvider.otherwise('/app/dashboard');
 })
 
 ;

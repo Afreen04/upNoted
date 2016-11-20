@@ -1,0 +1,18 @@
+<ion-view title="Puzzle Page">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <span class="icon-label">15%</span><i class="icon ion-cash balanced top-icon"></i>
+    <span class="icon-label">3</span><i class="icon ion-heart assertive top-icon"></i>
+  </ion-nav-buttons>
+
+  <ion-content class="has-header">
+    <h1>Puzzle Number: {{puzzle.PuzzleId}}</h1>
+    <img class="puzzle-image" ng-src="{{puzzle.Photo}}" alt="puzzle image">
+    <h2>{{puzzle.Hint}}</h2>
+
+    <button class="button button-block button-balanced">I Found It!</button>
+  </ion-content>
+</ion-view>

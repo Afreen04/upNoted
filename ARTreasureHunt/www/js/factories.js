@@ -35,9 +35,8 @@ angular.module('starter.factories', [])
         var USER = authData.uid;
         var ref = firebase.database().ref('users/' + USER + '/settings');
         settings = $firebaseObject(ref);
-        settings.$loaded().then(function() {
-          console.log($state.current)
 
+        settings.$loaded().then(function() {
           // Very much a hack, but hey that is alright for now!
           if (settings.user) {
             $state.go("app.dashboard");

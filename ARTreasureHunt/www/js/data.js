@@ -30,7 +30,7 @@ var app_config = {
         "PuzzleId": "1",
         "LocationName": "Front Room",
         "Hint": "Pizza was served here",
-        "Photo": "http://placehold.it/200x200",
+        "Photo": "http://placehold.it/400x400",
         "Question": "What color are the walls?",
         "Answer": "White",
         "Token": "FrontRoom"
