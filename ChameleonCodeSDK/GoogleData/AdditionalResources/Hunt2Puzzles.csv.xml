@@ -5,7 +5,7 @@
     <LocationName>One Barrel</LocationName>
     <Story>Arthur A. Reality lived in the Atwood Neighborhood in east Madison. No promises, but it might be a good idea to start your hunt there. I hope you're familiar with Wisconsin traditions!</Story>
     <Hint>Seventh inning stretch/ Sing it loud in Milwaukee/ What's four minus three?</Hint>
-    <Photo>hunt_data/PuzzleImages/Puzzle1.jpg</Photo>
+    <Photo>hunt_data/Hunt2/PuzzleImages/Puzzle1.jpg</Photo>
     <PhotoName>Puzzle1.jpg</PhotoName>
     <Question>What Swiss meat is sold here? (Spell it right!)</Question>
     <Answer>Landjäger</Answer>
@@ -16,7 +16,7 @@
     <LocationName>Stone Fence</LocationName>
     <Story>Good job! Mr. Reality would be proud. This next test might require a thesaurus. You do carry one with you always, right?</Story>
     <Hint>Rock me mama like/ another brick in the wall/ Synonyms are friends</Hint>
-    <Photo>hunt_data/PuzzleImages/Puzzle2.jpg</Photo>
+    <Photo>hunt_data/Hunt2/PuzzleImages/Puzzle2.jpg</Photo>
     <PhotoName>Puzzle2.jpg</PhotoName>
     <Question>How many yellow windows are on the gray building in the window?</Question>
     <Answer>6</Answer>
@@ -27,7 +27,7 @@
     <LocationName>Barrymore Theater</LocationName>
     <Story><![CDATA[Steady as she goes, you are almost halfway there! The Princess Bride was Mr. Reality's favorite movie. If you got tired of his pitiful poetry, and told him, "No more rhyming I mean it!" He'd answer, "Anybody want a peanut?"]]></Story>
     <Hint>Bury your strife and/ Marry for life and make/ No more awful rhymes</Hint>
-    <Photo>hunt_data/PuzzleImages/Puzzle3.jpg</Photo>
+    <Photo>hunt_data/Hunt2/PuzzleImages/Puzzle3.jpg</Photo>
     <PhotoName>Puzzle3.jpg</PhotoName>
     <Question>What does BDF stand for?</Question>
     <Answer>Bad Dog Frida</Answer>
@@ -38,7 +38,7 @@
     <LocationName>The Mermaid Cafe</LocationName>
     <Story>Nice work! Did you know how old Mr. Reality was when he died? He was 104! What's his secret? Coffee, coffee, and more coffee.</Story>
     <Hint>Roosters are known to/ Go swimming under the sea/ When there is coffee</Hint>
-    <Photo>hunt_data/PuzzleImages/Puzzle4.jpg</Photo>
+    <Photo>hunt_data/Hunt2/PuzzleImages/Puzzle4.jpg</Photo>
     <PhotoName>Puzzle4.jpg</PhotoName>
     <Question>How many lightbulbs hang above?</Question>
     <Answer>33</Answer>
@@ -49,7 +49,7 @@
     <LocationName>Alchemy</LocationName>
     <Story>Sadly, Mr. Reality's recent death proves the following theory wrong, but he thought it was worth a try.</Story>
     <Hint>Medieval lore says/ Drink this and live forever/ It's pseudo science</Hint>
-    <Photo>hunt_data/PuzzleImages/Puzzle5.jpg</Photo>
+    <Photo>hunt_data/Hunt2/PuzzleImages/Puzzle5.jpg</Photo>
     <PhotoName>Puzzle5.jpg</PhotoName>
     <Question>What color are the pants on the mural?</Question>
     <Answer>Blue</Answer>

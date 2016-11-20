@@ -68,4 +68,11 @@
     <GoogleKey>1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY</GoogleKey>
     <GID>645911934</GID>
   </AdditionalResource>
+  <AdditionalResource>
+    <Name>AppStates</Name>
+    <Description>A list of states in the app.</Description>
+    <Type>GSheet</Type>
+    <GoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</GoogleKey>
+    <GID>1125683000</GID>
+  </AdditionalResource>
 </AdditionalResources>
