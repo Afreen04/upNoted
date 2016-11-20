@@ -1,0 +1,20 @@
+{
+  "Hunt1": {
+    "Hunt1": [
+      {
+        "Name": "Location1",
+        "Longitude": "-85.11075",
+        "Latitude": "41.45372",
+        "RadiusMeters": "10",
+        "Token": "Location1"
+      },
+      {
+        "Name": "Location2",
+        "Longitude": "-87.10512",
+        "Latitude": "41.45372",
+        "RadiusMeters": "10",
+        "Token": "Location2"
+      }
+    ]
+  }
+}
