@@ -16,15 +16,34 @@
   font-size: 24px;
 }
 
+/* Coupon Styling */
+.coupon {
+  display: block;
+  text-align: center;
+  background: #f7f7f7;
+  padding: 30px;
+  margin: 30px;
+  border-radius: 20px;
+  border: 3px solid #777;
+}
+
 /* Character box styling */
 .responsive-image {
   width: 100%;
+  max-width: 500px;
+  margin: auto;
+  display: block;
 }
 
-.padding-bottom {
+.padding-bottom-2 {
   padding-bottom: 40px;
 }
 
 .slider-pager {
   padding-top: 20px;
+}
+
+/* Utility Classes */
+.center-text {
+  text-align: center;
 }

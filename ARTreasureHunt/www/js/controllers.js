@@ -30,6 +30,31 @@ angular.module('starter.controllers', [])
   });
 }])
 
+
+.controller('RedeemController', ['$scope', 'User', function($scope, User) {
+  User.then(function(data) {
+    $scope.settings = data.settings;
+  });
+
+  var today = new Date();
+  var nextweek = new Date(today.getFullYear(), today.getMonth(), today.getDate()+7);
+  var dd = nextweek.getDate();
+  var mm = nextweek.getMonth()+1; //January is 0!
+  var yyyy = nextweek.getFullYear();
+  if(dd<10) {
+      dd='0'+dd
+  }
+  if(mm<10) {
+      mm='0'+mm
+  }
+  $scope.nextweek = mm+'/'+dd+'/'+yyyy;
+
+
+  $scope.sponsor = app_hunts.HuntData.TreaureHunt[0].Sponsor;
+
+  JsBarcode("#barcode", "123456789012", {format: "upc", background: "none"});
+}])
+
 .controller('StoryController', ['$scope', '$state', function($scope, $state) {
   $scope.story = app_hunts.HuntData.TreaureHunt[0].Description;
 
@@ -114,12 +139,12 @@ angular.module('starter.controllers', [])
 
   $scope.checkLoc = function() {
     geolocationSvc.getCurrentPosition().then(function(position) {
-      console.log(position)
-      alert("accuracy: " + position.coords.accuracy);
+      var dist = $scope.distance(position.coords.latitude, position.coords.longitude, $scope.location.Latitude, $scope.location.Longitude);
 
-      var dist = $scope.distance(position.latitude, position.longitude, $scope.location.Latitude, $scope.location.Longitude);
+      console.log(position);
+      alert("accuracy: " + position.coords.accuracy + "m\ndistance: " + dist * 1000 + "m");
 
-      if (position.coords.accuracy <= 10 && dist < $scope.puzzle.RadiusMeters / 1000) {
+      if (position.coords.accuracy <= 20 && dist < $scope.puzzle.RadiusMeters / 1000) {
         $scope.verify();
       } else {
         alert("Sorry, there is no puzzle nearby :(");
@@ -128,22 +153,31 @@ angular.module('starter.controllers', [])
   }
 
   $scope.verify = function() {
-    var response = prompt($scope.puzzle.Question + "\nPlease enter your answer", "");
-    if (response != null) {
-      var lower = response.toLowerCase();
-      var answer = $scope.puzzle.Answer.toLowerCase();
+    if ($scope.settings.lives > 0) {
+      var response = prompt($scope.puzzle.Question + "\nPlease enter your answer", "");
+      if (response != null) {
+        var lower = response.toLowerCase();
+        var answer = $scope.puzzle.Answer.toLowerCase();
 
-      if (answer === lower) {
-        $scope.settings.user.puzzleIndex = ($scope.settings.user.puzzleIndex + 1) % 3;
-        $scope.settings.user.discount += 5;
-        alert("You are correct!");
+        if (answer === lower) {
+          $scope.settings.user.puzzleIndex = ($scope.settings.user.puzzleIndex + 1) % 3;
 
-        // Update reference to the puzzle
-        $scope.puzzle = app_hunts.HuntData.TreaureHunt[$scope.settings.user.huntIndex].Puzzles[$scope.settings.user.puzzleIndex];
-      } else {
-        $scope.settings.user.lives -= 1;
-        alert("You guessed wrongly.\nYou have lost 1 life");
+          // Just in case ;)
+          if ($scope.settings.user.discount < 50) {
+            $scope.settings.user.discount += 5;
+          }
+
+          alert("You are correct!");
+
+          // Update reference to the puzzle
+          $scope.puzzle = app_hunts.HuntData.TreaureHunt[$scope.settings.user.huntIndex].Puzzles[$scope.settings.user.puzzleIndex];
+        } else {
+          $scope.settings.user.lives -= 1;
+          alert("You guessed wrongly.\nYou have lost 1 life");
+        }
       }
+    } else {
+      alert("Oh no! You are out of lives.\nYou should go buy some from the store.");
     }
   }
 }])

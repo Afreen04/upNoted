@@ -4,7 +4,7 @@
       {
         "Name": "Hunt1",
         "Description": "SectorTest - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "Sponsor": "Sector",
+        "Sponsor": "Sector67",
         "TotalDiscountAccumulated": "100",
         "IsTest": "TRUE",
         "State": "WI",
@@ -34,7 +34,7 @@
             "Name": "Character2",
             "Character": "Music super fan",
             "Bio": "[FILL ME]",
-            "Icon": "hunt_data/Hunt2/AvatarIcons/HalWhite.svg",
+            "Icon": "hunt_data/Hunt1/AvatarIcons/HalWhite.svg",
             "Vice": "LocalMusic",
             "IconName": "HalWhite.svg",
             "Token": "Character2"
@@ -45,21 +45,21 @@
             "Name": "Location1",
             "Longitude": "-89.353862",
             "Latitude": "43.093695",
-            "RadiusMeters": "10",
+            "RadiusMeters": "20",
             "Token": "Location1"
           },
           {
             "Name": "Location2",
             "Longitude": "-89.353862",
             "Latitude": "43.093695",
-            "RadiusMeters": "10",
+            "RadiusMeters": "20",
             "Token": "Location2"
           },
           {
             "Name": "Location3",
             "Longitude": "-89.353862",
             "Latitude": "43.093695",
-            "RadiusMeters": "10",
+            "RadiusMeters": "20",
             "Token": "Location3"
           }
         ],

@@ -16,13 +16,13 @@
           <span class="icon ion-map padding-right"></span>
           <span>Home</span>
         </ion-item>
+        <ion-item nav-clear menu-close href="#/app/redeem" ng-show="settings.user.discount > 0">
+          <span class="icon ion-cash padding-right"></span>
+          <span>Redeem</span>
+        </ion-item>
         <ion-item nav-clear menu-close ng-click="reset()">
           <span class="icon ion-loop padding-right"></span>
           <span>Start Over</span>
-        </ion-item>
-        <!-- <ion-item nav-clear menu-close href="#/app/settings">
-          <span class="icon ion-gear-a padding-right"></span>
-          <span>Settings</span> -->
         </ion-item>
         <ion-item nav-clear menu-close ng-click="signOut()">
           <span class="icon ion-log-out padding-right"></span>

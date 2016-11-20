@@ -110,6 +110,16 @@ var ionicApp = angular.module('starter', ['ionic', 'starter.controllers', 'start
       },
     })
 
+    .state('app.redeem', {
+      url: '/redeem',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/redeem.html',
+          controller: 'RedeemController'
+        }
+      },
+    })
+
     ;
 
   // if none of the above states are matched, use this as the fallback
