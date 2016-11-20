@@ -8,19 +8,22 @@
 
     <ion-slide-box on-slide-changed="characterChanged($index)">
       <ion-slide ng-repeat="character in characters">
-        <div class="row">
-          <div class="col col-25">
+        <div class="row padding-bottom">
+          <div class="col col-33">
             <img class="character-image" ng-src="{{character.image}}" alt="character portrait">
           </div>
           <div class="col">
             <h1>{{character.name}}</h1>
             <p>{{character.bio}}</p>
+
+            <button class="button button-block button-balanced icon-left" ng-show="selectedIndex == $index">✓ Selected</button>
+            <button class="button button-block button-stable" ng-click="select($index)" ng-show="selectedIndex != $index">Select Character</button>
           </div>
         </div>
       </ion-slide>
     </ion-slide-box>
 
     <button class="button button-block button-dark" ng-click="complete()">Complete</button>
-    
+
   </ion-content>
 </ion-view>
