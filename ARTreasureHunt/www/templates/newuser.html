@@ -1,14 +1,14 @@
-<ion-view title="Create Your Character">
+<ion-view title="Choose Your Character">
   <ion-content class="has-header" drag-content="false">
     <div class="list list-inset">
       <div class="item item-input">
-        <input type="text" ng-model="characterName" placeholder="User Name">
+        <input type="text" ng-model="$parent.name" placeholder="User Name">
       </div>
     </div>
 
     <ion-slide-box on-slide-changed="characterChanged($index)">
       <ion-slide ng-repeat="character in characters">
-        <div class="row padding-bottom">
+        <div class="row padding-bottom2">
           <div class="col col-33">
             <img class="responsive-image" ng-src="{{character.Icon}}" alt="character portrait">
           </div>

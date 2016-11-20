@@ -1,6 +1,8 @@
 angular.module('starter.factories', [])
 
-.factory('Auth', ['$firebaseAuth', '$state', function($firebaseAuth, $state) {
+.factory('User', ['$firebaseAuth', '$firebaseObject', '$q', '$state', function($firebaseAuth, $firebaseObject, $q,  $state) {
+    var deferred = $q.defer();
+
     // Init firebase 3.x.x
     var config = {
       apiKey: "AIzaSyC93WY_4dJ2LXpRE8oGExenhM3HdhnHUuo",
@@ -12,132 +14,76 @@ angular.module('starter.factories', [])
     firebase.initializeApp(config);
 
     var auth = $firebaseAuth();
+    var settings;
 
     // any time auth status updates, add the user data to scope
     auth.$onAuthStateChanged(function(authData) {
       auth.authData = authData;
 
       if (authData === null || authData === undefined) {
+        deferred.resolve(
+          {
+            auth: auth,
+            settings: settings
+          }
+        );
+
         $state.go('app.login');
-      }
-    });
-
-    return auth;
-  }
-])
-
-.factory('Settings', ['$firebaseObject', '$state', 'Auth',
-  function($firebaseObject, $state, Auth) {
-    var settings = null;
-
-    Auth.$onAuthStateChanged(function(authData) {
-      if (authData !== null) {
+      } else {
         var USER = authData.uid;
-        var ref = firebase.database().ref('users/' + USER + '/settings');
+        var ref = firebase.database().ref('users/' + USER + '/');
         settings = $firebaseObject(ref);
 
         settings.$loaded().then(function() {
-          // Very much a hack, but hey that is alright for now!
+          deferred.resolve(
+            {
+              auth: auth,
+              settings: settings
+            }
+          );
+
           if (settings.user) {
-            $state.go("app.dashboard");
+            $state.go('app.dashboard');
           } else {
-            $state.go("app.story");
+            $state.go('app.story');
           }
+        }).catch(function(error) {
+          deferred.resolve(
+            {
+              auth: auth,
+              settings: settings
+            }
+          );
+
+          $state.go('app.login');
         });
       }
     });
 
-    function getSettings() {
-      return settings;
-    }
-
-    return getSettings;
+    return deferred.promise;
   }
 ])
 
-.factory('Favorites', ['$firebaseArray', 'Auth',
-  function($firebaseArray, Auth) {
-    var favorites = null;
+.factory('geolocationSvc', ['$q', '$window', function ($q, $window) {
+  function getCurrentPosition() {
+    var deferred = $q.defer();
 
-    Auth.$onAuthStateChanged(function(authData) {
-      if (authData !== null) {
-        var USER = authData.uid;
-        var ref = firebase.database().ref('users/' + USER + '/favorites');
-        favorites = $firebaseArray(ref);
-      }
-    });
-
-    function addFavorite(image) {
-      // Strip out stuff that isn't important
-      var customImage = {
-        imgUrl: image.imgUrl,
-        hqImgUrl: image.hqImgUrl,
-        originalImgUrl: image.originalImgUrl,
-        favorite: image.favorite,
-        tags: image.tags,
-        // Only used with custom uploaded files
-        filename: image.filename || null
-      }
-      favorites.$add(customImage);
+    if (!$window.navigator.geolocation) {
+      deferred.reject('Geolocation not supported.');
+    } else {
+      $window.navigator.geolocation.getCurrentPosition(
+        function (position) {
+          deferred.resolve(position);
+        },
+        function (err) {
+          deferred.reject(err);
+        });
     }
 
-    function removeFavorite(image) {
-      for (var i = 0; i < favorites.length; i++) {
-        if (favorites[i].originalImgUrl === image.originalImgUrl) {
-          favorites.$remove(i);
-          return;
-        }
-      }
-      console.error('unable to remove favorite');
-    }
-
-    function updateTags(value) {
-      var image = value.image;
-      var tag = value.tag;
-
-      for (var i = 0; i < favorites.length; i++) {
-        if (favorites[i].originalImgUrl === image.originalImgUrl) {
-          image.tags = image.tags || [tag];
-          favorites[i].tags = image.tags;
-          favorites.$save(i);
-        }
-      }
-    }
-
-    function getFavorites() {
-      if (favorites === null) {
-        return [];
-      }
-      return favorites;
-    }
-
-    function isFavorite(image) {
-      for (var i = 0; i < favorites.length; i++) {
-        if (favorites[i].originalImgUrl === image.originalImgUrl) {
-          return true;
-        }
-      }
-
-      return false;
-    }
-
-    function getTags(image) {
-      for (var i = 0; i < favorites.length; i++) {
-        if (favorites[i].originalImgUrl === image.originalImgUrl) {
-          return favorites[i].tags;
-        }
-      }
-
-      return [];
-    }
-
-    return {
-      addFavorite: addFavorite,
-      removeFavorite: removeFavorite,
-      updateTags: updateTags,
-      getFavorites: getFavorites,
-      isFavorite: isFavorite,
-      getTags: getTags,
-    };
+    return deferred.promise;
   }
-])
+
+  return {
+    getCurrentPosition: getCurrentPosition
+  };
+}])

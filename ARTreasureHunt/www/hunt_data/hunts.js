@@ -1,11 +1,11 @@
-﻿var app_hunts = 
-{
+﻿var app_hunts = {
+  "current_hunt": 1,
   "HuntData": {
     "TreaureHunt": [
       {
         "Name": "Hunt1",
-        "Description": "SectorTest",
-        "Sponsor": "Sector",
+        "Description": "SectorTest - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Sponsor": "Sector67",
         "TotalDiscountAccumulated": "100",
         "IsTest": "TRUE",
         "State": "WI",
@@ -44,22 +44,22 @@
         "Locations": [
           {
             "Name": "Location1",
-            "Longitude": "-89.353862",
-            "Latitude": "43.093695",
+            "Longitude": "-89.354476",
+            "Latitude": "43.093937",
             "RadiusMeters": "10",
             "Token": "Location1"
           },
           {
             "Name": "Location2",
-            "Longitude": "-89.353862",
-            "Latitude": "43.093695",
+            "Longitude": "-89.354476",
+            "Latitude": "43.093937",
             "RadiusMeters": "10",
             "Token": "Location2"
           },
           {
             "Name": "Location3",
-            "Longitude": "-89.353862",
-            "Latitude": "43.093695",
+            "Longitude": "-89.354476",
+            "Latitude": "43.093937",
             "RadiusMeters": "10",
             "Token": "Location3"
           }
@@ -83,7 +83,7 @@
             "Hint": "You can print a prosthetic here",
             "Photo": "hunt_data/Hunt1/PuzzleImages/TestPuzzle2.jpg",
             "PhotoName": "TestPuzzle2.jpg",
-            "Question": "Who's the best super here?",
+            "Question": "Who's the best super hero?",
             "Answer": "Iron Man",
             "Token": "ThreeDPrinterRoom"
           },
@@ -103,6 +103,7 @@
       {
         "Name": "Hunt2",
         "Description": "MVP",
+        "Sponsor": "Sector67",
         "TotalDiscountAccumulated": "20",
         "IsTest": "TRUE",
         "State": "WI",
