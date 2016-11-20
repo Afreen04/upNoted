@@ -1,5 +1,5 @@
-<Hunt1>
-  <Hunt1>
+<Hunt1Puzzles>
+  <Hunt1Puzzles>
     <HuntId>1</HuntId>
     <PuzzleId>1</PuzzleId>
     <LocationName>Front Room</LocationName>
@@ -8,8 +8,8 @@
     <Question>What color are the walls?</Question>
     <Answer>White</Answer>
     <Token>FrontRoom</Token>
-  </Hunt1>
-  <Hunt1>
+  </Hunt1Puzzles>
+  <Hunt1Puzzles>
     <HuntId>1</HuntId>
     <PuzzleId>2</PuzzleId>
     <LocationName>3D Printer Room</LocationName>
@@ -18,8 +18,8 @@
     <Question>Who's the best super here?</Question>
     <Answer>Iron Man</Answer>
     <Token>ThreeDPrinterRoom</Token>
-  </Hunt1>
-  <Hunt1>
+  </Hunt1Puzzles>
+  <Hunt1Puzzles>
     <HuntId>1</HuntId>
     <PuzzleId>3</PuzzleId>
     <LocationName>Computer Lab</LocationName>
@@ -28,5 +28,5 @@
     <Question>What are the shelves made of?</Question>
     <Answer>Wood</Answer>
     <Token>ComputerLab</Token>
-  </Hunt1>
-</Hunt1>
+  </Hunt1Puzzles>
+</Hunt1Puzzles>
