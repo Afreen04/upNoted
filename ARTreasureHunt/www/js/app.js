@@ -24,7 +24,7 @@ var ionicApp = angular.module('starter', ['ionic', 'starter.controllers', 'start
   });
 })
 
-.run(['$rootScope', '$state', 'Auth', function($rootScope, $state, Auth) {
+.run(['$rootScope', '$state', 'User', function($rootScope, $state, User) {
   $rootScope.$on('$stateChangeError', function(event, toState, toParams, fromState, fromParams, error) {
     // We can catch the error thrown when the $requireSignIn promise is rejected
     // and redirect the user back to the home page
@@ -34,12 +34,12 @@ var ionicApp = angular.module('starter', ['ionic', 'starter.controllers', 'start
     }
   });
 
-  $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams, error) {
-    // Prevent going back to the login page after a successful authentication
-    if (toState.name === 'app.login' && Auth.authData !== null && Auth.authData !== undefined) {
-      event.preventDefault();
-    }
-  })
+  // $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams, error) {
+  //   // Prevent going back to the login page after a successful authentication
+  //   if (toState.name === 'app.login' && auth !== undefined && auth.authData !== null && auth.authData !== undefined) {
+  //     event.preventDefault();
+  //   }
+  // })
 }])
 
 // .config(function($ionicConfigProvider) {
@@ -53,40 +53,10 @@ var ionicApp = angular.module('starter', ['ionic', 'starter.controllers', 'start
       url: '/app',
       abstract: true,
       templateUrl: 'templates/menu.html',
-      controller: 'AppController',
-    })
-
-    .state('app.search', {
-      url: '/search',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/search.html',
-          controller: 'SearchController'
-        }
-      },
       resolve: {
-        'currentAuth': ['Auth', function(Auth) {
-          // $requireSignIn returns a promise so the resolve waits for it to complete
-          // If the promise is rejected, it will throw a $stateChangeError (see above)
-          return Auth.$requireSignIn();
-        }]
-      }
-    })
-
-    .state('app.favorites', {
-      url: '/favorites',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/favorites.html',
-          controller: 'FavoritesController'
+        function(User) {
+          return User;
         }
-      },
-      resolve: {
-        'currentAuth': ['Auth', function(Auth) {
-          // $requireSignIn returns a promise so the resolve waits for it to complete
-          // If the promise is rejected, it will throw a $stateChangeError (see above)
-          return Auth.$requireSignIn();
-        }]
       }
     })
 
@@ -97,12 +67,6 @@ var ionicApp = angular.module('starter', ['ionic', 'starter.controllers', 'start
           templateUrl: 'templates/login.html',
           controller: 'LoginController'
         }
-      },
-      resolve: {
-        'currentAuth': ['Auth', function(Auth) {
-          // $waitForAuth returns a promise so the resolve waits for it to complete
-          return Auth.$waitForSignIn();
-        }]
       }
     })
 
@@ -114,13 +78,6 @@ var ionicApp = angular.module('starter', ['ionic', 'starter.controllers', 'start
           controller: 'StoryController'
         }
       },
-      resolve: {
-        'currentAuth': ['Auth', function(Auth) {
-          // $requireSignIn returns a promise so the resolve waits for it to complete
-          // If the promise is rejected, it will throw a $stateChangeError (see above)
-          return Auth.$requireSignIn();
-        }]
-      }
     })
 
     .state('app.newuser', {
@@ -131,13 +88,6 @@ var ionicApp = angular.module('starter', ['ionic', 'starter.controllers', 'start
           controller: 'NewUserController'
         }
       },
-      resolve: {
-        'currentAuth': ['Auth', function(Auth) {
-          // $requireSignIn returns a promise so the resolve waits for it to complete
-          // If the promise is rejected, it will throw a $stateChangeError (see above)
-          return Auth.$requireSignIn();
-        }]
-      }
     })
 
     .state('app.dashboard', {
@@ -148,13 +98,6 @@ var ionicApp = angular.module('starter', ['ionic', 'starter.controllers', 'start
           controller: 'DashboardController'
         }
       },
-      resolve: {
-        'currentAuth': ['Auth', function(Auth) {
-          // $requireSignIn returns a promise so the resolve waits for it to complete
-          // If the promise is rejected, it will throw a $stateChangeError (see above)
-          return Auth.$requireSignIn();
-        }]
-      }
     })
 
     .state('app.puzzle', {
@@ -165,36 +108,12 @@ var ionicApp = angular.module('starter', ['ionic', 'starter.controllers', 'start
           controller: 'PuzzleController'
         }
       },
-      resolve: {
-        'currentAuth': ['Auth', function(Auth) {
-          // $requireSignIn returns a promise so the resolve waits for it to complete
-          // If the promise is rejected, it will throw a $stateChangeError (see above)
-          return Auth.$requireSignIn();
-        }]
-      }
-    })
-
-    .state('app.settings', {
-      url: '/settings',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/settings.html',
-          controller: 'SettingsController'
-        }
-      },
-      resolve: {
-        'currentAuth': ['Auth', function(Auth) {
-          // $requireSignIn returns a promise so the resolve waits for it to complete
-          // If the promise is rejected, it will throw a $stateChangeError (see above)
-          return Auth.$requireSignIn();
-        }]
-      }
     })
 
     ;
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/dashboard');
+  $urlRouterProvider.otherwise('/app/login');
 })
 
 ;
