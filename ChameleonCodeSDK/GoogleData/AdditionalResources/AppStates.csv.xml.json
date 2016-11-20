@@ -1,0 +1,163 @@
+{
+  "AppStates": {
+    "AppState": [
+      {
+        "Name": "App",
+        "State": "app",
+        "Url": "/app",
+        "TemplateUrl": "templates/menu.html",
+        "controller": "AppController",
+        "IsAuthenticated": "FALSE",
+        "IsAbsract": "TRUE",
+        "ShowMenuNav": "FALSE",
+        "ShowStats": "FALSE"
+      },
+      {
+        "Name": "Login",
+        "State": "app.login",
+        "Description": "Login for the first time, or log in as returning user",
+        "Url": "/login",
+        "TemplateUrl": "templates/login.html",
+        "controller": "LoginController",
+        "IsAuthenticated": "TRUE",
+        "IsAbsract": "FALSE",
+        "ShowMenuNav": "FALSE",
+        "ShowStats": "FALSE"
+      },
+      {
+        "Name": "Story",
+        "State": "app.story",
+        "Description": "The narrative that sets up the treasure hunt",
+        "Url": "/story",
+        "TemplateUrl": "templates/story.html",
+        "controller": "StoryController",
+        "IsAuthenticated": "TRUE",
+        "IsAbsract": "FALSE",
+        "ShowMenuNav": "FALSE",
+        "ShowStats": "FALSE"
+      },
+      {
+        "Name": "Newuser",
+        "State": "app.newuser",
+        "Description": "Choose a character to play through the hunt",
+        "Url": "/newuser",
+        "TemplateUrl": "templates/newuser.html",
+        "controller": "NewUserController",
+        "IsAuthenticated": "TRUE",
+        "IsAbsract": "FALSE",
+        "ShowMenuNav": "FALSE",
+        "ShowStats": "FALSE"
+      },
+      {
+        "Name": "Dashboard",
+        "State": "app.dashboard",
+        "Description": "User home page",
+        "Url": "/dashboard",
+        "TemplateUrl": "templates/dashboard.html",
+        "controller": "DashboardController",
+        "IsAuthenticated": "TRUE",
+        "IsAbsract": "FALSE",
+        "ShowMenuNav": "FALSE",
+        "ShowStats": "TRUE"
+      },
+      {
+        "Name": "Puzzle",
+        "State": "app.puzzle",
+        "Description": {
+          "#cdata-section": "Contains photo, hint, and \"I found it!\" button"
+        },
+        "Url": "/puzzle",
+        "TemplateUrl": "templates/puzzle.html",
+        "controller": "PuzzleController",
+        "IsAuthenticated": "TRUE",
+        "IsAbsract": "FALSE",
+        "ShowMenuNav": "FALSE",
+        "ShowStats": "TRUE"
+      },
+      {
+        "Name": "Treat",
+        "State": "app.treat",
+        "Description": "Upon completion of puzzle, user receives treat (increased discount) and earns points for leaderboard",
+        "Url": "/treat",
+        "TemplateUrl": "templates/treat.html",
+        "controller": "TreatController",
+        "IsAuthenticated": "TRUE",
+        "IsAbsract": "FALSE",
+        "ShowMenuNav": "FALSE",
+        "ShowStats": "TRUE"
+      },
+      {
+        "Name": "Gameover",
+        "State": "app.gameover",
+        "Description": "Congratulations! You finished the hunt. You were the nth finisher.",
+        "Url": "/gameover",
+        "TemplateUrl": "templates/gameover.html",
+        "controller": "GameOverController",
+        "IsAuthenticated": "TRUE",
+        "IsAbsract": "FALSE",
+        "ShowMenuNav": "FALSE",
+        "ShowStats": "FALSE"
+      },
+      {
+        "Name": "Settings",
+        "State": "app.settings",
+        "Description": "user preferences",
+        "Url": "/settings",
+        "TemplateUrl": "templates/settings.html",
+        "controller": "SettingsController",
+        "IsAuthenticated": "TRUE",
+        "IsAbsract": "FALSE",
+        "ShowMenuNav": "FALSE",
+        "ShowStats": "FALSE"
+      },
+      {
+        "Name": "Logout",
+        "State": "app.logout",
+        "Description": "logout",
+        "Url": "/logout",
+        "TemplateUrl": "templates/logout.html",
+        "controller": "LogoutController",
+        "IsAuthenticated": "TRUE",
+        "IsAbsract": "FALSE",
+        "ShowMenuNav": "FALSE",
+        "ShowStats": "FALSE"
+      },
+      {
+        "Name": "Leaderboard",
+        "State": "app.leaderboard",
+        "Description": "lists usernames and points earned",
+        "Url": "/leaderboard",
+        "TemplateUrl": "templates/leaderboard.html",
+        "controller": "LeaderboardController",
+        "IsAuthenticated": "TRUE",
+        "IsAbsract": "FALSE",
+        "ShowMenuNav": "FALSE",
+        "ShowStats": "FALSE"
+      },
+      {
+        "Name": "Lifecode",
+        "State": "app.lifecode",
+        "Description": "enter code from vendor to gain a new life",
+        "Url": "/lifecode",
+        "TemplateUrl": "templates/lifecode.html",
+        "controller": "LifecodeController",
+        "IsAuthenticated": "TRUE",
+        "IsAbsract": "FALSE",
+        "ShowMenuNav": "FALSE",
+        "ShowStats": "TRUE"
+      },
+      {
+        "Name": "Redeem",
+        "State": "app.redeem",
+        "Description": "redeem discount code at vendor",
+        "Url": "/redeem",
+        "TemplateUrl": "templates/redeem.html",
+        "controller": "RedeemController",
+        "IsAuthenticated": "TRUE",
+        "IsAbsract": "FALSE",
+        "ShowMenuNav": "FALSE",
+        "ShowStats": "FALSE"
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+Name,State,Description,Url,TemplateUrl,controller,IsAuthenticated,IsAbsract,ShowMenuNav,ShowStats
+App,app,,/app,templates/menu.html,AppController,FALSE,TRUE,FALSE,FALSE
+Login,app.login,"Login for the first time, or log in as returning user",/login,templates/login.html,LoginController,TRUE,FALSE,FALSE,FALSE
+Story,app.story,The narrative that sets up the treasure hunt,/story,templates/story.html,StoryController,TRUE,FALSE,FALSE,FALSE
+Newuser,app.newuser,Choose a character to play through the hunt,/newuser,templates/newuser.html,NewUserController,TRUE,FALSE,FALSE,FALSE
+Dashboard,app.dashboard,User home page,/dashboard,templates/dashboard.html,DashboardController,TRUE,FALSE,FALSE,TRUE
+Puzzle,app.puzzle,"Contains photo, hint, and ""I found it!"" button",/puzzle,templates/puzzle.html,PuzzleController,TRUE,FALSE,FALSE,TRUE
+Treat,app.treat,"Upon completion of puzzle, user receives treat (increased discount) and earns points for leaderboard",/treat,templates/treat.html,TreatController,TRUE,FALSE,FALSE,TRUE
+Gameover,app.gameover,Congratulations! You finished the hunt. You were the nth finisher. ,/gameover,templates/gameover.html,GameOverController,TRUE,FALSE,FALSE,FALSE
+Settings,app.settings,user preferences,/settings,templates/settings.html,SettingsController,TRUE,FALSE,FALSE,FALSE
+Logout,app.logout,logout,/logout,templates/logout.html,LogoutController,TRUE,FALSE,FALSE,FALSE
+Leaderboard,app.leaderboard,lists usernames and points earned,/leaderboard,templates/leaderboard.html,LeaderboardController,TRUE,FALSE,FALSE,FALSE
+Lifecode,app.lifecode,enter code from vendor to gain a new life,/lifecode,templates/lifecode.html,LifecodeController,TRUE,FALSE,FALSE,TRUE
+Redeem,app.redeem,redeem discount code at vendor,/redeem,templates/redeem.html,RedeemController,TRUE,FALSE,FALSE,FALSE

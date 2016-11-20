@@ -6,7 +6,7 @@
         "Name": "Character1",
         "Character": "Writer - in the coffee shop all the time",
         "Bio": "[FILL ME]",
-        "Icon": "hunt_data/AvatarIcons/HalWhite.svg",
+        "Icon": "hunt_data/Hunt1/AvatarIcons/AnnaRodriguez.svg",
         "Vice": "Coffee",
         "IconName": "AnnaRodriguez.svg",
         "Token": "Character1"
@@ -16,7 +16,7 @@
         "Name": "Character2",
         "Character": "Music super fan",
         "Bio": "[FILL ME]",
-        "Icon": "hunt_data/AvatarIcons/",
+        "Icon": "hunt_data/Hunt1/AvatarIcons/HalWhite.svg",
         "Vice": "LocalMusic",
         "IconName": "HalWhite.svg",
         "Token": "Character2"
