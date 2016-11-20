@@ -1,6 +1,6 @@
 <Hunt2Puzzles>
   <Hunt2Puzzles>
-    <HuntId>1</HuntId>
+    <HuntId>2</HuntId>
     <PuzzleId>1</PuzzleId>
     <LocationName>One Barrel</LocationName>
     <Story>Arthur A. Reality lived in the Atwood Neighborhood in east Madison. No promises, but it might be a good idea to start your hunt there. I hope you're familiar with Wisconsin traditions!</Story>
@@ -10,7 +10,7 @@
     <Answer>Landjäger</Answer>
   </Hunt2Puzzles>
   <Hunt2Puzzles>
-    <HuntId>1</HuntId>
+    <HuntId>2</HuntId>
     <PuzzleId>2</PuzzleId>
     <LocationName>Stone Fence</LocationName>
     <Story>Good job! Mr. Reality would be proud. This next test might require a thesaurus. You do carry one with you always, right?</Story>
@@ -20,7 +20,7 @@
     <Answer>6</Answer>
   </Hunt2Puzzles>
   <Hunt2Puzzles>
-    <HuntId>1</HuntId>
+    <HuntId>2</HuntId>
     <PuzzleId>3</PuzzleId>
     <LocationName>Barrymore Theater</LocationName>
     <Story><![CDATA[Steady as she goes, you are almost halfway there! The Princess Bride was Mr. Reality's favorite movie. If you got tired of his pitiful poetry, and told him, "No more rhyming I mean it!" He'd answer, "Anybody want a peanut?"]]></Story>
@@ -30,7 +30,7 @@
     <Answer>Bad Dog Frida</Answer>
   </Hunt2Puzzles>
   <Hunt2Puzzles>
-    <HuntId>1</HuntId>
+    <HuntId>2</HuntId>
     <PuzzleId>4</PuzzleId>
     <LocationName>The Mermaid Cafe</LocationName>
     <Story>Nice work! Did you know how old Mr. Reality was when he died? He was 104! What's his secret? Coffee, coffee, and more coffee.</Story>
@@ -40,7 +40,7 @@
     <Answer>33</Answer>
   </Hunt2Puzzles>
   <Hunt2Puzzles>
-    <HuntId>1</HuntId>
+    <HuntId>2</HuntId>
     <PuzzleId>5</PuzzleId>
     <LocationName>Alchemy</LocationName>
     <Story>Sadly, Mr. Reality's recent death proves the following theory wrong, but he thought it was worth a try.</Story>
@@ -48,25 +48,5 @@
     <Photo>Puzzle5.jpg</Photo>
     <Question>What color are the pants on the mural?</Question>
     <Answer>Blue</Answer>
-  </Hunt2Puzzles>
-  <Hunt2Puzzles>
-    <HuntId>2</HuntId>
-    <PuzzleId>1</PuzzleId>
-  </Hunt2Puzzles>
-  <Hunt2Puzzles>
-    <HuntId>2</HuntId>
-    <PuzzleId>2</PuzzleId>
-  </Hunt2Puzzles>
-  <Hunt2Puzzles>
-    <HuntId>2</HuntId>
-    <PuzzleId>3</PuzzleId>
-  </Hunt2Puzzles>
-  <Hunt2Puzzles>
-    <HuntId>2</HuntId>
-    <PuzzleId>4</PuzzleId>
-  </Hunt2Puzzles>
-  <Hunt2Puzzles>
-    <HuntId>2</HuntId>
-    <PuzzleId>5</PuzzleId>
   </Hunt2Puzzles>
 </Hunt2Puzzles>

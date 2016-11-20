@@ -1,4 +1,5 @@
 @ECHO OFF
+ECHO ON
 
 
 MSXSL %CODEE_SETTINGS_PATH% CreateHuntData.xslt sdk-root=%SDK_PATH% root=%CODEE_ROOT_PATH% > _fileset.xml

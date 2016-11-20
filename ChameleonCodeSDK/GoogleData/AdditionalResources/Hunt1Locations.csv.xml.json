@@ -3,17 +3,24 @@
     "Hunt1Locations": [
       {
         "Name": "Location1",
-        "Longitude": "-85.11075",
-        "Latitude": "41.45372",
+        "Longitude": "-89.353862",
+        "Latitude": "43.093695",
         "RadiusMeters": "10",
         "Token": "Location1"
       },
       {
         "Name": "Location2",
-        "Longitude": "-87.10512",
-        "Latitude": "41.45372",
+        "Longitude": "-89.353862",
+        "Latitude": "43.093695",
         "RadiusMeters": "10",
         "Token": "Location2"
+      },
+      {
+        "Name": "Location3",
+        "Longitude": "-89.353862",
+        "Latitude": "43.093695",
+        "RadiusMeters": "10",
+        "Token": "Location3"
       }
     ]
   }

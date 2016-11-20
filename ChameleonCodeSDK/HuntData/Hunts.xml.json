@@ -18,13 +18,13 @@
         "CharactersGoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
         "CharactersGID": "1871536543",
         "GSheet": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
-        "Character": [
+        "Characters": [
           {
             "Id": "1",
             "Name": "Character1",
             "Character": "Writer - in the coffee shop all the time",
             "Bio": "[FILL ME]",
-            "Icon": "Icon1",
+            "Icon": "AnnaRodriguez.svg",
             "Vice": "Coffee",
             "Token": "Character1"
           },
@@ -33,28 +33,35 @@
             "Name": "Character2",
             "Character": "Music super fan",
             "Bio": "[FILL ME]",
-            "Icon": "Icon2",
+            "Icon": "HalWhite.svg",
             "Vice": "LocalMusic",
             "Token": "Character2"
           }
         ],
-        "Location": [
+        "Locations": [
           {
             "Name": "Location1",
-            "Longitude": "-85.11075",
-            "Latitude": "41.45372",
+            "Longitude": "-89.353862",
+            "Latitude": "43.093695",
             "RadiusMeters": "10",
             "Token": "Location1"
           },
           {
             "Name": "Location2",
-            "Longitude": "-87.10512",
-            "Latitude": "41.45372",
+            "Longitude": "-89.353862",
+            "Latitude": "43.093695",
             "RadiusMeters": "10",
             "Token": "Location2"
+          },
+          {
+            "Name": "Location3",
+            "Longitude": "-89.353862",
+            "Latitude": "43.093695",
+            "RadiusMeters": "10",
+            "Token": "Location3"
           }
         ],
-        "Puzzle": [
+        "Puzzles": [
           {
             "HuntId": "1",
             "PuzzleId": "1",
@@ -103,7 +110,7 @@
         "CharactersGoogleKey": "1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY",
         "CharactersGID": "1992169427",
         "GSheet": "1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY",
-        "Character": [
+        "Characters": [
           {
             "Name": "Barrymore Theater",
             "Longitude": "-89.21075",
@@ -135,7 +142,7 @@
             "RadiusMeters": "10"
           }
         ],
-        "Location": [
+        "Locations": [
           {
             "Name": "Barrymore Theater",
             "Longitude": "-89.21075",
@@ -167,9 +174,9 @@
             "RadiusMeters": "10"
           }
         ],
-        "Puzzle": [
+        "Puzzles": [
           {
-            "HuntId": "1",
+            "HuntId": "2",
             "PuzzleId": "1",
             "LocationName": "One Barrel",
             "Story": "Arthur A. Reality lived in the Atwood Neighborhood in east Madison. No promises, but it might be a good idea to start your hunt there. I hope you're familiar with Wisconsin traditions!",
@@ -179,7 +186,7 @@
             "Answer": "Landjäger"
           },
           {
-            "HuntId": "1",
+            "HuntId": "2",
             "PuzzleId": "2",
             "LocationName": "Stone Fence",
             "Story": "Good job! Mr. Reality would be proud. This next test might require a thesaurus. You do carry one with you always, right?",
@@ -189,7 +196,7 @@
             "Answer": "6"
           },
           {
-            "HuntId": "1",
+            "HuntId": "2",
             "PuzzleId": "3",
             "LocationName": "Barrymore Theater",
             "Story": "Steady as she goes, you are almost halfway there! The Princess Bride was Mr. Reality's favorite movie. If you got tired of his pitiful poetry, and told him, \"No more rhyming I mean it!\" He'd answer, \"Anybody want a peanut?\"",
@@ -199,7 +206,7 @@
             "Answer": "Bad Dog Frida"
           },
           {
-            "HuntId": "1",
+            "HuntId": "2",
             "PuzzleId": "4",
             "LocationName": "The Mermaid Cafe",
             "Story": "Nice work! Did you know how old Mr. Reality was when he died? He was 104! What's his secret? Coffee, coffee, and more coffee.",
@@ -209,7 +216,7 @@
             "Answer": "33"
           },
           {
-            "HuntId": "1",
+            "HuntId": "2",
             "PuzzleId": "5",
             "LocationName": "Alchemy",
             "Story": "Sadly, Mr. Reality's recent death proves the following theory wrong, but he thought it was worth a try.",
@@ -217,26 +224,6 @@
             "Photo": "Puzzle5.jpg",
             "Question": "What color are the pants on the mural?",
             "Answer": "Blue"
-          },
-          {
-            "HuntId": "2",
-            "PuzzleId": "1"
-          },
-          {
-            "HuntId": "2",
-            "PuzzleId": "2"
-          },
-          {
-            "HuntId": "2",
-            "PuzzleId": "3"
-          },
-          {
-            "HuntId": "2",
-            "PuzzleId": "4"
-          },
-          {
-            "HuntId": "2",
-            "PuzzleId": "5"
           }
         ]
       }
