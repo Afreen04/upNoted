@@ -2,34 +2,54 @@
   "Hunt2Characters": {
     "Hunt2Characters": [
       {
-        "Name": "Barrymore Theater",
-        "Longitude": "-89.21075",
-        "Latitude": "43.05336",
-        "RadiusMeters": "10"
+        "Id": "1",
+        "Name": "Anna Rodriguez",
+        "Character": "Barista who was always nice to him",
+        "Bio": {
+          "#cdata-section": "Anna Rodriguez, 23\nVice: Coffee\nAnna receives the letter in the middle of a shift at Barriques. She can’t believe Mr. Reality named her in his will — she never knew he remembered her name. But she remembers him. He always wore a bow tie and had the same order at Barriques every Tuesday and Thursday. She can't wait to get off work and begin hunting, but she’ll have to juggle hunting with working at Barriques and taking night classes at the university to eventually become a nurse practitioner. She relies on coffee to get through the long days and longer nights. \n"
+        },
+        "Icon": "AnnaRodriguez.svg",
+        "Vice": "Coffee"
       },
       {
-        "Name": "Stone Fence",
-        "Longitude": "-89.20512",
-        "Latitude": "43.05372",
-        "RadiusMeters": "10"
+        "Id": "2",
+        "Name": "Hal White",
+        "Character": "His favorite singer in a local band",
+        "Bio": {
+          "#cdata-section": "Hal White, 34\nVice: Local Music\nHal remembers Mr. Reality because he was easy to spot in the sparse crowd of regulars that showed up to his monthly show at Harmony Bar and Grill. Sitting in the back, resting his chin on his cane, he listened with rapt attention to all of Hal’s songs, even the half-assed covers. Hal keeps a busy schedule frequenting other local musicians’ shows, and he hopes the treasure hunt will inspire the lyrics for his first big hit. \n"
+        },
+        "Icon": "HalWhite.svg",
+        "Vice": "LocalMusic"
       },
       {
-        "Name": "One Barrel",
-        "Longitude": "-89.355087",
-        "Latitude": "43.091936",
-        "RadiusMeters": "10"
+        "Id": "3",
+        "Name": "George Beaufort",
+        "Character": "Butler",
+        "Bio": {
+          "#cdata-section": "George Beaufort, 68\nVice: Cocktails\nGeorge served Mr. Reality fine wines and cocktails until the day he died. He’s touched at being included in the will, as he deeply respected Mr. Reality. Following his employer’s death, George is entering retirement, and is excited to have a project to fill his time. In honor of his employer, he regularly drinks Mr. Reality’s favorite cocktail, a brandy old fashioned."
+        },
+        "Icon": "GeorgeBeaufort.svg",
+        "Vice": "Cocktails"
       },
       {
-        "Name": "Alchemy",
-        "Longitude": "-89.355273",
-        "Latitude": "43.092338",
-        "RadiusMeters": "10"
+        "Id": "4",
+        "Name": "Diamond Jones",
+        "Character": "Estranged god-daughter",
+        "Bio": {
+          "#cdata-section": "Diamond Jones, 41\nVice: Beauty Products\nDiamond had not talked to her god-father in five years when she received the letter. Her father had been Mr. Reality’s best friend and business partner while he was alive, but following his death, she had lost touch with Mr. Reality. Diamond questioned whether it was worth leaving her San Antonio hair salon to travel to Madison to participate in the hunt, but decided to give it a try in honor of her father’s friendship. Besides, she can get inspiration for her salon by visiting other beauty salons in Madison. \n"
+        },
+        "Icon": "DiamondJones.svg",
+        "Vice": "BeautyProducts"
       },
       {
-        "Name": "The Mermaid Cafe",
-        "Longitude": "-89.355784",
-        "Latitude": "43.091149",
-        "RadiusMeters": "10"
+        "Id": "5",
+        "Name": "Danny Chang",
+        "Character": "Guy he talked to in a bar one time",
+        "Bio": {
+          "#cdata-section": "Danny Chang, 52\nVice: Craft Beer\nDanny Chang has no idea who Mr. Reality is. He doesn’t remember meeting him in a bar in his hometown Milwaukee, but his lawyer says the letter is legit, and he would love some extra money to help start his microbrewery. He devotes his spare time to solving the puzzles. He plans to check out a few of the Madison breweries along the way."
+        },
+        "Icon": "DannyChang.svg",
+        "Vice": "Beer"
       }
     ]
   }
