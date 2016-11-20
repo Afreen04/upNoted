@@ -1,19 +1,45 @@
 {
   "TreasureHunts": {
-    "TreasureHunt": {
-      "Name": "MVP",
-      "IsTest": "TRUE",
-      "State": "WI",
-      "StartDate": "11/19/2016 12:00:00 AM",
-      "Prize": "1",
-      "Num_free_lives": "3",
-      "GSheet": "1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY",
-      "ClueGID": "0",
-      "ClueGoogleKey": "1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY",
-      "LocationsGoogleKey": "1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY",
-      "LocationsGID": "1992169427",
-      "CharactersGoogleKey": "1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY",
-      "CharactersGID": "1992169427"
-    }
+    "TreasureHunt": [
+      {
+        "Name": "Hunt1",
+        "Description": "SectorTest",
+        "Sponsor": "Sector",
+        "TotalDiscountAccumulated": "100",
+        "IsTest": "TRUE",
+        "State": "WI",
+        "StartDate": "11/19/2016 12:00:00 AM",
+        "Prize": "0.0000",
+        "Num_free_lives": "3",
+        "PuzzlesGID": "1806827157",
+        "LocationsGID": "1825322207",
+        "CharactersGID": "1871536543",
+        "GSheet": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
+        "ClueGoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
+        "LocationsGoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
+        "CharactersGoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0"
+      },
+      {
+        "Name": "Hunt2",
+        "Description": "MVP",
+        "TotalDiscountAccumulated": "20",
+        "IsTest": "TRUE",
+        "State": "WI",
+        "StartDate": "12/1/2016 12:00:00 AM",
+        "Prize": "1",
+        "Num_free_lives": "3",
+        "PuzzlesGID": "0",
+        "LocationsGID": "1992169427",
+        "CharactersGID": "1992169427",
+        "GSheet": "1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY",
+        "ClueGoogleKey": "1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY",
+        "LocationsGoogleKey": "1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY",
+        "CharactersGoogleKey": "1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY"
+      },
+      {
+        "Name": "Hunt3",
+        "Description": "Not setup yet.."
+      }
+    ]
   }
 }

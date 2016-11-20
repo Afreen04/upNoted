@@ -59,6 +59,30 @@
         "IsActiveDownload": "FALSE"
       },
       {
+        "Name": "GoogleResourceList",
+        "Value": "HuntLocations",
+        "Description": "A list of hunt puzzles",
+        "GoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
+        "GID": "1663244018",
+        "IsActiveDownload": "FALSE"
+      },
+      {
+        "Name": "GoogleResourceList",
+        "Value": "HuntCharacters",
+        "Description": "A list of hunt puzzles",
+        "GoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
+        "GID": "1663244018",
+        "IsActiveDownload": "FALSE"
+      },
+      {
+        "Name": "GoogleResourceList",
+        "Value": "HuntPuzzles",
+        "Description": "A list of hunt puzzles",
+        "GoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
+        "GID": "1663244018",
+        "IsActiveDownload": "FALSE"
+      },
+      {
         "Name": "ChameleonCodeHostUri",
         "Value": "https://eejai42.sdks.codeiverse.com/",
         "Description": "The root path to the SDK Doc Host"

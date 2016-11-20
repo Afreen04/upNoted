@@ -33,6 +33,8 @@
     <EntityType>Primary</EntityType>
     <AttributesGoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</AttributesGoogleKey>
     <AttributesGID>1308029725</AttributesGID>
+    <SampleValuesGoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</SampleValuesGoogleKey>
+    <SampleValuesGID>1806827157</SampleValuesGID>
     <OriginalSortOrder>5</OriginalSortOrder>
   </ExampleData>
   <ExampleData>
@@ -65,8 +67,8 @@
     <OriginalSortOrder>8</OriginalSortOrder>
   </ExampleData>
   <ExampleData>
-    <Name>LocalBusinesse</Name>
-    <DisplayName>Local Businesse</DisplayName>
+    <Name>LocalBusiness</Name>
+    <DisplayName>Local Business</DisplayName>
     <Description>A business which is somehow involved in the the hunt</Description>
     <EntityType>Primary</EntityType>
     <OriginalSortOrder>9</OriginalSortOrder>

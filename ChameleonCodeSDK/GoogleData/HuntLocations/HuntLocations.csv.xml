@@ -1,5 +1,5 @@
-<TreasureHunts>
-  <TreasureHunt>
+<HuntLocations>
+  <HuntLocation>
     <Name>Hunt1</Name>
     <Description>SectorTest</Description>
     <Sponsor>Sector</Sponsor>
@@ -16,8 +16,8 @@
     <ClueGoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</ClueGoogleKey>
     <LocationsGoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</LocationsGoogleKey>
     <CharactersGoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</CharactersGoogleKey>
-  </TreasureHunt>
-  <TreasureHunt>
+  </HuntLocation>
+  <HuntLocation>
     <Name>Hunt2</Name>
     <Description>MVP</Description>
     <TotalDiscountAccumulated>20</TotalDiscountAccumulated>
@@ -33,9 +33,9 @@
     <ClueGoogleKey>1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY</ClueGoogleKey>
     <LocationsGoogleKey>1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY</LocationsGoogleKey>
     <CharactersGoogleKey>1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY</CharactersGoogleKey>
-  </TreasureHunt>
-  <TreasureHunt>
+  </HuntLocation>
+  <HuntLocation>
     <Name>Hunt3</Name>
     <Description>Not setup yet..</Description>
-  </TreasureHunt>
-</TreasureHunts>
+  </HuntLocation>
+</HuntLocations>
