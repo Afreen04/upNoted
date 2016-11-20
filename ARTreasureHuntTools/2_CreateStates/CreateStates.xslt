@@ -25,28 +25,67 @@
           </RelativePath>
           <OverwriteMode>Always</OverwriteMode>
             <xsl:element name="FileContents" xml:space="preserve">
-            <xsl:for-each select="$app-states//AppState">
-   .state('<xsl:value-of select="Name" />', {
-      url: '/newuser',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/newuser.html',
-          controller: 'NewUserController'
-        }
-      },
+function configureStates($stateProvider) 
+{
+   $stateProvider
+<xsl:for-each select="$app-states//AppState">
+   .state('<xsl:value-of select="State" />', {    // <xsl:value-of select="Description" />
+      url: '<xsl:value-of select="Url" />',
+      <xsl:choose>
+      <xsl:when test="normalize-space(IsAbstract) = 'TRUE'">
+      abstract: true,
+      templateUrl: '<xsl:value-of select="TemplateUrl" />',
       resolve: {
-        'currentAuth': ['Auth', function(Auth) {
-          // $requireSignIn returns a promise so the resolve waits for it to complete
-          // If the promise is rejected, it will throw a $stateChangeError (see above)
-          return Auth.$requireSignIn();
-        }]
+        function(User) {
+          return User;
+        }
+      }</xsl:when>
+
+      <xsl:otherwise>
+        views: {
+        'menuContent': {
+          templateUrl: '<xsl:value-of select="TemplateUrl" />',
+          controller: '<xsl:value-of select="Controller" />'
+        }
       }
+
+      </xsl:otherwise>
+      </xsl:choose>
+    
     })
     </xsl:for-each>
+}
             </xsl:element>
         </FileSetFile>
+          <xsl:for-each select="$app-states//AppState">
+              <FileSetFile>
+                  <RelativePath>
+                      <xsl:value-of select="$sdk-root"  /><xsl:text>../ARTreasureHunt/www/</xsl:text><xsl:value-of select="TemplateUrl" />
+                  </RelativePath>
+                  <OverwriteMode>Never</OverwriteMode>
+                  <xsl:element name="FileContents" xml:space="preserve">
+&lt;ion-view title="<xsl:value-of select="Name" />">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <span class="icon-label">15%</span><i class="icon ion-cash balanced top-icon"></i>
+    <span class="icon-label">3</span><i class="icon ion-heart assertive top-icon"></i>
+  </ion-nav-buttons>
+
+  <ion-content class="has-header">
+
+  <!-- this is where the page content goes -->
+
+  </ion-content>
+&lt;/ion-view>
+                  </xsl:element>
+              </FileSetFile>
+          </xsl:for-each>
       </FileSetFiles>
     </FileSet>
   </xsl:template>
+   
 
 </xsl:stylesheet>

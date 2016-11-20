@@ -6,7 +6,7 @@
     <TemplateUrl>templates/menu.html</TemplateUrl>
     <controller>AppController</controller>
     <IsAuthenticated>FALSE</IsAuthenticated>
-    <IsAbsract>TRUE</IsAbsract>
+    <IsAbstract>TRUE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>
     <ShowStats>FALSE</ShowStats>
   </AppState>
@@ -18,7 +18,7 @@
     <TemplateUrl>templates/login.html</TemplateUrl>
     <controller>LoginController</controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
-    <IsAbsract>FALSE</IsAbsract>
+    <IsAbstract>FALSE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>
     <ShowStats>FALSE</ShowStats>
   </AppState>
@@ -30,7 +30,7 @@
     <TemplateUrl>templates/story.html</TemplateUrl>
     <controller>StoryController</controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
-    <IsAbsract>FALSE</IsAbsract>
+    <IsAbstract>FALSE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>
     <ShowStats>FALSE</ShowStats>
   </AppState>
@@ -42,7 +42,7 @@
     <TemplateUrl>templates/newuser.html</TemplateUrl>
     <controller>NewUserController</controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
-    <IsAbsract>FALSE</IsAbsract>
+    <IsAbstract>FALSE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>
     <ShowStats>FALSE</ShowStats>
   </AppState>
@@ -54,7 +54,7 @@
     <TemplateUrl>templates/dashboard.html</TemplateUrl>
     <controller>DashboardController</controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
-    <IsAbsract>FALSE</IsAbsract>
+    <IsAbstract>FALSE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>
     <ShowStats>TRUE</ShowStats>
   </AppState>
@@ -66,7 +66,7 @@
     <TemplateUrl>templates/puzzle.html</TemplateUrl>
     <controller>PuzzleController</controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
-    <IsAbsract>FALSE</IsAbsract>
+    <IsAbstract>FALSE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>
     <ShowStats>TRUE</ShowStats>
   </AppState>
@@ -78,7 +78,7 @@
     <TemplateUrl>templates/treat.html</TemplateUrl>
     <controller>TreatController</controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
-    <IsAbsract>FALSE</IsAbsract>
+    <IsAbstract>FALSE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>
     <ShowStats>TRUE</ShowStats>
   </AppState>
@@ -90,7 +90,7 @@
     <TemplateUrl>templates/gameover.html</TemplateUrl>
     <controller>GameOverController</controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
-    <IsAbsract>FALSE</IsAbsract>
+    <IsAbstract>FALSE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>
     <ShowStats>FALSE</ShowStats>
   </AppState>
@@ -102,7 +102,7 @@
     <TemplateUrl>templates/settings.html</TemplateUrl>
     <controller>SettingsController</controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
-    <IsAbsract>FALSE</IsAbsract>
+    <IsAbstract>FALSE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>
     <ShowStats>FALSE</ShowStats>
   </AppState>
@@ -114,7 +114,7 @@
     <TemplateUrl>templates/logout.html</TemplateUrl>
     <controller>LogoutController</controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
-    <IsAbsract>FALSE</IsAbsract>
+    <IsAbstract>FALSE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>
     <ShowStats>FALSE</ShowStats>
   </AppState>
@@ -126,7 +126,7 @@
     <TemplateUrl>templates/leaderboard.html</TemplateUrl>
     <controller>LeaderboardController</controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
-    <IsAbsract>FALSE</IsAbsract>
+    <IsAbstract>FALSE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>
     <ShowStats>FALSE</ShowStats>
   </AppState>
@@ -138,7 +138,7 @@
     <TemplateUrl>templates/lifecode.html</TemplateUrl>
     <controller>LifecodeController</controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
-    <IsAbsract>FALSE</IsAbsract>
+    <IsAbstract>FALSE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>
     <ShowStats>TRUE</ShowStats>
   </AppState>
@@ -150,7 +150,7 @@
     <TemplateUrl>templates/redeem.html</TemplateUrl>
     <controller>RedeemController</controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
-    <IsAbsract>FALSE</IsAbsract>
+    <IsAbstract>FALSE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>
     <ShowStats>FALSE</ShowStats>
   </AppState>
