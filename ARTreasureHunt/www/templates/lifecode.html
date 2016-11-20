@@ -1,5 +1,24 @@
+<ion-view title="Enter Life Code">
 
-<ion-view title="Lifecode">
-  <ion-nav-buttons side="left"><button menu-toggle="left" class="button button-icon icon ion-navicon"></button></ion-nav-buttons><ion-nav-buttons side="right"><span class="icon-label">15%</span><i class="icon ion-cash balanced top-icon"></i><span class="icon-label">3</span><i class="icon ion-heart assertive top-icon"></i></ion-nav-buttons><ion-content class="has-header"></ion-content>
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <span ng-show="settings.user.discount > 0" class="icon-label">{{settings.user.discount}}%</span><i ng-show="settings.user.discount > 0" class="icon ion-cash balanced top-icon"></i>
+    <span class="icon-label">{{settings.user.lives}}</span><i class="icon ion-heart assertive top-icon"></i>
+  </ion-nav-buttons>
+
+  <ion-content class="has-header">
+    <h3>If you want to get more lives, you should check out {{sponsor}}. If you spend more than {{minamt}}, you can get a life code from them. (Code is "CODE")</h3>
+
+    <div class="list list-inset padding-top">
+      <div class="item item-input">
+        <input type="text" ng-model="$parent.code" placeholder="Life Code">
+      </div>
+    </div>
+
+    <button class="button button-block button-dark" ng-click="verifyCode()">Submit</button>
+
+  </ion-content>
 </ion-view>
-                  

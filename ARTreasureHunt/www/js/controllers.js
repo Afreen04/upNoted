@@ -55,6 +55,25 @@ angular.module('starter.controllers', [])
   JsBarcode("#barcode", "123456789012", {format: "upc", background: "none"});
 }])
 
+.controller('LifeCodeController', ['$scope', '$state', 'User', function($scope, $state, User) {
+  User.then(function(data) {
+    $scope.settings = data.settings;
+  });
+
+  $scope.sponsor = app_hunts.HuntData.TreaureHunt[app_hunts.current_hunt].Sponsor;
+  $scope.minamt = "$1";
+  $scope.code = "";
+
+  $scope.verifyCode = function() {
+    if ($scope.code === "CODE") {
+      $scope.settings.user.lives += 1;
+      $scope.settings.$save();
+    }
+
+    $scope.code = "";
+  }
+}])
+
 .controller('StoryController', ['$scope', '$state', function($scope, $state) {
   $scope.story = app_hunts.HuntData.TreaureHunt[app_hunts.current_hunt].Description;
 

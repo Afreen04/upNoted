@@ -120,6 +120,16 @@ var ionicApp = angular.module('starter', ['ionic', 'starter.controllers', 'start
       },
     })
 
+    .state('app.lifecode', {
+      url: '/lifecode',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/lifecode.html',
+          controller: 'LifeCodeController'
+        }
+      },
+    })
+
     ;
 
   // if none of the above states are matched, use this as the fallback
