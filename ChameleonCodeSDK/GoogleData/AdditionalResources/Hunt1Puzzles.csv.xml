@@ -4,7 +4,8 @@
     <PuzzleId>1</PuzzleId>
     <LocationName>Front Room</LocationName>
     <Hint>Pizza was served here</Hint>
-    <Photo>TestPuzzle1.jpg</Photo>
+    <Photo>hunt_data/PuzzleImages/TestPuzzle1.jpg</Photo>
+    <PhotoName>TestPuzzle1.jpg</PhotoName>
     <Question>What color are the walls?</Question>
     <Answer>White</Answer>
     <Token>FrontRoom</Token>
@@ -14,7 +15,8 @@
     <PuzzleId>2</PuzzleId>
     <LocationName>3D Printer Room</LocationName>
     <Hint>You can print a prosthetic here</Hint>
-    <Photo>TestPuzzle2.jpg</Photo>
+    <Photo>hunt_data/PuzzleImages/TestPuzzle2.jpg</Photo>
+    <PhotoName>TestPuzzle2.jpg</PhotoName>
     <Question>Who's the best super here?</Question>
     <Answer>Iron Man</Answer>
     <Token>ThreeDPrinterRoom</Token>
@@ -24,7 +26,8 @@
     <PuzzleId>3</PuzzleId>
     <LocationName>Computer Lab</LocationName>
     <Hint>Dell sponsored this room</Hint>
-    <Photo>TestPuzzle3.jpg</Photo>
+    <Photo>hunt_data/PuzzleImages/TestPuzzle3.jpg</Photo>
+    <PhotoName>TestPuzzle3.jpg</PhotoName>
     <Question>What are the shelves made of?</Question>
     <Answer>Wood</Answer>
     <Token>ComputerLab</Token>

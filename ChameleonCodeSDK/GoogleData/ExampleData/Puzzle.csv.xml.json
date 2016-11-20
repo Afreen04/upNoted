@@ -6,7 +6,8 @@
         "PuzzleId": "1",
         "LocationName": "Front Room",
         "Hint": "Pizza was served here",
-        "Photo": "TestPuzzle1.jpg",
+        "Photo": "hunt_data/PuzzleImages/TestPuzzle1.jpg",
+        "PhotoName": "TestPuzzle1.jpg",
         "Question": "What color are the walls?",
         "Answer": "White",
         "Token": "FrontRoom"
@@ -16,7 +17,8 @@
         "PuzzleId": "2",
         "LocationName": "3D Printer Room",
         "Hint": "You can print a prosthetic here",
-        "Photo": "TestPuzzle2.jpg",
+        "Photo": "hunt_data/PuzzleImages/TestPuzzle2.jpg",
+        "PhotoName": "TestPuzzle2.jpg",
         "Question": "Who's the best super here?",
         "Answer": "Iron Man",
         "Token": "ThreeDPrinterRoom"
@@ -26,7 +28,8 @@
         "PuzzleId": "3",
         "LocationName": "Computer Lab",
         "Hint": "Dell sponsored this room",
-        "Photo": "TestPuzzle3.jpg",
+        "Photo": "hunt_data/PuzzleImages/TestPuzzle3.jpg",
+        "PhotoName": "TestPuzzle3.jpg",
         "Question": "What are the shelves made of?",
         "Answer": "Wood",
         "Token": "ComputerLab"

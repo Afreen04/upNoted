@@ -7,7 +7,8 @@
         "LocationName": "One Barrel",
         "Story": "Arthur A. Reality lived in the Atwood Neighborhood in east Madison. No promises, but it might be a good idea to start your hunt there. I hope you're familiar with Wisconsin traditions!",
         "Hint": "Seventh inning stretch/ Sing it loud in Milwaukee/ What's four minus three?",
-        "Photo": "Puzzle1.jpg",
+        "Photo": "hunt_data/PuzzleImages/Puzzle1.jpg",
+        "PhotoName": "Puzzle1.jpg",
         "Question": "What Swiss meat is sold here? (Spell it right!)",
         "Answer": "Landjäger"
       },
@@ -17,7 +18,8 @@
         "LocationName": "Stone Fence",
         "Story": "Good job! Mr. Reality would be proud. This next test might require a thesaurus. You do carry one with you always, right?",
         "Hint": "Rock me mama like/ another brick in the wall/ Synonyms are friends",
-        "Photo": "Puzzle2.jpg",
+        "Photo": "hunt_data/PuzzleImages/Puzzle2.jpg",
+        "PhotoName": "Puzzle2.jpg",
         "Question": "How many yellow windows are on the gray building in the window?",
         "Answer": "6"
       },
@@ -29,7 +31,8 @@
           "#cdata-section": "Steady as she goes, you are almost halfway there! The Princess Bride was Mr. Reality's favorite movie. If you got tired of his pitiful poetry, and told him, \"No more rhyming I mean it!\" He'd answer, \"Anybody want a peanut?\""
         },
         "Hint": "Bury your strife and/ Marry for life and make/ No more awful rhymes",
-        "Photo": "Puzzle3.jpg",
+        "Photo": "hunt_data/PuzzleImages/Puzzle3.jpg",
+        "PhotoName": "Puzzle3.jpg",
         "Question": "What does BDF stand for?",
         "Answer": "Bad Dog Frida"
       },
@@ -39,7 +42,8 @@
         "LocationName": "The Mermaid Cafe",
         "Story": "Nice work! Did you know how old Mr. Reality was when he died? He was 104! What's his secret? Coffee, coffee, and more coffee.",
         "Hint": "Roosters are known to/ Go swimming under the sea/ When there is coffee",
-        "Photo": "Puzzle4.jpg",
+        "Photo": "hunt_data/PuzzleImages/Puzzle4.jpg",
+        "PhotoName": "Puzzle4.jpg",
         "Question": "How many lightbulbs hang above?",
         "Answer": "33"
       },
@@ -49,7 +53,8 @@
         "LocationName": "Alchemy",
         "Story": "Sadly, Mr. Reality's recent death proves the following theory wrong, but he thought it was worth a try.",
         "Hint": "Medieval lore says/ Drink this and live forever/ It's pseudo science",
-        "Photo": "Puzzle5.jpg",
+        "Photo": "hunt_data/PuzzleImages/Puzzle5.jpg",
+        "PhotoName": "Puzzle5.jpg",
         "Question": "What color are the pants on the mural?",
         "Answer": "Blue"
       }
