@@ -42,9 +42,9 @@ var ionicApp = angular.module('starter', ['ionic', 'starter.controllers', 'start
   })
 }])
 
-.config(function($ionicConfigProvider) {
-  $ionicConfigProvider.scrolling.jsScrolling(false);
-})
+// .config(function($ionicConfigProvider) {
+//   $ionicConfigProvider.scrolling.jsScrolling(false);
+// })
 
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
@@ -106,12 +106,29 @@ var ionicApp = angular.module('starter', ['ionic', 'starter.controllers', 'start
       }
     })
 
+    .state('app.story', {
+      url: '/story',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/story.html',
+          controller: 'StoryCtrl'
+        }
+      },
+      resolve: {
+        'currentAuth': ['Auth', function(Auth) {
+          // $requireSignIn returns a promise so the resolve waits for it to complete
+          // If the promise is rejected, it will throw a $stateChangeError (see above)
+          return Auth.$requireSignIn();
+        }]
+      }
+    })
+
     .state('app.newuser', {
       url: '/newuser',
       views: {
         'menuContent': {
           templateUrl: 'templates/newuser.html',
-          controller: 'NewUserController'
+          controller: 'NewUserCtrl'
         }
       },
       resolve: {
