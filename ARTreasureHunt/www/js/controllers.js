@@ -297,10 +297,19 @@ angular.module('starter.controllers', [])
   }
 }])
 
-.controller('DashboardController', ['$scope', 'Settings', function($scope, Settings) {
+.controller('DashboardController', ['$scope', '$state', 'Settings', function($scope, $state, Settings) {
   // Settings().$bindTo($scope, 'settings');
 
   $scope.character = app_config.characters[0]; //TODO: Fix the index, [Settings().user.characterIndex]
+
+  $scope.start = function() {
+    $state.go('app.puzzle');
+  }
+}])
+
+.controller('PuzzleController', ['$scope', 'Settings', function($scope, Settings) {
+  $scope.huntName = app_config.hunt.name;
+  $scope.puzzle = app_config.hunt.puzzles[0]; //TODO: Fix the index, [Settings().user.characterIndex]
 }])
 
 ;

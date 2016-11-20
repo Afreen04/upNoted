@@ -1,6 +1,12 @@
-<ion-view title="Dashboard">
+<ion-view title="Home">
+
   <ion-nav-buttons side="left">
     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <span class="icon-label">15%</span><i class="icon ion-cash balanced top-icon"></i>
+    <span class="icon-label">3</span><i class="icon ion-heart assertive top-icon"></i>
   </ion-nav-buttons>
 
   <ion-content class="has-header">
@@ -15,7 +21,7 @@
         <p>{{character.bio}}</p>
       </div>
     </div>
+    <button class="button button-block button-balanced" ng-click="start()">Play</button>
 
-    <button class="button button-block button-balanced">Start</button>
   </ion-content>
 </ion-view>

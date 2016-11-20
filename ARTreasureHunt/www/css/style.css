@@ -3,6 +3,19 @@
   background-color: #222;
 }
 
+/* Icon styling */
+.icon-label {
+  padding-top: 6px;
+  font-size: 18px;
+}
+
+.top-icon {
+  padding-left: 6px;
+  padding-right: 10px;
+  padding-top: 4px;
+  font-size: 24px;
+}
+
 /* Character box styling */
 .character-image {
   width: 100%;
