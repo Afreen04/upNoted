@@ -10,7 +10,7 @@
       <ion-slide ng-repeat="character in characters">
         <div class="row padding-bottom">
           <div class="col col-33">
-            <img class="responsive-image" ng-src="img/avatars/{{character.Icon}}" alt="character portrait">
+            <img class="responsive-image" ng-src="{{character.Icon}}" alt="character portrait">
           </div>
           <div class="col">
             <h1>{{character.Name}}</h1>

@@ -1,4 +1,4 @@
-{
+var app_hunts = {
   "HuntData": {
     "TreaureHunt": [
       {
@@ -239,4 +239,4 @@
       }
     ]
   }
-}
+};
