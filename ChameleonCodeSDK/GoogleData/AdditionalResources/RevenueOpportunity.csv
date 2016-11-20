@@ -1,0 +1,8 @@
+Name,Description
+TitleSponsor,Title sponsorship
+PrizeSponsor,Prize-level sponsorship
+ClueSponsor,Clue sponsorship (could dictate what subject matter the clue requires knowledge of)
+RechargeSponsor,Choose recharging stations according to highest bidder
+AppCost,Cost of downloading the app (suggested $2)
+BuyGems,"Users could buy additional code verifications (if they think they interpreted the clue right, but got it wrong, they could buy extras so they can try again)"
+SkipRecharge,Users could pay to recharge instead of going to recharging spot

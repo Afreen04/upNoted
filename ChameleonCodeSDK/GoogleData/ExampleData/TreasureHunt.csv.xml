@@ -1,7 +1,11 @@
 <TreasureHunts>
   <TreasureHunt>
-    <Name>MVP Hunt</Name>
+    <Name>MVP</Name>
     <IsTest>TRUE</IsTest>
+    <State>WI</State>
+    <StartDate>11/19/2016 12:00:00 AM</StartDate>
+    <Prize>1</Prize>
+    <Num_free_lives>3</Num_free_lives>
     <GSheet>1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY</GSheet>
     <ClueGID>0</ClueGID>
     <ClueGoogleKey>1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY</ClueGoogleKey>

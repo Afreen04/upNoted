@@ -13,4 +13,11 @@
     <IsOptional>FALSE</IsOptional>
     <DataType>string</DataType>
   </AppUser>
+  <AppUser>
+    <Name>Avatar</Name>
+    <SampleValue>Anna Rodriguez</SampleValue>
+    <Description>Character of user (one of 5)</Description>
+    <IsOptional>FALSE</IsOptional>
+    <DataType>string</DataType>
+  </AppUser>
 </AppUsers>

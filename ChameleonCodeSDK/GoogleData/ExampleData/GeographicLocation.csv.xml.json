@@ -1,6 +1,6 @@
 {
-  "AppUsers": {
-    "AppUser": [
+  "GeographicLocations": {
+    "GeographicLocation": [
       {
         "Name": "Barrymore Theater",
         "Longitude": "-89.21075",

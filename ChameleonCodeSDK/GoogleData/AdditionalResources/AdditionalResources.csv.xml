@@ -30,4 +30,12 @@
     <GID>631430883</GID>
     <IsActiveDownload>FALSE</IsActiveDownload>
   </AdditionalResource>
+  <AdditionalResource>
+    <Name>RevenueOpportunity</Name>
+    <Description>List of ways that this could be monotized</Description>
+    <Type>GSheet</Type>
+    <GoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</GoogleKey>
+    <GID>671527018</GID>
+    <IsActiveDownload>TRUE</IsActiveDownload>
+  </AdditionalResource>
 </AdditionalResources>

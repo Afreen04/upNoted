@@ -32,9 +32,16 @@
       {
         "Name": "Prize",
         "SampleValue": "$1,000",
-        "Description": "A description for the price",
+        "Description": "A description for the prize",
         "IsOptional": "FALSE",
         "DataType": "string"
+      },
+      {
+        "Name": "Num_free_lives",
+        "SampleValue": "3",
+        "Description": "Number of lives until you buy more",
+        "IsOptional": "FALSE",
+        "DataType": "integer"
       }
     ]
   }

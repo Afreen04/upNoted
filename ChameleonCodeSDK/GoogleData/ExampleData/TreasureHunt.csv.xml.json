@@ -1,8 +1,12 @@
 {
   "TreasureHunts": {
     "TreasureHunt": {
-      "Name": "MVP Hunt",
+      "Name": "MVP",
       "IsTest": "TRUE",
+      "State": "WI",
+      "StartDate": "11/19/2016 12:00:00 AM",
+      "Prize": "1",
+      "Num_free_lives": "3",
       "GSheet": "1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY",
       "ClueGID": "0",
       "ClueGoogleKey": "1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY",

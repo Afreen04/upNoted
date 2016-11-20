@@ -2,31 +2,44 @@
   "CharacterTemplates": {
     "CharacterTemplate": [
       {
-        "Name": "Character1",
+        "Id": "1",
+        "Name": "Anna Rodriguez",
         "Character": "Barista who was always nice to him",
-        "Bio": "bio1",
-        "Icon": "name of file?",
-        "Vice": "coffee"
+        "Bio": "Anna receives the letter in the middle of a shift at Barriques. She can't wait",
+        "Icon": "AnnaRodriguez.svg",
+        "Vice": "Coffee"
       },
       {
-        "Name": "Character2",
+        "Id": "2",
+        "Name": "Hal White",
         "Character": "His favorite singer in a local band",
-        "Vice": "local music"
+        "Bio": "[FILL ME]",
+        "Icon": "AnnaRodriguez.svg",
+        "Vice": "LocalMusic"
       },
       {
-        "Name": "Character3",
+        "Id": "3",
+        "Name": "George Beaufort",
         "Character": "Butler",
-        "Vice": "cocktails"
+        "Bio": "[FILL ME]",
+        "Icon": "AnnaRodriguez.svg",
+        "Vice": "Cocktails"
       },
       {
-        "Name": "Character4",
+        "Id": "4",
+        "Name": "Diamond Jones",
         "Character": "Estranged god-daughter",
-        "Vice": "beauty products"
+        "Bio": "[FILL ME]",
+        "Icon": "AnnaRodriguez.svg",
+        "Vice": "BeautyProducts"
       },
       {
-        "Name": "Character5",
-        "Character": "Trucker he talked to in a bar one time",
-        "Vice": "beer"
+        "Id": "5",
+        "Name": "Danny Chang",
+        "Character": "Guy he talked to in a bar one time",
+        "Bio": "[FILL ME]",
+        "Icon": "AnnaRodriguez.svg",
+        "Vice": "Beer"
       }
     ]
   }

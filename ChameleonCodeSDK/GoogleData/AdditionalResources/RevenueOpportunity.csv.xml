@@ -1,0 +1,30 @@
+<RevenueOpportunities>
+  <RevenueOpportunity>
+    <Name>TitleSponsor</Name>
+    <Description>Title sponsorship</Description>
+  </RevenueOpportunity>
+  <RevenueOpportunity>
+    <Name>PrizeSponsor</Name>
+    <Description>Prize-level sponsorship</Description>
+  </RevenueOpportunity>
+  <RevenueOpportunity>
+    <Name>ClueSponsor</Name>
+    <Description>Clue sponsorship (could dictate what subject matter the clue requires knowledge of)</Description>
+  </RevenueOpportunity>
+  <RevenueOpportunity>
+    <Name>RechargeSponsor</Name>
+    <Description>Choose recharging stations according to highest bidder</Description>
+  </RevenueOpportunity>
+  <RevenueOpportunity>
+    <Name>AppCost</Name>
+    <Description>Cost of downloading the app (suggested $2)</Description>
+  </RevenueOpportunity>
+  <RevenueOpportunity>
+    <Name>BuyGems</Name>
+    <Description>Users could buy additional code verifications (if they think they interpreted the clue right, but got it wrong, they could buy extras so they can try again)</Description>
+  </RevenueOpportunity>
+  <RevenueOpportunity>
+    <Name>SkipRecharge</Name>
+    <Description>Users could pay to recharge instead of going to recharging spot</Description>
+  </RevenueOpportunity>
+</RevenueOpportunities>

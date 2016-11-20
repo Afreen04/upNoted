@@ -14,10 +14,20 @@
     <DataType>string</DataType>
   </CharacterTemplate>
   <CharacterTemplate>
-    <Name>Description</Name>
-    <Description>A description of the charcers</Description>
+    <Name>Character</Name>
+    <Description>A description of the charcter</Description>
     <SampleValue>A high strung melenial</SampleValue>
     <IsOptional>FALSE</IsOptional>
+    <DataType>string</DataType>
+  </CharacterTemplate>
+  <CharacterTemplate>
+    <Name>Bio</Name>
+    <IsOptional>TRUE</IsOptional>
+    <DataType>string</DataType>
+  </CharacterTemplate>
+  <CharacterTemplate>
+    <Name>Icon</Name>
+    <IsOptional>TRUE</IsOptional>
     <DataType>string</DataType>
   </CharacterTemplate>
 </CharacterTemplates>
