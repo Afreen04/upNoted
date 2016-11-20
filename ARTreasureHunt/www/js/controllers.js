@@ -3,10 +3,25 @@ angular.module('starter.controllers', [])
 .controller('AppController', function($scope) {
 })
 
-.controller('MenuController', ['$scope', 'User', function($scope, User) {
+.controller('MenuController', ['$scope', '$state', 'User', function($scope, $state, User) {
   User.then(function(data) {
     $scope.auth = data.auth;
+    $scope.settings = data.settings;
   });
+
+  $scope.signOut = function() {
+    $scope.settings.$destroy();
+    $scope.auth.$signOut();
+  }
+
+  $scope.reset = function() {
+    var response = confirm("Are you sure you want to reset your account?");
+    if (response) {
+      $scope.settings.$remove().then(function() {
+        $state.go('app.story');
+      });
+    }
+  }
 }])
 
 .controller('LoginController', ['$scope', 'User', function($scope, User) {
