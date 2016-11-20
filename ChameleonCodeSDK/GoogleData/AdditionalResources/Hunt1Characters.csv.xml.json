@@ -6,8 +6,9 @@
         "Name": "Character1",
         "Character": "Writer - in the coffee shop all the time",
         "Bio": "[FILL ME]",
-        "Icon": "AnnaRodriguez.svg",
+        "Icon": "hunt_data/AvatarIcons/HalWhite.svg",
         "Vice": "Coffee",
+        "IconName": "AnnaRodriguez.svg",
         "Token": "Character1"
       },
       {
@@ -15,8 +16,9 @@
         "Name": "Character2",
         "Character": "Music super fan",
         "Bio": "[FILL ME]",
-        "Icon": "HalWhite.svg",
+        "Icon": "hunt_data/AvatarIcons/",
         "Vice": "LocalMusic",
+        "IconName": "HalWhite.svg",
         "Token": "Character2"
       }
     ]
