@@ -18,7 +18,7 @@
         "CharactersGoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
         "CharactersGID": "1871536543",
         "GSheet": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
-        "Character": [
+        "Characters": [
           {
             "Id": "1",
             "Name": "Character1",
@@ -38,7 +38,7 @@
             "Token": "Character2"
           }
         ],
-        "Location": [
+        "Locations": [
           {
             "Name": "Location1",
             "Longitude": "-85.11075",
@@ -54,7 +54,7 @@
             "Token": "Location2"
           }
         ],
-        "Puzzle": [
+        "Puzzles": [
           {
             "HuntId": "1",
             "PuzzleId": "1",
@@ -103,7 +103,7 @@
         "CharactersGoogleKey": "1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY",
         "CharactersGID": "1992169427",
         "GSheet": "1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY",
-        "Character": [
+        "Characters": [
           {
             "Name": "Barrymore Theater",
             "Longitude": "-89.21075",
@@ -135,7 +135,7 @@
             "RadiusMeters": "10"
           }
         ],
-        "Location": [
+        "Locations": [
           {
             "Name": "Barrymore Theater",
             "Longitude": "-89.21075",
@@ -167,7 +167,7 @@
             "RadiusMeters": "10"
           }
         ],
-        "Puzzle": [
+        "Puzzles": [
           {
             "HuntId": "1",
             "PuzzleId": "1",

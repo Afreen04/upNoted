@@ -33,19 +33,19 @@
                     <xsl:variable name="locations" select="document(concat($sdk-root, 'GoogleData/AdditionalResources/', Name, 'Locations.csv.xml'))" />
                     <xsl:variable name="puzzles" select="document(concat($sdk-root, 'GoogleData/AdditionalResources/', Name, 'Puzzles.csv.xml'))" />
                   <xsl:for-each select="$characters/*/*">
-                    <Character>
+                    <Characters>
                       <xsl:copy-of select="*"/>
-                    </Character>
+                    </Characters>
                   </xsl:for-each>
                   <xsl:for-each select="$locations/*/*">
-                    <Location>
+                    <Locations>
                       <xsl:copy-of select="*"/>
-                    </Location>
+                    </Locations>
                   </xsl:for-each>
                   <xsl:for-each select="$puzzles/*/*">
-                    <Puzzle>
+                    <Puzzles>
                       <xsl:copy-of select="*"/>
-                    </Puzzle>
+                    </Puzzles>
                   </xsl:for-each>
                 </TreaureHunt>
               </xsl:for-each>
