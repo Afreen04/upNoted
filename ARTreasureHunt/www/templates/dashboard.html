@@ -5,8 +5,8 @@
   </ion-nav-buttons>
 
   <ion-nav-buttons side="right">
-    <span class="icon-label">15%</span><i class="icon ion-cash balanced top-icon"></i>
-    <span class="icon-label">3</span><i class="icon ion-heart assertive top-icon"></i>
+    <span ng-show="settings.user.discount > 0" class="icon-label">{{settings.user.discount}}%</span><i ng-show="settings.user.discount > 0" class="icon ion-cash balanced top-icon"></i>
+    <span class="icon-label">{{settings.user.lives}}</span><i class="icon ion-heart assertive top-icon"></i>
   </ion-nav-buttons>
 
   <ion-content class="has-header">

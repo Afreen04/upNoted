@@ -82,7 +82,7 @@
             "Hint": "You can print a prosthetic here",
             "Photo": "hunt_data/Hunt1/PuzzleImages/TestPuzzle2.jpg",
             "PhotoName": "TestPuzzle2.jpg",
-            "Question": "Who's the best super here?",
+            "Question": "Who's the best super hero?",
             "Answer": "Iron Man",
             "Token": "ThreeDPrinterRoom"
           },
