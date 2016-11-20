@@ -31,6 +31,14 @@
         "GoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
         "GID": "631430883",
         "IsActiveDownload": "FALSE"
+      },
+      {
+        "Name": "RevenueOpportunity",
+        "Description": "List of ways that this could be monotized",
+        "Type": "GSheet",
+        "GoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
+        "GID": "671527018",
+        "IsActiveDownload": "TRUE"
       }
     ]
   }

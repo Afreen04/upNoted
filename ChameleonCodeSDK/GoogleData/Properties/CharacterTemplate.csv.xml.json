@@ -16,10 +16,20 @@
         "DataType": "string"
       },
       {
-        "Name": "Description",
-        "Description": "A description of the charcers",
+        "Name": "Character",
+        "Description": "A description of the charcter",
         "SampleValue": "A high strung melenial",
         "IsOptional": "FALSE",
+        "DataType": "string"
+      },
+      {
+        "Name": "Bio",
+        "IsOptional": "TRUE",
+        "DataType": "string"
+      },
+      {
+        "Name": "Icon",
+        "IsOptional": "TRUE",
         "DataType": "string"
       }
     ]

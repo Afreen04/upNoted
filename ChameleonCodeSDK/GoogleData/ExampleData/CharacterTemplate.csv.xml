@@ -1,29 +1,42 @@
 <CharacterTemplates>
   <CharacterTemplate>
-    <Name>Character1</Name>
+    <Id>1</Id>
+    <Name>Anna Rodriguez</Name>
     <Character>Barista who was always nice to him</Character>
-    <Bio>bio1</Bio>
-    <Icon>name of file?</Icon>
-    <Vice>coffee</Vice>
+    <Bio>Anna receives the letter in the middle of a shift at Barriques. She can't wait</Bio>
+    <Icon>AnnaRodriguez.svg</Icon>
+    <Vice>Coffee</Vice>
   </CharacterTemplate>
   <CharacterTemplate>
-    <Name>Character2</Name>
+    <Id>2</Id>
+    <Name>Hal White</Name>
     <Character>His favorite singer in a local band</Character>
-    <Vice>local music</Vice>
+    <Bio>[FILL ME]</Bio>
+    <Icon>AnnaRodriguez.svg</Icon>
+    <Vice>LocalMusic</Vice>
   </CharacterTemplate>
   <CharacterTemplate>
-    <Name>Character3</Name>
+    <Id>3</Id>
+    <Name>George Beaufort</Name>
     <Character>Butler</Character>
-    <Vice>cocktails</Vice>
+    <Bio>[FILL ME]</Bio>
+    <Icon>AnnaRodriguez.svg</Icon>
+    <Vice>Cocktails</Vice>
   </CharacterTemplate>
   <CharacterTemplate>
-    <Name>Character4</Name>
+    <Id>4</Id>
+    <Name>Diamond Jones</Name>
     <Character>Estranged god-daughter</Character>
-    <Vice>beauty products</Vice>
+    <Bio>[FILL ME]</Bio>
+    <Icon>AnnaRodriguez.svg</Icon>
+    <Vice>BeautyProducts</Vice>
   </CharacterTemplate>
   <CharacterTemplate>
-    <Name>Character5</Name>
-    <Character>Trucker he talked to in a bar one time</Character>
-    <Vice>beer</Vice>
+    <Id>5</Id>
+    <Name>Danny Chang</Name>
+    <Character>Guy he talked to in a bar one time</Character>
+    <Bio>[FILL ME]</Bio>
+    <Icon>AnnaRodriguez.svg</Icon>
+    <Vice>Beer</Vice>
   </CharacterTemplate>
 </CharacterTemplates>

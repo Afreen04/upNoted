@@ -30,8 +30,15 @@
   <TreasureHunt>
     <Name>Prize</Name>
     <SampleValue>$1,000</SampleValue>
-    <Description>A description for the price</Description>
+    <Description>A description for the prize</Description>
     <IsOptional>FALSE</IsOptional>
     <DataType>string</DataType>
+  </TreasureHunt>
+  <TreasureHunt>
+    <Name>Num_free_lives</Name>
+    <SampleValue>3</SampleValue>
+    <Description>Number of lives until you buy more</Description>
+    <IsOptional>FALSE</IsOptional>
+    <DataType>integer</DataType>
   </TreasureHunt>
 </TreasureHunts>

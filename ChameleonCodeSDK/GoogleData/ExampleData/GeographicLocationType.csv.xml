@@ -1,0 +1,38 @@
+<GeographicLocationTypes>
+  <GeographicLocationType>
+    <Name>Park</Name>
+    <Description>A park or public space</Description>
+  </GeographicLocationType>
+  <GeographicLocationType>
+    <Name>Business</Name>
+    <Description>A general bsuiness</Description>
+  </GeographicLocationType>
+  <GeographicLocationType>
+    <Name>PublicSpace</Name>
+    <Description>A public space such as the capitol or state house</Description>
+  </GeographicLocationType>
+  <GeographicLocationType>
+    <Name>Landmark</Name>
+    <Description>A landmark like the lakes.</Description>
+  </GeographicLocationType>
+  <GeographicLocationType>
+    <Name>Restaurant</Name>
+    <Description>A specific food based establishment</Description>
+  </GeographicLocationType>
+  <GeographicLocationType>
+    <Name>Bar</Name>
+    <Description>A restaurant that primarily serves alchohol</Description>
+  </GeographicLocationType>
+  <GeographicLocationType>
+    <Name>Shop</Name>
+    <Description>A shopping business like a gift shop or clothes store</Description>
+  </GeographicLocationType>
+  <GeographicLocationType>
+    <Name>Arena</Name>
+    <Description>An arena, stadium or large venue</Description>
+  </GeographicLocationType>
+  <GeographicLocationType>
+    <Name>Other</Name>
+    <Description>Other kind of locaion</Description>
+  </GeographicLocationType>
+</GeographicLocationTypes>

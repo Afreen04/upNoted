@@ -14,6 +14,13 @@
         "Description": "An email address for the user",
         "IsOptional": "FALSE",
         "DataType": "string"
+      },
+      {
+        "Name": "Avatar",
+        "SampleValue": "Anna Rodriguez",
+        "Description": "Character of user (one of 5)",
+        "IsOptional": "FALSE",
+        "DataType": "string"
       }
     ]
   }

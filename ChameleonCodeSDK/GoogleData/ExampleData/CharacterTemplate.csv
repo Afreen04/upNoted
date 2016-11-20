@@ -1,6 +1,6 @@
-Name,Character,Bio,Icon,Vice
-Character1,Barista who was always nice to him,bio1,name of file?,coffee
-Character2,His favorite singer in a local band,,,local music
-Character3,Butler,,,cocktails
-Character4,Estranged god-daughter,,,beauty products
-Character5,Trucker he talked to in a bar one time,,,beer
+Id,Name,Character,Bio,Icon,Vice
+1,Anna Rodriguez,Barista who was always nice to him,Anna receives the letter in the middle of a shift at Barriques. She can't wait ,AnnaRodriguez.svg,Coffee
+2,Hal White,His favorite singer in a local band,[FILL ME],AnnaRodriguez.svg,LocalMusic
+3,George Beaufort,Butler,[FILL ME],AnnaRodriguez.svg,Cocktails
+4,Diamond Jones,Estranged god-daughter,[FILL ME],AnnaRodriguez.svg,BeautyProducts
+5,Danny Chang,Guy he talked to in a bar one time,[FILL ME],AnnaRodriguez.svg,Beer

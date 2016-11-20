@@ -1,3 +1,8 @@
-Name,SampleValue,Description,IsOptional,DataType
-TreasureHunt,MVP Test Hunt,The hunt associated,FALSE,string
-Name,Some puzzle,a puzzle ,FALSE,string
+Name,Description,SampleValue,IsOptional,DataType
+TreasureHunt,The hunt associated,MVP Test Hunt,FALSE,string/HuntId
+Name,a puzzle ,Some puzzle,FALSE,string
+Hint,Clue to location,Roosters are known ...,FALSE,string
+Photo,Photo of location,<image>,FALSE,image
+Question,Verification question,How many light bulbs?,FALSE,string
+Answer,Correct response,33,FALSE,string
+Treat,Reward for correct answer,<key to Reward>,TRUE,string

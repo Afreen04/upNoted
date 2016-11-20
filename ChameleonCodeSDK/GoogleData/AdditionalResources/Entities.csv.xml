@@ -6,8 +6,6 @@
     <EntityType>Primary</EntityType>
     <AttributesGoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</AttributesGoogleKey>
     <AttributesGID>1769909430</AttributesGID>
-    <SampleValuesGoogleKey>1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY</SampleValuesGoogleKey>
-    <SampleValuesGID>1992169427</SampleValuesGID>
     <OriginalSortOrder>27</OriginalSortOrder>
   </Entity>
   <Entity>
@@ -15,6 +13,8 @@
     <DisplayName>Geographic Location</DisplayName>
     <Description>A location (with a longitude/latitude)</Description>
     <EntityType>Primary</EntityType>
+    <SampleValuesGoogleKey>1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY</SampleValuesGoogleKey>
+    <SampleValuesGID>1992169427</SampleValuesGID>
     <OriginalSortOrder>2</OriginalSortOrder>
   </Entity>
   <Entity>
@@ -22,14 +22,9 @@
     <DisplayName>Geographic Location Type</DisplayName>
     <Description>A type of location (park, field, room, business, landmark,etc)</Description>
     <EntityType>Primary</EntityType>
+    <SampleValuesGoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</SampleValuesGoogleKey>
+    <SampleValuesGID>360276803</SampleValuesGID>
     <OriginalSortOrder>2</OriginalSortOrder>
-  </Entity>
-  <Entity>
-    <Name>UserVerificationRequest</Name>
-    <DisplayName>User Verification Request</DisplayName>
-    <Description>A user requests verification of a clue</Description>
-    <EntityType>Primary</EntityType>
-    <OriginalSortOrder>3</OriginalSortOrder>
   </Entity>
   <Entity>
     <Name>Puzzle</Name>
@@ -77,32 +72,47 @@
     <OriginalSortOrder>9</OriginalSortOrder>
   </Entity>
   <Entity>
+    <Name>ClueDestination</Name>
+    <DisplayName>Clue Destination</DisplayName>
+    <Description>A destination for a particular clue</Description>
+    <EntityType>Primary</EntityType>
+    <OriginalSortOrder>26</OriginalSortOrder>
+  </Entity>
+  <Entity>
+    <Name>Vice</Name>
+    <DisplayName>Vice</DisplayName>
+    <Description>A list of vices</Description>
+    <EntityType>Primary</EntityType>
+    <SampleValuesGoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</SampleValuesGoogleKey>
+    <SampleValuesGID>1423227714</SampleValuesGID>
+  </Entity>
+  <Entity>
+    <Name>UserVerificationRequest</Name>
+    <DisplayName>User Verification Request</DisplayName>
+    <Description>A user requests verification of a clue</Description>
+    <EntityType>Future</EntityType>
+    <OriginalSortOrder>3</OriginalSortOrder>
+  </Entity>
+  <Entity>
     <Name>UserAnswer</Name>
     <DisplayName>User Answer</DisplayName>
     <Description>An answer to a specific</Description>
-    <EntityType>Primary</EntityType>
+    <EntityType>Future</EntityType>
     <OriginalSortOrder>17</OriginalSortOrder>
   </Entity>
   <Entity>
     <Name>CorrectAnswer</Name>
     <DisplayName>Correct Answer</DisplayName>
     <Description>A correct answer for a Clue</Description>
-    <EntityType>Primary</EntityType>
+    <EntityType>Future</EntityType>
     <OriginalSortOrder>19</OriginalSortOrder>
   </Entity>
   <Entity>
     <Name>GpsLocation</Name>
     <DisplayName>Gps Location</DisplayName>
     <Description>A specific GpsPoint, with a radious.  Same as Georgraphical Location</Description>
-    <EntityType>Primary</EntityType>
+    <EntityType>Future</EntityType>
     <OriginalSortOrder>25</OriginalSortOrder>
-  </Entity>
-  <Entity>
-    <Name>ClueDestination</Name>
-    <DisplayName>Clue Destination</DisplayName>
-    <Description>A destination for a particular clue</Description>
-    <EntityType>Primary</EntityType>
-    <OriginalSortOrder>26</OriginalSortOrder>
   </Entity>
   <Entity>
     <Name>Risk</Name>

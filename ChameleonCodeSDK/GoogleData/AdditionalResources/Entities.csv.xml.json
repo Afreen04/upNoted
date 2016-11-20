@@ -8,8 +8,6 @@
         "EntityType": "Primary",
         "AttributesGoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
         "AttributesGID": "1769909430",
-        "SampleValuesGoogleKey": "1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY",
-        "SampleValuesGID": "1992169427",
         "OriginalSortOrder": "27"
       },
       {
@@ -17,6 +15,8 @@
         "DisplayName": "Geographic Location",
         "Description": "A location (with a longitude/latitude)",
         "EntityType": "Primary",
+        "SampleValuesGoogleKey": "1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY",
+        "SampleValuesGID": "1992169427",
         "OriginalSortOrder": "2"
       },
       {
@@ -24,14 +24,9 @@
         "DisplayName": "Geographic Location Type",
         "Description": "A type of location (park, field, room, business, landmark,etc)",
         "EntityType": "Primary",
+        "SampleValuesGoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
+        "SampleValuesGID": "360276803",
         "OriginalSortOrder": "2"
-      },
-      {
-        "Name": "UserVerificationRequest",
-        "DisplayName": "User Verification Request",
-        "Description": "A user requests verification of a clue",
-        "EntityType": "Primary",
-        "OriginalSortOrder": "3"
       },
       {
         "Name": "Puzzle",
@@ -83,32 +78,47 @@
         "OriginalSortOrder": "9"
       },
       {
+        "Name": "ClueDestination",
+        "DisplayName": "Clue Destination",
+        "Description": "A destination for a particular clue",
+        "EntityType": "Primary",
+        "OriginalSortOrder": "26"
+      },
+      {
+        "Name": "Vice",
+        "DisplayName": "Vice",
+        "Description": "A list of vices",
+        "EntityType": "Primary",
+        "SampleValuesGoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
+        "SampleValuesGID": "1423227714"
+      },
+      {
+        "Name": "UserVerificationRequest",
+        "DisplayName": "User Verification Request",
+        "Description": "A user requests verification of a clue",
+        "EntityType": "Future",
+        "OriginalSortOrder": "3"
+      },
+      {
         "Name": "UserAnswer",
         "DisplayName": "User Answer",
         "Description": "An answer to a specific",
-        "EntityType": "Primary",
+        "EntityType": "Future",
         "OriginalSortOrder": "17"
       },
       {
         "Name": "CorrectAnswer",
         "DisplayName": "Correct Answer",
         "Description": "A correct answer for a Clue",
-        "EntityType": "Primary",
+        "EntityType": "Future",
         "OriginalSortOrder": "19"
       },
       {
         "Name": "GpsLocation",
         "DisplayName": "Gps Location",
         "Description": "A specific GpsPoint, with a radious.  Same as Georgraphical Location",
-        "EntityType": "Primary",
+        "EntityType": "Future",
         "OriginalSortOrder": "25"
-      },
-      {
-        "Name": "ClueDestination",
-        "DisplayName": "Clue Destination",
-        "Description": "A destination for a particular clue",
-        "EntityType": "Primary",
-        "OriginalSortOrder": "26"
       },
       {
         "Name": "Risk",
