@@ -34,29 +34,5 @@
         </ion-item>
       </ion-list>
     </ion-content>
-
-    <footer class="bar bar-footer bar-dark">
-      <div class="title">Andrew McOlash - {{year}}</div>
-    </footer>
-  </ion-side-menu>
-
-  <ion-side-menu side="right" width="450">
-    <header class="bar bar-header bar-dark">
-      <h1 class="title">Preview</h1>
-      <button menu-toggle="right" class="button button-icon icon ion-close"></button>
-    </header>
-    <ion-content class="has-header right-menu">
-      <div class="center-image">
-        <img ng-src="{{preview.url}}" >
-        <!-- <ion-spinner ng-show="!preview.isLoaded"></ion-spinner> -->
-      </div>
-
-      <div class="item item-input-inset">
-        <label class="item-input-wrapper">
-          <input type="text" value={{preview.url}} disabled>
-        </label>
-        <button class="button button-icon icon ion-clipboard" clipboard text="preview.url"></button>
-      </div>
-    </ion-content>
   </ion-side-menu>
 </ion-side-menus>

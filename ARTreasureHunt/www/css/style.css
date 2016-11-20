@@ -1,0 +1,4 @@
+/* Slightly darker header / footer */
+.bar.bar-dark {
+  background-color: #222;
+}

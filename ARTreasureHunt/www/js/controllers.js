@@ -3,10 +3,9 @@ angular.module('starter.controllers', [])
 .controller('AppController', function($scope) {
 })
 
-.controller('SearchController', ['$scope', '$http', 'previewData', 'Favorites', 'Settings',
-  function($scope, $http, previewData, Favorites, Settings) {
+.controller('SearchController', ['$scope', '$http', 'Favorites', 'Settings',
+  function($scope, $http, Favorites, Settings) {
 
-  $scope.preview = previewData;
   $scope.favorites = Favorites;
   $scope.settings = Settings;
 
@@ -157,11 +156,6 @@ angular.module('starter.controllers', [])
     return $scope.lastData.length > 0;
   }
 
-  $scope.setupPreview = function(image) {
-    $scope.preview.isLoaded = $scope.preview.url === image.originalImgUrl;
-    $scope.preview.url = image.originalImgUrl;
-  }
-
   $scope.onFavorite = function(image) {
     if (!image.favorite) {
       image.favorite = true;
@@ -177,15 +171,9 @@ angular.module('starter.controllers', [])
   };
 }])
 
-.controller('FavoritesController', ['$scope', 'previewData', 'Favorites',
-  function($scope, previewData, Favorites) {
-  $scope.preview = previewData;
+.controller('FavoritesController', ['$scope', 'Favorites',
+  function($scope, Favorites) {
   $scope.favorites = Favorites;
-
-  $scope.setupPreview = function(image) {
-    $scope.preview.isLoaded = $scope.preview.url === image.originalImgUrl;
-    $scope.preview.url = image.originalImgUrl;
-  }
 
   $scope.onFavorite = function(image) {
     if (!image.favorite) {
@@ -207,13 +195,11 @@ angular.module('starter.controllers', [])
 
 }])
 
-.controller('MenuController', ['$scope', 'Auth', 'previewData', '$ionicModal', 'Favorites', 'Storage',
-  function($scope, Auth, previewData, $ionicModal, Favorites, Storage) {
+.controller('MenuController', ['$scope', 'Auth', '$ionicModal', 'Favorites',
+  function($scope, Auth, $ionicModal, Favorites) {
   $scope.auth = Auth;
   $scope.favorites = Favorites;
-  $scope.storage = Storage;
 
-  $scope.preview = previewData;
   $scope.customGif = { imgUrl: '', tags: [], failed: false};
   $scope.year = new Date().getFullYear();
   $scope.customType = 'upload';
@@ -262,42 +248,6 @@ angular.module('starter.controllers', [])
       }
     }
   };
-
-  $scope.uploadCustomGif = function() {
-    var file = $scope.files[0];
-    var name = new Date().getTime().toString() + '.' + file.name.split('.').pop();
-    var uploadTask = $scope.storage().child(name).put(file);
-
-    uploadTask.on('state_changed', function(snapshot) {
-      // Observe state change events such as progress, pause, and resume
-      $scope.uploadProgress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-      $scope.$apply();
-    }, function(error) {
-      // Handle unsuccessful uploads
-    }, function() {
-      // Handle successful uploads
-      var downloadURL = uploadTask.snapshot.downloadURL;
-      // Remove token from the url
-      downloadURL = downloadURL.substring(0, downloadURL.indexOf('&token'));
-
-      // TODO: Save url without auth, maybe it expires?
-      var image = {
-        imgUrl: downloadURL,
-        hqImgUrl: downloadURL,
-        originalImgUrl: downloadURL,
-        filename: name,
-        favorite: true,
-        tags: $scope.customGif.tags
-      }
-
-      $scope.favorites.addFavorite(image);
-      $scope.files = [];
-
-      $scope.uploadProgress = 0;
-      $scope.modal.hide();
-    });
-  }
-
 }])
 
 .controller('SettingsController', ['$scope', 'Settings', function($scope, Settings) {

@@ -1,19 +1,13 @@
 angular.module('starter.factories', [])
 
-.factory('previewData', function() {
-  return {
-    url: '',
-    isLoaded: false
-  };
-})
-
 .factory('Auth', ['$firebaseAuth', '$state', function($firebaseAuth, $state) {
     // Init firebase 3.x.x
     var config = {
-      apiKey: "AIzaSyDvGo3D5AhgdzcAbli3H3lXuawv-yeOoao",
-      authDomain: "giffingawesome.firebaseapp.com",
-      databaseURL: "https://giffingawesome.firebaseio.com",
-      storageBucket: "firebase-giffingawesome.appspot.com",
+      apiKey: "AIzaSyC93WY_4dJ2LXpRE8oGExenhM3HdhnHUuo",
+      authDomain: "ar-treasure-hunt.firebaseapp.com",
+      databaseURL: "https://ar-treasure-hunt.firebaseio.com",
+      storageBucket: "ar-treasure-hunt.appspot.com",
+      messagingSenderId: "872770693402"
     };
     firebase.initializeApp(config);
 
@@ -54,10 +48,9 @@ angular.module('starter.factories', [])
   }
 ])
 
-.factory('Favorites', ['$firebaseArray', 'Auth', 'Storage',
-  function($firebaseArray, Auth, Storage) {
+.factory('Favorites', ['$firebaseArray', 'Auth',
+  function($firebaseArray, Auth) {
     var favorites = null;
-    var storage = Storage;
 
     Auth.$onAuthStateChanged(function(authData) {
       if (authData !== null) {
@@ -84,9 +77,6 @@ angular.module('starter.factories', [])
     function removeFavorite(image) {
       for (var i = 0; i < favorites.length; i++) {
         if (favorites[i].originalImgUrl === image.originalImgUrl) {
-          if (favorites[i].filename !== undefined && favorites[i].filename !== null) {
-            storage().child(favorites[i].filename).delete();
-          }
           favorites.$remove(i);
           return;
         }
@@ -142,26 +132,5 @@ angular.module('starter.factories', [])
       isFavorite: isFavorite,
       getTags: getTags,
     };
-  }
-])
-
-.factory('Storage', ['Auth',
-  function(Auth) {
-    var storage = null;
-
-    Auth.$onAuthStateChanged(function(authData) {
-      if (authData !== null) {
-        var USER = authData.uid;
-
-        var storageRef = firebase.storage().ref();
-        storage = storageRef.child('users/' + USER + '/uploads');
-      }
-    });
-
-    function getStorage() {
-      return storage;
-    }
-
-    return getStorage;
   }
 ])
