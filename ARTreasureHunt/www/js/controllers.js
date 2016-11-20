@@ -73,7 +73,7 @@ angular.module('starter.controllers', [])
   }
 }])
 
-.controller('PuzzleController', ['$scope', 'User', function($scope, User) {
+.controller('PuzzleController', ['$scope', 'User', 'geolocationSvc', function($scope, User, geolocationSvc) {
   User.then(function(data) {
     data.settings.$bindTo($scope, "settings").then(function(unbind) {
       $scope.$on('$ionicView.beforeLeave', function() {
@@ -82,8 +82,35 @@ angular.module('starter.controllers', [])
 
       $scope.huntName = app_hunts.HuntData.TreaureHunt[$scope.settings.user.huntIndex].Name;
       $scope.puzzle = app_hunts.HuntData.TreaureHunt[$scope.settings.user.huntIndex].Puzzles[$scope.settings.user.puzzleIndex];
+      $scope.location = app_hunts.HuntData.TreaureHunt[$scope.settings.user.huntIndex].Locations[$scope.settings.user.puzzleIndex];
     });
   });
+
+  /* Taken from http://stackoverflow.com/questions/27928/ - this formula calculates the distance between lat/lon (in km) */
+  $scope.distance = function(lat1, lon1, lat2, lon2) {
+    var p = 0.017453292519943295;    // Math.PI / 180
+    var c = Math.cos;
+    var a = 0.5 - c((lat2 - lat1) * p)/2 +
+            c(lat1 * p) * c(lat2 * p) *
+            (1 - c((lon2 - lon1) * p))/2;
+
+    return 12742 * Math.asin(Math.sqrt(a)); // 2 * R; R = 6371 km
+  }
+
+  $scope.checkLoc = function() {
+    geolocationSvc.getCurrentPosition().then(function(position) {
+      console.log(position)
+      alert("accuracy: " + position.coords.accuracy);
+
+      var dist = $scope.distance(position.latitude, position.longitude, $scope.location.Latitude, $scope.location.Longitude);
+
+      if (position.coords.accuracy <= 10 && dist < $scope.puzzle.RadiusMeters / 1000) {
+        $scope.verify();
+      } else {
+        alert("Sorry, there is no puzzle nearby :(");
+      }
+    });
+  }
 
   $scope.verify = function() {
     var response = prompt($scope.puzzle.Question + "\nPlease enter your answer", "");
