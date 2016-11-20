@@ -1,5 +1,5 @@
 <ion-view title="Create Your Character">
-  <ion-content class="has-header">
+  <ion-content class="has-header" drag-content="false">
     <div class="list list-inset">
       <div class="item item-input">
         <input type="text" ng-model="characterName" placeholder="User Name">
@@ -10,13 +10,13 @@
       <ion-slide ng-repeat="character in characters">
         <div class="row padding-bottom">
           <div class="col col-33">
-            <img class="character-image" ng-src="{{character.image}}" alt="character portrait">
+            <img class="responsive-image" ng-src="img/avatars/{{character.Icon}}" alt="character portrait">
           </div>
           <div class="col">
-            <h1>{{character.name}}</h1>
-            <p>{{character.vice}}</p>
-            <p>{{character.sponsor}}</p>
-            <p>{{character.bio}}</p>
+            <h1>{{character.Name}}</h1>
+            <p>{{character.Vice}}</p>
+            <!-- <p>{{character.sponsor}}</p> -->
+            <p>{{character.Bio}}</p>
 
             <button class="button button-block button-balanced" ng-show="selectedIndex == $index">✓ Selected</button>
             <button class="button button-block button-stable" ng-click="select($index)" ng-show="selectedIndex != $index">Select Character</button>
