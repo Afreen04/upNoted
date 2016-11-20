@@ -1,0 +1,36 @@
+{
+  "Hunt1": {
+    "Hunt1": [
+      {
+        "HuntId": "1",
+        "PuzzleId": "1",
+        "LocationName": "Front Room",
+        "Hint": "Pizza was served here",
+        "Photo": "TestPuzzle1.jpg",
+        "Question": "What color are the walls?",
+        "Answer": "White",
+        "Token": "FrontRoom"
+      },
+      {
+        "HuntId": "1",
+        "PuzzleId": "2",
+        "LocationName": "3D Printer Room",
+        "Hint": "You can print a prosthetic here",
+        "Photo": "TestPuzzle2.jpg",
+        "Question": "Who's the best super here?",
+        "Answer": "Iron Man",
+        "Token": "ThreeDPrinterRoom"
+      },
+      {
+        "HuntId": "1",
+        "PuzzleId": "3",
+        "LocationName": "Computer Lab",
+        "Hint": "Dell sponsored this room",
+        "Photo": "TestPuzzle3.jpg",
+        "Question": "What are the shelves made of?",
+        "Answer": "Wood",
+        "Token": "ComputerLab"
+      }
+    ]
+  }
+}

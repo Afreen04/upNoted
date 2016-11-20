@@ -61,7 +61,7 @@
       {
         "Name": "GoogleResourceList",
         "Value": "HuntLocations",
-        "Description": "A list of hunt puzzles",
+        "Description": "A list of hunt locations",
         "Prefix": "Locations",
         "GoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
         "GID": "1663244018",
@@ -70,8 +70,8 @@
       {
         "Name": "GoogleResourceList",
         "Value": "HuntCharacters",
-        "Description": "A list of hunt puzzles",
-        "Prefix": "Characters",
+        "Description": "A list of hunt characters",
+        "Prefix": "Charactersd",
         "GoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
         "GID": "1663244018",
         "IsActiveDownload": "FALSE"
