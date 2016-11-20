@@ -2,7 +2,7 @@
   <ion-content class="has-header">
     <div class="list list-inset">
       <div class="item item-input">
-        <input type="text" ng-model="$parent.name" ng-model-options='{ debounce: 500 }' placeholder="User Name">
+        <input type="text" ng-model="characterName" placeholder="User Name">
       </div>
     </div>
 
@@ -14,9 +14,11 @@
           </div>
           <div class="col">
             <h1>{{character.name}}</h1>
+            <p>{{character.vice}}</p>
+            <p>{{character.sponsor}}</p>
             <p>{{character.bio}}</p>
 
-            <button class="button button-block button-balanced icon-left" ng-show="selectedIndex == $index">✓ Selected</button>
+            <button class="button button-block button-balanced" ng-show="selectedIndex == $index">✓ Selected</button>
             <button class="button button-block button-stable" ng-click="select($index)" ng-show="selectedIndex != $index">Select Character</button>
           </div>
         </div>

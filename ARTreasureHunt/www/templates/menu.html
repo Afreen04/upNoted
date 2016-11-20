@@ -5,24 +5,16 @@
     <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
   </ion-pane>
 
-  <ion-side-menu side="left">
+  <ion-side-menu side="left" drag-content="false">
     <header class="bar bar-header bar-dark">
-      <h1 class="title">GiffingAwesome</h1>
+      <h1 class="title">AR Treasure Hunt</h1>
     </header>
 
     <ion-content class="has-header">
       <ion-list>
-        <ion-item nav-clear menu-close href="#/app/search">
-          <span class="icon ion-search padding-right"></span>
-          <span>Search</span>
-        </ion-item>
-        <ion-item nav-clear menu-close ng-click="openModal()">
-          <span class="icon ion-compose padding-right"></span>
-          <span>Add Custom Gif</span>
-        </ion-item>
-        <ion-item nav-clear menu-close href="#/app/favorites">
-          <span class="icon ion-android-star padding-right"></span>
-          <span>Favorites</span>
+        <ion-item nav-clear menu-close href="#/app/dashboard">
+          <span class="icon ion-map padding-right"></span>
+          <span>Dashboard</span>
         </ion-item>
         <ion-item nav-clear menu-close href="#/app/settings">
           <span class="icon ion-gear-a padding-right"></span>

@@ -111,7 +111,7 @@ var ionicApp = angular.module('starter', ['ionic', 'starter.controllers', 'start
       views: {
         'menuContent': {
           templateUrl: 'templates/story.html',
-          controller: 'StoryCtrl'
+          controller: 'StoryController'
         }
       },
       resolve: {
@@ -128,7 +128,24 @@ var ionicApp = angular.module('starter', ['ionic', 'starter.controllers', 'start
       views: {
         'menuContent': {
           templateUrl: 'templates/newuser.html',
-          controller: 'NewUserCtrl'
+          controller: 'NewUserController'
+        }
+      },
+      resolve: {
+        'currentAuth': ['Auth', function(Auth) {
+          // $requireSignIn returns a promise so the resolve waits for it to complete
+          // If the promise is rejected, it will throw a $stateChangeError (see above)
+          return Auth.$requireSignIn();
+        }]
+      }
+    })
+
+    .state('app.dashboard', {
+      url: '/dashboard',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/dashboard.html',
+          controller: 'DashboardController'
         }
       },
       resolve: {
@@ -147,6 +164,13 @@ var ionicApp = angular.module('starter', ['ionic', 'starter.controllers', 'start
           templateUrl: 'templates/settings.html',
           controller: 'SettingsController'
         }
+      },
+      resolve: {
+        'currentAuth': ['Auth', function(Auth) {
+          // $requireSignIn returns a promise so the resolve waits for it to complete
+          // If the promise is rejected, it will throw a $stateChangeError (see above)
+          return Auth.$requireSignIn();
+        }]
       }
     })
 
