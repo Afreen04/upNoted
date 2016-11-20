@@ -1,5 +1,4 @@
 ﻿var app_hunts = {
-{
   "HuntData": {
     "TreaureHunt": [
       {
@@ -25,7 +24,7 @@
             "Name": "Character1",
             "Character": "Writer - in the coffee shop all the time",
             "Bio": "[FILL ME]",
-            "Icon": "hunt_data/AvatarIcons/HalWhite.svg",
+            "Icon": "hunt_data/Hunt1/AvatarIcons/AnnaRodriguez.svg",
             "Vice": "Coffee",
             "IconName": "AnnaRodriguez.svg",
             "Token": "Character1"
@@ -35,7 +34,7 @@
             "Name": "Character2",
             "Character": "Music super fan",
             "Bio": "[FILL ME]",
-            "Icon": "hunt_data/AvatarIcons/",
+            "Icon": "hunt_data/Hunt2/AvatarIcons/HalWhite.svg",
             "Vice": "LocalMusic",
             "IconName": "HalWhite.svg",
             "Token": "Character2"
@@ -70,7 +69,7 @@
             "PuzzleId": "1",
             "LocationName": "Front Room",
             "Hint": "Pizza was served here",
-            "Photo": "hunt_data/PuzzleImages/TestPuzzle1.jpg",
+            "Photo": "hunt_data/Hunt1/PuzzleImages/TestPuzzle1.jpg",
             "PhotoName": "TestPuzzle1.jpg",
             "Question": "What color are the walls?",
             "Answer": "White",
@@ -81,7 +80,7 @@
             "PuzzleId": "2",
             "LocationName": "3D Printer Room",
             "Hint": "You can print a prosthetic here",
-            "Photo": "hunt_data/PuzzleImages/TestPuzzle2.jpg",
+            "Photo": "hunt_data/Hunt1/PuzzleImages/TestPuzzle2.jpg",
             "PhotoName": "TestPuzzle2.jpg",
             "Question": "Who's the best super here?",
             "Answer": "Iron Man",
@@ -92,7 +91,7 @@
             "PuzzleId": "3",
             "LocationName": "Computer Lab",
             "Hint": "Dell sponsored this room",
-            "Photo": "hunt_data/PuzzleImages/TestPuzzle3.jpg",
+            "Photo": "hunt_data/Hunt1/PuzzleImages/TestPuzzle3.jpg",
             "PhotoName": "TestPuzzle3.jpg",
             "Question": "What are the shelves made of?",
             "Answer": "Wood",
@@ -255,5 +254,4 @@
       }
     ]
   }
-}
 };
