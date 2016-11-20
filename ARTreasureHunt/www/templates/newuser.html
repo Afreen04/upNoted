@@ -1,6 +1,26 @@
-<ion-view title="New User">
+<ion-view title="Create Your Character">
   <ion-content class="has-header">
-    NEW USER!
-    <button class="button button-block button-dark" ng-click="continue()">Continue</button>
+    <div class="list list-inset">
+      <div class="item item-input">
+        <input type="text" ng-model="$parent.name" ng-model-options='{ debounce: 500 }' placeholder="User Name">
+      </div>
+    </div>
+
+    <ion-slide-box on-slide-changed="characterChanged($index)">
+      <ion-slide ng-repeat="character in characters">
+        <div class="row">
+          <div class="col col-25">
+            <img class="character-image" ng-src="{{character.image}}" alt="character portrait">
+          </div>
+          <div class="col">
+            <h1>{{character.name}}</h1>
+            <p>{{character.bio}}</p>
+          </div>
+        </div>
+      </ion-slide>
+    </ion-slide-box>
+
+    <button class="button button-block button-dark" ng-click="complete()">Complete</button>
+    
   </ion-content>
 </ion-view>

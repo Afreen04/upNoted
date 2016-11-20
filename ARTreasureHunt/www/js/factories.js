@@ -20,7 +20,7 @@ angular.module('starter.factories', [])
       if (authData === null || authData === undefined) {
         $state.go('app.login');
       } else {
-        $state.go('app.newuser');
+        $state.go('app.story');
       }
     });
 
@@ -28,8 +28,8 @@ angular.module('starter.factories', [])
   }
 ])
 
-.factory('Settings', ['$firebaseObject', 'Auth',
-  function($firebaseObject, Auth) {
+.factory('Settings', ['$firebaseObject', '$state', 'Auth',
+  function($firebaseObject, $state, Auth) {
     var settings = null;
 
     Auth.$onAuthStateChanged(function(authData) {
@@ -37,6 +37,13 @@ angular.module('starter.factories', [])
         var USER = authData.uid;
         var ref = firebase.database().ref('users/' + USER + '/settings');
         settings = $firebaseObject(ref);
+
+        settings.$loaded().then(function() {
+          // Very much a hack, but hey that is alright for now!
+          if ($state.is("app.newuser") && settings.test) {
+            $state.go("app.search");
+          }
+        });
       }
     });
 
