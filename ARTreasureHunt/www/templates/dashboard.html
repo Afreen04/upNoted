@@ -5,6 +5,7 @@
   </ion-nav-buttons>
 
   <ion-nav-buttons side="right">
+    <span ng-show="settings.user.points > 0" class="icon-label">{{settings.user.points}}</span><i ng-show="settings.user.points > 0" class="icon ion-trophy energized top-icon"></i>
     <span ng-show="settings.user.discount > 0" class="icon-label">{{settings.user.discount}}%</span><i ng-show="settings.user.discount > 0" class="icon ion-cash balanced top-icon"></i>
     <span class="icon-label">{{settings.user.lives}}</span><i class="icon ion-heart assertive top-icon"></i>
   </ion-nav-buttons>

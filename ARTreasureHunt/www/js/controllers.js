@@ -74,6 +74,45 @@ angular.module('starter.controllers', [])
   }
 }])
 
+.controller('LeaderboardController', ['$scope', '$state', 'User', function($scope, $state, User) {
+  User.then(function(data) {
+    $scope.settings = data.settings;
+  });
+
+  $scope.users = [
+    {
+      "name": "User 3",
+      "characterName": "Anna Rodriguez",
+      "image": "hunt_data/Hunt2/AvatarIcons/AnnaRodriguez.svg",
+      "points": 25
+    },
+    {
+      "name": "User 1",
+      "characterName": "Hal White",
+      "image": "hunt_data/Hunt2/AvatarIcons/HalWhite.svg",
+      "points": 20
+    },
+    {
+      "name": "User 5",
+      "characterName": "George Beaufort",
+      "image": "hunt_data/Hunt2/AvatarIcons/GeorgeBeaufort.svg",
+      "points": 15
+    },
+    {
+      "name": "User 4",
+      "characterName": "Diamond Jones",
+      "image": "hunt_data/Hunt2/AvatarIcons/DiamondJones.svg",
+      "points": 10
+    },
+    {
+      "name": "User 2",
+      "characterName": "Danny Chang",
+      "image": "hunt_data/Hunt2/AvatarIcons/DannyChang.svg",
+      "points": 5
+    }
+  ]
+}])
+
 .controller('StoryController', ['$scope', '$state', function($scope, $state) {
   $scope.story = app_hunts.HuntData.TreaureHunt[app_hunts.current_hunt].Description;
 
@@ -105,6 +144,7 @@ angular.module('starter.controllers', [])
       puzzleIndex: 0,
       lives: 3,
       discount: 0,
+      points: 0,
       email: $scope.auth.authData.email
     };
 
@@ -188,6 +228,8 @@ angular.module('starter.controllers', [])
           if ($scope.settings.user.discount < 50) {
             $scope.settings.user.discount += 5;
           }
+
+          $scope.settings.user.points += $scope.settings.user.puzzleIndex * 5;
 
           alert("You are correct!");
 

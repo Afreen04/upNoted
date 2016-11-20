@@ -1,4 +1,4 @@
-<ion-view title="Enter Life Code">
+<ion-view title="Leaderboards">
 
   <ion-nav-buttons side="left">
     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
@@ -11,15 +11,17 @@
   </ion-nav-buttons>
 
   <ion-content class="has-header">
-    <h3>If you want to get more lives, you should check out {{sponsor}}. If you spend more than {{minamt}}, you can get a life code from them. (Code is "CODE")</h3>
-
-    <div class="list list-inset padding-top">
-      <div class="item item-input">
-        <input type="text" ng-model="$parent.code" placeholder="Life Code">
+    <div ng-repeat="user in users">
+      <div class="row">
+        <div class="col col-33">
+          <img class="responsive-image" ng-src={{user.image}} alt="user image">
+        </div>
+        <div class="col">
+          <h4>{{user.characterName}}</h4>
+          <h4>({{user.name}})</h4>
+          <h4>Points: {{user.points}}</h4>
+        </div>
       </div>
     </div>
-
-    <button class="button button-block button-dark" ng-click="verifyCode()">Submit</button>
-
   </ion-content>
 </ion-view>

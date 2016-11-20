@@ -30,7 +30,7 @@
 /* Character box styling */
 .responsive-image {
   width: 100%;
-  max-width: 500px;
+  max-width: 350px;
   margin: auto;
   display: block;
 }
