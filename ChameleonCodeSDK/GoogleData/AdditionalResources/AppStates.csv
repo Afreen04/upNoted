@@ -1,4 +1,4 @@
-Name,State,Description,Url,TemplateUrl,controller,IsAuthenticated,IsAbsract,ShowMenuNav,ShowStats
+Name,State,Description,Url,TemplateUrl,Controller,IsAuthenticated,IsAbstract,ShowMenuNav,ShowStats
 App,app,,/app,templates/menu.html,AppController,FALSE,TRUE,FALSE,FALSE
 Login,app.login,"Login for the first time, or log in as returning user",/login,templates/login.html,LoginController,TRUE,FALSE,FALSE,FALSE
 Story,app.story,The narrative that sets up the treasure hunt,/story,templates/story.html,StoryController,TRUE,FALSE,FALSE,FALSE

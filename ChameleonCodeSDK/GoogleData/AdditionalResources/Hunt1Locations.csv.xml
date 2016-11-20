@@ -1,22 +1,18 @@
 <Hunt1Locations>
   <Hunt1Locations>
     <Name>Location1</Name>
-    <Longitude>-89.353862</Longitude>
-    <Latitude>43.093695</Latitude>
+    <Longitude>-89.354476</Longitude>
+    <Latitude>43.093937</Latitude>
     <RadiusMeters>10</RadiusMeters>
     <Token>Location1</Token>
   </Hunt1Locations>
   <Hunt1Locations>
     <Name>Location2</Name>
-    <Longitude>-89.353862</Longitude>
-    <Latitude>43.093695</Latitude>
     <RadiusMeters>10</RadiusMeters>
     <Token>Location2</Token>
   </Hunt1Locations>
   <Hunt1Locations>
     <Name>Location3</Name>
-    <Longitude>-89.353862</Longitude>
-    <Latitude>43.093695</Latitude>
     <RadiusMeters>10</RadiusMeters>
     <Token>Location3</Token>
   </Hunt1Locations>

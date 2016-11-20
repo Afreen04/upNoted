@@ -4,7 +4,7 @@
     <State>app</State>
     <Url>/app</Url>
     <TemplateUrl>templates/menu.html</TemplateUrl>
-    <controller>AppController</controller>
+    <Controller>AppController</Controller>
     <IsAuthenticated>FALSE</IsAuthenticated>
     <IsAbstract>TRUE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>
@@ -16,7 +16,7 @@
     <Description>Login for the first time, or log in as returning user</Description>
     <Url>/login</Url>
     <TemplateUrl>templates/login.html</TemplateUrl>
-    <controller>LoginController</controller>
+    <Controller>LoginController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
     <IsAbstract>FALSE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>
@@ -28,7 +28,7 @@
     <Description>The narrative that sets up the treasure hunt</Description>
     <Url>/story</Url>
     <TemplateUrl>templates/story.html</TemplateUrl>
-    <controller>StoryController</controller>
+    <Controller>StoryController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
     <IsAbstract>FALSE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>
@@ -40,7 +40,7 @@
     <Description>Choose a character to play through the hunt</Description>
     <Url>/newuser</Url>
     <TemplateUrl>templates/newuser.html</TemplateUrl>
-    <controller>NewUserController</controller>
+    <Controller>NewUserController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
     <IsAbstract>FALSE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>
@@ -52,7 +52,7 @@
     <Description>User home page</Description>
     <Url>/dashboard</Url>
     <TemplateUrl>templates/dashboard.html</TemplateUrl>
-    <controller>DashboardController</controller>
+    <Controller>DashboardController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
     <IsAbstract>FALSE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>
@@ -64,7 +64,7 @@
     <Description><![CDATA[Contains photo, hint, and "I found it!" button]]></Description>
     <Url>/puzzle</Url>
     <TemplateUrl>templates/puzzle.html</TemplateUrl>
-    <controller>PuzzleController</controller>
+    <Controller>PuzzleController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
     <IsAbstract>FALSE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>
@@ -76,7 +76,7 @@
     <Description>Upon completion of puzzle, user receives treat (increased discount) and earns points for leaderboard</Description>
     <Url>/treat</Url>
     <TemplateUrl>templates/treat.html</TemplateUrl>
-    <controller>TreatController</controller>
+    <Controller>TreatController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
     <IsAbstract>FALSE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>
@@ -88,7 +88,7 @@
     <Description>Congratulations! You finished the hunt. You were the nth finisher.</Description>
     <Url>/gameover</Url>
     <TemplateUrl>templates/gameover.html</TemplateUrl>
-    <controller>GameOverController</controller>
+    <Controller>GameOverController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
     <IsAbstract>FALSE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>
@@ -100,7 +100,7 @@
     <Description>user preferences</Description>
     <Url>/settings</Url>
     <TemplateUrl>templates/settings.html</TemplateUrl>
-    <controller>SettingsController</controller>
+    <Controller>SettingsController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
     <IsAbstract>FALSE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>
@@ -112,7 +112,7 @@
     <Description>logout</Description>
     <Url>/logout</Url>
     <TemplateUrl>templates/logout.html</TemplateUrl>
-    <controller>LogoutController</controller>
+    <Controller>LogoutController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
     <IsAbstract>FALSE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>
@@ -124,7 +124,7 @@
     <Description>lists usernames and points earned</Description>
     <Url>/leaderboard</Url>
     <TemplateUrl>templates/leaderboard.html</TemplateUrl>
-    <controller>LeaderboardController</controller>
+    <Controller>LeaderboardController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
     <IsAbstract>FALSE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>
@@ -136,7 +136,7 @@
     <Description>enter code from vendor to gain a new life</Description>
     <Url>/lifecode</Url>
     <TemplateUrl>templates/lifecode.html</TemplateUrl>
-    <controller>LifecodeController</controller>
+    <Controller>LifecodeController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
     <IsAbstract>FALSE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>
@@ -148,7 +148,7 @@
     <Description>redeem discount code at vendor</Description>
     <Url>/redeem</Url>
     <TemplateUrl>templates/redeem.html</TemplateUrl>
-    <controller>RedeemController</controller>
+    <Controller>RedeemController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
     <IsAbstract>FALSE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>

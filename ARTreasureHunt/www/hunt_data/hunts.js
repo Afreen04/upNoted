@@ -46,21 +46,21 @@
             "Name": "Location1",
             "Longitude": "-89.354476",
             "Latitude": "43.093937",
-            "RadiusMeters": "20",
+            "RadiusMeters": "10",
             "Token": "Location1"
           },
           {
             "Name": "Location2",
             "Longitude": "-89.354476",
             "Latitude": "43.093937",
-            "RadiusMeters": "20",
+            "RadiusMeters": "10",
             "Token": "Location2"
           },
           {
             "Name": "Location3",
             "Longitude": "-89.354476",
             "Latitude": "43.093937",
-            "RadiusMeters": "20",
+            "RadiusMeters": "10",
             "Token": "Location3"
           }
         ],
@@ -103,6 +103,7 @@
       {
         "Name": "Hunt2",
         "Description": "MVP",
+        "Sponsor": "Sector67",
         "TotalDiscountAccumulated": "20",
         "IsTest": "TRUE",
         "State": "WI",

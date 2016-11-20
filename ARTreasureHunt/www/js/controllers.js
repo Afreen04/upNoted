@@ -85,7 +85,8 @@ angular.module('starter.controllers', [])
       huntIndex: 0,
       puzzleIndex: 0,
       lives: 3,
-      discount: 0
+      discount: 0,
+      email: $scope.auth.authData.email
     };
 
     $scope.settings.$save();
@@ -107,6 +108,8 @@ angular.module('starter.controllers', [])
       $scope.character = app_hunts.HuntData.TreaureHunt[app_hunts.current_hunt].Characters[data.settings.user.characterIndex];
     });
   });
+
+  $scope.position = "1st";
 
   $scope.start = function() {
     $state.go('app.puzzle');
@@ -134,7 +137,7 @@ angular.module('starter.controllers', [])
             c(lat1 * p) * c(lat2 * p) *
             (1 - c((lon2 - lon1) * p))/2;
 
-    return 12742 * Math.asin(Math.sqrt(a)); // 2 * R; R = 6371 km
+    return 12742 * Math.asin(Math.sqrt(a)) * 1000; // 2 * R; R = 6371 km * 1000 = m
   }
 
   $scope.checkLoc = function() {
@@ -142,13 +145,13 @@ angular.module('starter.controllers', [])
       var dist = $scope.distance(position.coords.latitude, position.coords.longitude, $scope.location.Latitude, $scope.location.Longitude);
 
       console.log(position);
-      alert("accuracy: " + position.coords.accuracy + "m\ndistance: " + dist * 1000 + "m");
+      alert("accuracy: " + position.coords.accuracy + "m, distance: " + dist + "m");
 
-      // if (position.coords.accuracy <= 20 && dist < $scope.puzzle.RadiusMeters / 1000) {
+      if (dist < $scope.puzzle.RadiusMeters || dist < position.coords.accuracy) {
         $scope.verify();
-      // } else {
-        // alert("Sorry, there is no puzzle nearby :(");
-      // }
+      } else {
+        alert("Sorry, there is no puzzle nearby :(");
+      }
     });
   }
 
@@ -160,7 +163,7 @@ angular.module('starter.controllers', [])
         var answer = $scope.puzzle.Answer.toLowerCase();
 
         if (answer === lower) {
-          $scope.settings.user.puzzleIndex = ($scope.settings.user.puzzleIndex + 1) % 3;
+          $scope.settings.user.puzzleIndex +=1 ;
 
           // Just in case ;)
           if ($scope.settings.user.discount < 50) {
