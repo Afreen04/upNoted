@@ -4,3 +4,10 @@
 }
 
 /* Character box styling */
+.padding-bottom {
+  padding-bottom: 40px;
+}
+
+.slider-pager {
+  padding-top: 20px;
+}
