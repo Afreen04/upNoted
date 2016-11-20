@@ -35,6 +35,8 @@
         "EntityType": "Primary",
         "AttributesGoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
         "AttributesGID": "1308029725",
+        "SampleValuesGoogleKey": "1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0",
+        "SampleValuesGID": "1806827157",
         "OriginalSortOrder": "5"
       },
       {
@@ -71,8 +73,8 @@
         "OriginalSortOrder": "8"
       },
       {
-        "Name": "LocalBusinesse",
-        "DisplayName": "Local Businesse",
+        "Name": "LocalBusiness",
+        "DisplayName": "Local Business",
         "Description": "A business which is somehow involved in the the hunt",
         "EntityType": "Primary",
         "OriginalSortOrder": "9"

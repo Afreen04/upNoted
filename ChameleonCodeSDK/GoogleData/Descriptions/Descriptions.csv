@@ -2,11 +2,11 @@ Name,DisplayName,Description,EntityType,AttributesGoogleKey,AttributesGID,Sample
 AppUser,AppUser,A user within the app,Primary,1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0,1769909430,,,27
 GeographicLocation,Geographic Location,A location (with a longitude/latitude),Primary,,,1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY,1992169427,2
 GeographicLocationType,Geographic Location Type,"A type of location (park, field, room, business, landmark,etc)",Primary,,,1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0,360276803,2
-Puzzle,Puzzle,"A clue, or puzzle in a game",Primary,1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0,1308029725,,,5
+Puzzle,Puzzle,"A clue, or puzzle in a game",Primary,1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0,1308029725,1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0,1806827157,5
 TreasureHunt,Treasure Hunt,"A game with a specific start date, and list of ""clues""",Primary,1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0,1669262400,1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0,1663244018,6
 CharacterProfile,Character Profile,"A description of a specific user, which is based on a Character, but has been ""customized"" in some way",Primary,,,,,7
 CharacterTemplate,CharacterTemplate,A character (with a particular vice),Primary,1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0,1830181720,1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY,645911934,8
-LocalBusinesse,Local Businesse,A business which is somehow involved in the the hunt,Primary,,,,,9
+LocalBusiness,Local Business,A business which is somehow involved in the the hunt,Primary,,,,,9
 ClueDestination,Clue Destination,A destination for a particular clue,Primary,,,,,26
 Vice,Vice,A list of vices,Primary,,,1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0,1423227714,
 UserVerificationRequest,User Verification Request,A user requests verification of a clue,Future,,,,,3

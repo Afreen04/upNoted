@@ -55,6 +55,30 @@
     <IsActiveDownload>FALSE</IsActiveDownload>
   </Setting>
   <Setting>
+    <Name>GoogleResourceList</Name>
+    <Value>HuntLocations</Value>
+    <Description>A list of hunt puzzles</Description>
+    <GoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</GoogleKey>
+    <GID>1663244018</GID>
+    <IsActiveDownload>FALSE</IsActiveDownload>
+  </Setting>
+  <Setting>
+    <Name>GoogleResourceList</Name>
+    <Value>HuntCharacters</Value>
+    <Description>A list of hunt puzzles</Description>
+    <GoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</GoogleKey>
+    <GID>1663244018</GID>
+    <IsActiveDownload>FALSE</IsActiveDownload>
+  </Setting>
+  <Setting>
+    <Name>GoogleResourceList</Name>
+    <Value>HuntPuzzles</Value>
+    <Description>A list of hunt puzzles</Description>
+    <GoogleKey>1yX71ofqc5lwlHFX9ED--NR0DpHRl1jFVvsdzp2ROkI0</GoogleKey>
+    <GID>1663244018</GID>
+    <IsActiveDownload>FALSE</IsActiveDownload>
+  </Setting>
+  <Setting>
     <Name>ChameleonCodeHostUri</Name>
     <Value>https://eejai42.sdks.codeiverse.com/</Value>
     <Description>The root path to the SDK Doc Host</Description>
