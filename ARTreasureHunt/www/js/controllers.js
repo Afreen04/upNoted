@@ -274,7 +274,7 @@ angular.module('starter.controllers', [])
   $scope.currentIndex = 0;
   $scope.selectedIndex = 0;
 
-  $scope.characters = app_config.characters;
+  $scope.characters = app_hunts.HuntData.TreaureHunt[0].Characters;
 
   $scope.characterChanged = function(index) {
     $scope.currentIndex = index;
@@ -300,7 +300,7 @@ angular.module('starter.controllers', [])
 .controller('DashboardController', ['$scope', '$state', 'Settings', function($scope, $state, Settings) {
   // Settings().$bindTo($scope, 'settings');
 
-  $scope.character = app_config.characters[0]; //TODO: Fix the index, [Settings().user.characterIndex]
+  $scope.character = app_hunts.HuntData.TreaureHunt[0].Characters[0]; //TODO: Fix the index, [Settings().user.characterIndex]
 
   $scope.start = function() {
     $state.go('app.puzzle');
@@ -308,8 +308,8 @@ angular.module('starter.controllers', [])
 }])
 
 .controller('PuzzleController', ['$scope', 'Settings', function($scope, Settings) {
-  $scope.huntName = app_config.hunt.name;
-  $scope.puzzle = app_config.hunt.puzzles[0]; //TODO: Fix the index, [Settings().user.characterIndex]
+  $scope.huntName = app_hunts.HuntData.TreaureHunt[0].Name;
+  $scope.puzzle = app_hunts.HuntData.TreaureHunt[0].Puzzles[0]; //TODO: Fix the index, [Settings().user.characterIndex]
 }])
 
 ;
