@@ -106,6 +106,23 @@ var ionicApp = angular.module('starter', ['ionic', 'starter.controllers', 'start
       }
     })
 
+    .state('app.newuser', {
+      url: '/newuser',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/newuser.html',
+          controller: 'NewUserController'
+        }
+      },
+      resolve: {
+        'currentAuth': ['Auth', function(Auth) {
+          // $requireSignIn returns a promise so the resolve waits for it to complete
+          // If the promise is rejected, it will throw a $stateChangeError (see above)
+          return Auth.$requireSignIn();
+        }]
+      }
+    })
+
     .state('app.settings', {
       url: '/settings',
       views: {

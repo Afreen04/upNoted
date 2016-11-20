@@ -258,4 +258,16 @@ angular.module('starter.controllers', [])
   $scope.auth = Auth;
 }])
 
+.controller('NewUserController', ['$scope', '$state', 'Auth', 'Settings', function($scope, $state, Auth, Settings) {
+  $scope.auth = Auth;
+
+  if (Settings() && Settings().test) {
+    $state.go('app.search');
+  }
+
+  $scope.continue = function() {
+    $state.go('app.search');
+  }
+}])
+
 ;

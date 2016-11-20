@@ -20,7 +20,7 @@ angular.module('starter.factories', [])
       if (authData === null || authData === undefined) {
         $state.go('app.login');
       } else {
-        $state.go('app.search');
+        $state.go('app.newuser');
       }
     });
 
