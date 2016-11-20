@@ -43,6 +43,10 @@
   padding-top: 20px;
 }
 
+.bottom-border {
+  border-bottom: 2px solid #ccc;
+}
+
 /* Utility Classes */
 .center-text {
   text-align: center;
