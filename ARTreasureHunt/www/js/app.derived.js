@@ -58,20 +58,6 @@ function configureStates($stateProvider)
     
     })
     
-   .state('app.dashboard', {    // User home page
-      url: '/dashboard',
-      
-        views: {
-        'menuContent': {
-          templateUrl: 'templates/dashboard.html',
-          controller: 'DashboardController'
-        }
-      }
-
-      
-    
-    })
-    
    .state('app.puzzle', {    // Contains photo, hint, and "I found it!" button
       url: '/puzzle',
       
@@ -114,35 +100,7 @@ function configureStates($stateProvider)
     
     })
     
-   .state('app.settings', {    // user preferences
-      url: '/settings',
-      
-        views: {
-        'menuContent': {
-          templateUrl: 'templates/settings.html',
-          controller: 'SettingsController'
-        }
-      }
-
-      
-    
-    })
-    
-   .state('app.logout', {    // logout
-      url: '/logout',
-      
-        views: {
-        'menuContent': {
-          templateUrl: 'templates/logout.html',
-          controller: 'LogoutController'
-        }
-      }
-
-      
-    
-    })
-    
-   .state('app.leaderboard', {    // lists usernames and points earned
+   .state('app.leaderboard', {    // Lists usernames and points earned for the player's hunt.
       url: '/leaderboard',
       
         views: {
@@ -156,7 +114,7 @@ function configureStates($stateProvider)
     
     })
     
-   .state('app.lifecode', {    // enter code from vendor to gain a new life
+   .state('app.lifecode', {    // Enter code from vendor to gain a new life
       url: '/lifecode',
       
         views: {
@@ -170,13 +128,55 @@ function configureStates($stateProvider)
     
     })
     
-   .state('app.redeem', {    // redeem discount code at vendor
+   .state('app.redeem', {    // Redeem discount code at vendor.  The vendor can see the coupon - and validate it with a mobile device - if they choose.
       url: '/redeem',
       
         views: {
         'menuContent': {
           templateUrl: 'templates/redeem.html',
           controller: 'RedeemController'
+        }
+      }
+
+      
+    
+    })
+    
+   .state('app.dashboard', {    // User home page - lists possible hunts?
+      url: '/dashboard',
+      
+        views: {
+        'menuContent': {
+          templateUrl: 'templates/dashboard.html',
+          controller: 'DashboardController'
+        }
+      }
+
+      
+    
+    })
+    
+   .state('app.settings', {    // User preferences and settings
+      url: '/settings',
+      
+        views: {
+        'menuContent': {
+          templateUrl: 'templates/settings.html',
+          controller: 'SettingsController'
+        }
+      }
+
+      
+    
+    })
+    
+   .state('app.logout', {    // Logout
+      url: '/logout',
+      
+        views: {
+        'menuContent': {
+          templateUrl: 'templates/logout.html',
+          controller: 'LogoutController'
         }
       }
 

@@ -15,6 +15,7 @@
     <State>app.login</State>
     <Description>Login for the first time, or log in as returning user</Description>
     <Url>/login</Url>
+    <StateType>GameState</StateType>
     <TemplateUrl>templates/login.html</TemplateUrl>
     <Controller>LoginController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
@@ -27,6 +28,7 @@
     <State>app.story</State>
     <Description>The narrative that sets up the treasure hunt</Description>
     <Url>/story</Url>
+    <StateType>GameState</StateType>
     <TemplateUrl>templates/story.html</TemplateUrl>
     <Controller>StoryController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
@@ -39,6 +41,7 @@
     <State>app.newuser</State>
     <Description>Choose a character to play through the hunt</Description>
     <Url>/newuser</Url>
+    <StateType>GameState</StateType>
     <TemplateUrl>templates/newuser.html</TemplateUrl>
     <Controller>NewUserController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
@@ -47,22 +50,11 @@
     <ShowStats>FALSE</ShowStats>
   </AppState>
   <AppState>
-    <Name>Dashboard</Name>
-    <State>app.dashboard</State>
-    <Description>User home page</Description>
-    <Url>/dashboard</Url>
-    <TemplateUrl>templates/dashboard.html</TemplateUrl>
-    <Controller>DashboardController</Controller>
-    <IsAuthenticated>TRUE</IsAuthenticated>
-    <IsAbstract>FALSE</IsAbstract>
-    <ShowMenuNav>FALSE</ShowMenuNav>
-    <ShowStats>TRUE</ShowStats>
-  </AppState>
-  <AppState>
     <Name>Puzzle</Name>
     <State>app.puzzle</State>
     <Description><![CDATA[Contains photo, hint, and "I found it!" button]]></Description>
     <Url>/puzzle</Url>
+    <StateType>GameState</StateType>
     <TemplateUrl>templates/puzzle.html</TemplateUrl>
     <Controller>PuzzleController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
@@ -75,6 +67,7 @@
     <State>app.treat</State>
     <Description>Upon completion of puzzle, user receives treat (increased discount) and earns points for leaderboard</Description>
     <Url>/treat</Url>
+    <StateType>GameState</StateType>
     <TemplateUrl>templates/treat.html</TemplateUrl>
     <Controller>TreatController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
@@ -87,6 +80,7 @@
     <State>app.gameover</State>
     <Description>Congratulations! You finished the hunt. You were the nth finisher.</Description>
     <Url>/gameover</Url>
+    <StateType>GameState</StateType>
     <TemplateUrl>templates/gameover.html</TemplateUrl>
     <Controller>GameOverController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
@@ -95,34 +89,11 @@
     <ShowStats>FALSE</ShowStats>
   </AppState>
   <AppState>
-    <Name>Settings</Name>
-    <State>app.settings</State>
-    <Description>user preferences</Description>
-    <Url>/settings</Url>
-    <TemplateUrl>templates/settings.html</TemplateUrl>
-    <Controller>SettingsController</Controller>
-    <IsAuthenticated>TRUE</IsAuthenticated>
-    <IsAbstract>FALSE</IsAbstract>
-    <ShowMenuNav>FALSE</ShowMenuNav>
-    <ShowStats>FALSE</ShowStats>
-  </AppState>
-  <AppState>
-    <Name>Logout</Name>
-    <State>app.logout</State>
-    <Description>logout</Description>
-    <Url>/logout</Url>
-    <TemplateUrl>templates/logout.html</TemplateUrl>
-    <Controller>LogoutController</Controller>
-    <IsAuthenticated>TRUE</IsAuthenticated>
-    <IsAbstract>FALSE</IsAbstract>
-    <ShowMenuNav>FALSE</ShowMenuNav>
-    <ShowStats>FALSE</ShowStats>
-  </AppState>
-  <AppState>
     <Name>Leaderboard</Name>
     <State>app.leaderboard</State>
-    <Description>lists usernames and points earned</Description>
+    <Description>Lists usernames and points earned for the player's hunt.</Description>
     <Url>/leaderboard</Url>
+    <StateType>GameState</StateType>
     <TemplateUrl>templates/leaderboard.html</TemplateUrl>
     <Controller>LeaderboardController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
@@ -133,8 +104,9 @@
   <AppState>
     <Name>Lifecode</Name>
     <State>app.lifecode</State>
-    <Description>enter code from vendor to gain a new life</Description>
+    <Description>Enter code from vendor to gain a new life</Description>
     <Url>/lifecode</Url>
+    <StateType>GameState</StateType>
     <TemplateUrl>templates/lifecode.html</TemplateUrl>
     <Controller>LifecodeController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
@@ -145,10 +117,50 @@
   <AppState>
     <Name>Redeem</Name>
     <State>app.redeem</State>
-    <Description>redeem discount code at vendor</Description>
+    <Description>Redeem discount code at vendor.  The vendor can see the coupon - and validate it with a mobile device - if they choose.</Description>
     <Url>/redeem</Url>
+    <StateType>GameState</StateType>
     <TemplateUrl>templates/redeem.html</TemplateUrl>
     <Controller>RedeemController</Controller>
+    <IsAuthenticated>TRUE</IsAuthenticated>
+    <IsAbstract>FALSE</IsAbstract>
+    <ShowMenuNav>FALSE</ShowMenuNav>
+    <ShowStats>FALSE</ShowStats>
+  </AppState>
+  <AppState>
+    <Name>Dashboard</Name>
+    <State>app.dashboard</State>
+    <Description>User home page - lists possible hunts?</Description>
+    <Url>/dashboard</Url>
+    <StateType>SystemState</StateType>
+    <TemplateUrl>templates/dashboard.html</TemplateUrl>
+    <Controller>DashboardController</Controller>
+    <IsAuthenticated>TRUE</IsAuthenticated>
+    <IsAbstract>FALSE</IsAbstract>
+    <ShowMenuNav>FALSE</ShowMenuNav>
+    <ShowStats>TRUE</ShowStats>
+  </AppState>
+  <AppState>
+    <Name>Settings</Name>
+    <State>app.settings</State>
+    <Description>User preferences and settings</Description>
+    <Url>/settings</Url>
+    <StateType>SystemState</StateType>
+    <TemplateUrl>templates/settings.html</TemplateUrl>
+    <Controller>SettingsController</Controller>
+    <IsAuthenticated>TRUE</IsAuthenticated>
+    <IsAbstract>FALSE</IsAbstract>
+    <ShowMenuNav>FALSE</ShowMenuNav>
+    <ShowStats>FALSE</ShowStats>
+  </AppState>
+  <AppState>
+    <Name>Logout</Name>
+    <State>app.logout</State>
+    <Description>Logout</Description>
+    <Url>/logout</Url>
+    <StateType>SystemState</StateType>
+    <TemplateUrl>templates/logout.html</TemplateUrl>
+    <Controller>LogoutController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
     <IsAbstract>FALSE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>
