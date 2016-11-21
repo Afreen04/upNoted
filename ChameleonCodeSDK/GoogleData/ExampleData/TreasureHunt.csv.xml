@@ -1,7 +1,7 @@
 <TreasureHunts>
   <TreasureHunt>
     <Name>Hunt1</Name>
-    <Description>SectorTest</Description>
+    <Description>This is the story for this hunt</Description>
     <Sponsor>Sector</Sponsor>
     <TotalDiscountAccumulated>100</TotalDiscountAccumulated>
     <IsTest>TRUE</IsTest>
@@ -19,7 +19,11 @@
   </TreasureHunt>
   <TreasureHunt>
     <Name>Hunt2</Name>
-    <Description>MVP</Description>
+    <Description><![CDATA[The last will and testament of Arthur A. Reality names you and four others as a potential heir, if you prove yourself worthy, to a fortune of $5,000. To prove yourself, you must travel to Madison, Wisconsin, by November 19 and compete in a contest. 
+
+The contest will test your wits, and your character, through a series of five puzzles. 
+
+The answers may be right under your nose. To stay in the game, you will need to support your favorite businesses with a purchase of $1 or more. With each separate purchase, you will earn a life. Those lives will come in handy as you play through the puzzles, so don’t let them fall below zero, or you’ll have to start over.]]></Description>
     <TotalDiscountAccumulated>20</TotalDiscountAccumulated>
     <IsTest>TRUE</IsTest>
     <State>WI</State>
