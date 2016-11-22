@@ -50,7 +50,7 @@ angular.module('starter.controllers', [])
   $scope.nextweek = mm+'/'+dd+'/'+yyyy;
 
 
-  $scope.sponsor = app_hunts.HuntData.TreaureHunt[app_hunts.current_hunt].Sponsor;
+  $scope.sponsor = app_hunts.HuntData.TreaureHunt[app_hunts.HuntData.current_hunt].Sponsor;
 
   JsBarcode("#barcode", "123456789012", {format: "upc", background: "none"});
 }])
@@ -60,7 +60,7 @@ angular.module('starter.controllers', [])
     $scope.settings = data.settings;
   });
 
-  $scope.sponsor = app_hunts.HuntData.TreaureHunt[app_hunts.current_hunt].Sponsor;
+  $scope.sponsor = app_hunts.HuntData.TreaureHunt[app_hunts.HuntData.current_hunt].Sponsor;
   $scope.minamt = "$1";
   $scope.code = "";
 
@@ -74,8 +74,47 @@ angular.module('starter.controllers', [])
   }
 }])
 
+.controller('LeaderboardController', ['$scope', '$state', 'User', function($scope, $state, User) {
+  User.then(function(data) {
+    $scope.settings = data.settings;
+  });
+
+  $scope.users = [
+    {
+      "name": "User 3",
+      "characterName": "Anna Rodriguez",
+      "image": "hunt_data/Hunt2/AvatarIcons/AnnaRodriguez.svg",
+      "points": 25
+    },
+    {
+      "name": "User 1",
+      "characterName": "Hal White",
+      "image": "hunt_data/Hunt2/AvatarIcons/HalWhite.svg",
+      "points": 20
+    },
+    {
+      "name": "User 5",
+      "characterName": "George Beaufort",
+      "image": "hunt_data/Hunt2/AvatarIcons/GeorgeBeaufort.svg",
+      "points": 15
+    },
+    {
+      "name": "User 4",
+      "characterName": "Diamond Jones",
+      "image": "hunt_data/Hunt2/AvatarIcons/DiamondJones.svg",
+      "points": 10
+    },
+    {
+      "name": "User 2",
+      "characterName": "Danny Chang",
+      "image": "hunt_data/Hunt2/AvatarIcons/DannyChang.svg",
+      "points": 5
+    }
+  ]
+}])
+
 .controller('StoryController', ['$scope', '$state', function($scope, $state) {
-  $scope.story = app_hunts.HuntData.TreaureHunt[app_hunts.current_hunt].Description;
+  $scope.story = app_hunts.HuntData.TreaureHunt[app_hunts.HuntData.current_hunt].Description;
 
   $scope.continue = function() {
     $state.go('app.newuser');
@@ -91,7 +130,7 @@ angular.module('starter.controllers', [])
     $scope.settings = data.settings;
   });
 
-  $scope.characters = app_hunts.HuntData.TreaureHunt[app_hunts.current_hunt].Characters;
+  $scope.characters = app_hunts.HuntData.TreaureHunt[app_hunts.HuntData.current_hunt].Characters;
 
   $scope.characterChanged = function(index) {
     $scope.currentIndex = index;
@@ -105,6 +144,7 @@ angular.module('starter.controllers', [])
       puzzleIndex: 0,
       lives: 3,
       discount: 0,
+      points: 0,
       email: $scope.auth.authData.email
     };
 
@@ -124,7 +164,7 @@ angular.module('starter.controllers', [])
         unbind();
       });
 
-      $scope.character = app_hunts.HuntData.TreaureHunt[app_hunts.current_hunt].Characters[data.settings.user.characterIndex];
+      $scope.character = app_hunts.HuntData.TreaureHunt[app_hunts.HuntData.current_hunt].Characters[data.settings.user.characterIndex];
     });
   });
 
@@ -142,9 +182,9 @@ angular.module('starter.controllers', [])
         unbind();
       });
 
-      $scope.huntName = app_hunts.HuntData.TreaureHunt[app_hunts.current_hunt].Name;
-      $scope.puzzle = app_hunts.HuntData.TreaureHunt[app_hunts.current_hunt].Puzzles[$scope.settings.user.puzzleIndex];
-      $scope.location = app_hunts.HuntData.TreaureHunt[app_hunts.current_hunt].Locations[$scope.settings.user.puzzleIndex];
+      $scope.huntName = app_hunts.HuntData.TreaureHunt[app_hunts.HuntData.current_hunt].Name;
+      $scope.puzzle = app_hunts.HuntData.TreaureHunt[app_hunts.HuntData.current_hunt].Puzzles[$scope.settings.user.puzzleIndex];
+      $scope.location = app_hunts.HuntData.TreaureHunt[app_hunts.HuntData.current_hunt].Locations[$scope.settings.user.puzzleIndex];
     });
   });
 
@@ -189,10 +229,12 @@ angular.module('starter.controllers', [])
             $scope.settings.user.discount += 5;
           }
 
+          $scope.settings.user.points += $scope.settings.user.puzzleIndex * 5;
+
           alert("You are correct!");
 
           // Update reference to the puzzle
-          $scope.puzzle = app_hunts.HuntData.TreaureHunt[app_hunts.current_hunt].Puzzles[$scope.settings.user.puzzleIndex];
+          $scope.puzzle = app_hunts.HuntData.TreaureHunt[app_hunts.HuntData.current_hunt].Puzzles[$scope.settings.user.puzzleIndex];
         } else {
           $scope.settings.user.lives -= 1;
           alert("You guessed wrongly.\nYou have lost 1 life");

@@ -108,6 +108,7 @@
               "State": "WI",
               "StartDate": "12/1/2016 12:00:00 AM",
               "Prize": "1",
+              "Sponsor": "Sector67",
               "Num_free_lives": "3",
               "PuzzlesGoogleKey": "1xLobCQiDkHCIBUPvZGPa-Gvkc77K-kYliGKnihNscwY",
               "PuzzlesGID": "0",

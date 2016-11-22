@@ -130,6 +130,16 @@ var ionicApp = angular.module('starter', ['ionic', 'starter.controllers', 'start
       },
     })
 
+    .state('app.leaderboard', {
+      url: '/leaderboard',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/leaderboard.html',
+          controller: 'LeaderboardController'
+        }
+      },
+    })
+
     ;
 
   // if none of the above states are matched, use this as the fallback

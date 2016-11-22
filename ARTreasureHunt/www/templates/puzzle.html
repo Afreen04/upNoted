@@ -4,14 +4,16 @@
   </ion-nav-buttons>
 
   <ion-nav-buttons side="right">
+    <span ng-show="settings.user.points > 0" class="icon-label">{{settings.user.points}}</span><i ng-show="settings.user.points > 0" class="icon ion-trophy energized top-icon"></i>
     <span ng-show="settings.user.discount > 0" class="icon-label">{{settings.user.discount}}%</span><i ng-show="settings.user.discount > 0" class="icon ion-cash balanced top-icon"></i>
     <span class="icon-label">{{settings.user.lives}}</span><i class="icon ion-heart assertive top-icon"></i>
   </ion-nav-buttons>
 
   <ion-content class="has-header">
-    <h1 class="center-text padding-top">Puzzle Number: {{puzzle.PuzzleId}}</h1>
+    <h3 class="center-text padding-top">Puzzle Number: {{puzzle.PuzzleId}}</h3>
+    <p>{{puzzle.Story}}</p>
     <img class="responsive-image" ng-src="{{puzzle.Photo}}" alt="puzzle image">
-    <h2 class="center-text padding-bottom">{{puzzle.Hint}}</h2>
+    <h4 class="center-text padding-bottom">{{puzzle.Hint}}</h4>
 
     <button class="button button-block button-balanced" ng-click="checkLoc()">I Found It!</button>
   </ion-content>

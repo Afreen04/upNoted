@@ -30,7 +30,7 @@
 /* Character box styling */
 .responsive-image {
   width: 100%;
-  max-width: 500px;
+  max-width: 350px;
   margin: auto;
   display: block;
 }
@@ -41,6 +41,10 @@
 
 .slider-pager {
   padding-top: 20px;
+}
+
+.bottom-border {
+  border-bottom: 2px solid #ccc;
 }
 
 /* Utility Classes */
