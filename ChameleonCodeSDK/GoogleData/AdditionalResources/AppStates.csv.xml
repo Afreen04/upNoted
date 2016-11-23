@@ -2,7 +2,9 @@
   <AppState>
     <Name>App</Name>
     <State>app</State>
+    <Description>Abstract App Root</Description>
     <Url>/app</Url>
+    <StateType>AbstractState</StateType>
     <TemplateUrl>templates/menu.html</TemplateUrl>
     <Controller>AppController</Controller>
     <IsAuthenticated>FALSE</IsAuthenticated>
@@ -15,6 +17,7 @@
     <State>app.login</State>
     <Description>Login for the first time, or log in as returning user</Description>
     <Url>/login</Url>
+    <StateType>GameState</StateType>
     <TemplateUrl>templates/login.html</TemplateUrl>
     <Controller>LoginController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
@@ -27,6 +30,7 @@
     <State>app.story</State>
     <Description>The narrative that sets up the treasure hunt</Description>
     <Url>/story</Url>
+    <StateType>GameState</StateType>
     <TemplateUrl>templates/story.html</TemplateUrl>
     <Controller>StoryController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
@@ -39,6 +43,7 @@
     <State>app.newuser</State>
     <Description>Choose a character to play through the hunt</Description>
     <Url>/newuser</Url>
+    <StateType>GameState</StateType>
     <TemplateUrl>templates/newuser.html</TemplateUrl>
     <Controller>NewUserController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
@@ -47,22 +52,11 @@
     <ShowStats>FALSE</ShowStats>
   </AppState>
   <AppState>
-    <Name>Dashboard</Name>
-    <State>app.dashboard</State>
-    <Description>User home page</Description>
-    <Url>/dashboard</Url>
-    <TemplateUrl>templates/dashboard.html</TemplateUrl>
-    <Controller>DashboardController</Controller>
-    <IsAuthenticated>TRUE</IsAuthenticated>
-    <IsAbstract>FALSE</IsAbstract>
-    <ShowMenuNav>FALSE</ShowMenuNav>
-    <ShowStats>TRUE</ShowStats>
-  </AppState>
-  <AppState>
     <Name>Puzzle</Name>
     <State>app.puzzle</State>
     <Description><![CDATA[Contains photo, hint, and "I found it!" button]]></Description>
     <Url>/puzzle</Url>
+    <StateType>GameState</StateType>
     <TemplateUrl>templates/puzzle.html</TemplateUrl>
     <Controller>PuzzleController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
@@ -75,6 +69,7 @@
     <State>app.treat</State>
     <Description>Upon completion of puzzle, user receives treat (increased discount) and earns points for leaderboard</Description>
     <Url>/treat</Url>
+    <StateType>GameState</StateType>
     <TemplateUrl>templates/treat.html</TemplateUrl>
     <Controller>TreatController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
@@ -87,6 +82,7 @@
     <State>app.gameover</State>
     <Description>Congratulations! You finished the hunt. You were the nth finisher.</Description>
     <Url>/gameover</Url>
+    <StateType>GameState</StateType>
     <TemplateUrl>templates/gameover.html</TemplateUrl>
     <Controller>GameOverController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
@@ -95,34 +91,11 @@
     <ShowStats>FALSE</ShowStats>
   </AppState>
   <AppState>
-    <Name>Settings</Name>
-    <State>app.settings</State>
-    <Description>user preferences</Description>
-    <Url>/settings</Url>
-    <TemplateUrl>templates/settings.html</TemplateUrl>
-    <Controller>SettingsController</Controller>
-    <IsAuthenticated>TRUE</IsAuthenticated>
-    <IsAbstract>FALSE</IsAbstract>
-    <ShowMenuNav>FALSE</ShowMenuNav>
-    <ShowStats>FALSE</ShowStats>
-  </AppState>
-  <AppState>
-    <Name>Logout</Name>
-    <State>app.logout</State>
-    <Description>logout</Description>
-    <Url>/logout</Url>
-    <TemplateUrl>templates/logout.html</TemplateUrl>
-    <Controller>LogoutController</Controller>
-    <IsAuthenticated>TRUE</IsAuthenticated>
-    <IsAbstract>FALSE</IsAbstract>
-    <ShowMenuNav>FALSE</ShowMenuNav>
-    <ShowStats>FALSE</ShowStats>
-  </AppState>
-  <AppState>
     <Name>Leaderboard</Name>
     <State>app.leaderboard</State>
-    <Description>lists usernames and points earned</Description>
+    <Description>Lists usernames and points earned for the player's hunt.</Description>
     <Url>/leaderboard</Url>
+    <StateType>GameState</StateType>
     <TemplateUrl>templates/leaderboard.html</TemplateUrl>
     <Controller>LeaderboardController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
@@ -133,8 +106,9 @@
   <AppState>
     <Name>Lifecode</Name>
     <State>app.lifecode</State>
-    <Description>enter code from vendor to gain a new life</Description>
+    <Description>Enter code from vendor to gain a new life</Description>
     <Url>/lifecode</Url>
+    <StateType>GameState</StateType>
     <TemplateUrl>templates/lifecode.html</TemplateUrl>
     <Controller>LifecodeController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
@@ -145,10 +119,206 @@
   <AppState>
     <Name>Redeem</Name>
     <State>app.redeem</State>
-    <Description>redeem discount code at vendor</Description>
+    <Description>Redeem discount code at vendor.  The vendor can see the coupon - and validate it with a mobile device - if they choose.</Description>
     <Url>/redeem</Url>
+    <StateType>GameState</StateType>
     <TemplateUrl>templates/redeem.html</TemplateUrl>
     <Controller>RedeemController</Controller>
+    <IsAuthenticated>TRUE</IsAuthenticated>
+    <IsAbstract>FALSE</IsAbstract>
+    <ShowMenuNav>FALSE</ShowMenuNav>
+    <ShowStats>FALSE</ShowStats>
+  </AppState>
+  <AppState>
+    <Name>Dashboard</Name>
+    <State>app.dashboard</State>
+    <Description>User home page - lists possible hunts?</Description>
+    <Url>/dashboard</Url>
+    <StateType>SystemState</StateType>
+    <TemplateUrl>templates/dashboard.html</TemplateUrl>
+    <Controller>DashboardController</Controller>
+    <IsAuthenticated>TRUE</IsAuthenticated>
+    <IsAbstract>FALSE</IsAbstract>
+    <ShowMenuNav>FALSE</ShowMenuNav>
+    <ShowStats>TRUE</ShowStats>
+  </AppState>
+  <AppState>
+    <Name>Settings</Name>
+    <State>app.settings</State>
+    <Description>User preferences and settings</Description>
+    <Url>/settings</Url>
+    <StateType>SystemState</StateType>
+    <TemplateUrl>templates/settings.html</TemplateUrl>
+    <Controller>SettingsController</Controller>
+    <IsAuthenticated>TRUE</IsAuthenticated>
+    <IsAbstract>FALSE</IsAbstract>
+    <ShowMenuNav>FALSE</ShowMenuNav>
+    <ShowStats>FALSE</ShowStats>
+  </AppState>
+  <AppState>
+    <Name>Logout</Name>
+    <State>app.logout</State>
+    <Description>Logout</Description>
+    <Url>/logout</Url>
+    <StateType>SystemState</StateType>
+    <TemplateUrl>templates/logout.html</TemplateUrl>
+    <Controller>LogoutController</Controller>
+    <IsAuthenticated>TRUE</IsAuthenticated>
+    <IsAbstract>FALSE</IsAbstract>
+    <ShowMenuNav>FALSE</ShowMenuNav>
+    <ShowStats>FALSE</ShowStats>
+  </AppState>
+  <AppState>
+    <Name>Admin</Name>
+    <State>app.admin</State>
+    <Description>Abstract Admin Root</Description>
+    <Url>/admin</Url>
+    <StateType>AbstractState</StateType>
+    <TemplateUrl>templates/admin-menu.html</TemplateUrl>
+    <Controller>AdminController</Controller>
+    <IsAuthenticated>FALSE</IsAuthenticated>
+    <IsAbstract>TRUE</IsAbstract>
+    <ShowMenuNav>FALSE</ShowMenuNav>
+    <ShowStats>FALSE</ShowStats>
+  </AppState>
+  <AppState>
+    <Name>Cities</Name>
+    <State>app.admin.cities</State>
+    <Description>A list of cities where hunts are</Description>
+    <Url>/cities</Url>
+    <StateType>AdminState</StateType>
+    <TemplateUrl>templates/cities.html</TemplateUrl>
+    <Controller>CitiesController</Controller>
+    <IsAuthenticated>TRUE</IsAuthenticated>
+    <IsAbstract>FALSE</IsAbstract>
+    <ShowMenuNav>FALSE</ShowMenuNav>
+    <ShowStats>FALSE</ShowStats>
+  </AppState>
+  <AppState>
+    <Name>City</Name>
+    <State>app.admin.cities.city</State>
+    <Description>A city in which a hunt may (or may not) take place.</Description>
+    <Url>/:city</Url>
+    <StateType>AdminState</StateType>
+    <TemplateUrl>templates/city.html</TemplateUrl>
+    <Controller>CityController</Controller>
+    <IsAuthenticated>TRUE</IsAuthenticated>
+    <IsAbstract>FALSE</IsAbstract>
+    <ShowMenuNav>FALSE</ShowMenuNav>
+    <ShowStats>FALSE</ShowStats>
+  </AppState>
+  <AppState>
+    <Name>Characters</Name>
+    <State>app.admin.characters</State>
+    <Description>A list of charcter templates used</Description>
+    <Url>/characters</Url>
+    <StateType>AdminState</StateType>
+    <TemplateUrl>templates/chracters.html</TemplateUrl>
+    <Controller>CharactersController</Controller>
+    <IsAuthenticated>TRUE</IsAuthenticated>
+    <IsAbstract>FALSE</IsAbstract>
+    <ShowMenuNav>FALSE</ShowMenuNav>
+    <ShowStats>FALSE</ShowStats>
+  </AppState>
+  <AppState>
+    <Name>Character</Name>
+    <State>app.admin.characters.character</State>
+    <Description>A character available in a hunt</Description>
+    <Url>/:character</Url>
+    <StateType>AdminState</StateType>
+    <TemplateUrl>templates/chracter.html</TemplateUrl>
+    <Controller>CharacterController</Controller>
+    <IsAuthenticated>TRUE</IsAuthenticated>
+    <IsAbstract>FALSE</IsAbstract>
+    <ShowMenuNav>FALSE</ShowMenuNav>
+    <ShowStats>FALSE</ShowStats>
+  </AppState>
+  <AppState>
+    <Name>Locations</Name>
+    <State>app.admin.locations</State>
+    <Description>A list of locations a hunt might happen in</Description>
+    <Url>/locations</Url>
+    <StateType>AdminState</StateType>
+    <TemplateUrl>templates/locations.html</TemplateUrl>
+    <Controller>LocationsController</Controller>
+    <IsAuthenticated>TRUE</IsAuthenticated>
+    <IsAbstract>FALSE</IsAbstract>
+    <ShowMenuNav>FALSE</ShowMenuNav>
+    <ShowStats>FALSE</ShowStats>
+  </AppState>
+  <AppState>
+    <Name>Location</Name>
+    <State>app.admin.locations.location</State>
+    <Description>A location within a city.</Description>
+    <Url>/:location</Url>
+    <StateType>AdminState</StateType>
+    <TemplateUrl>templates/location.html</TemplateUrl>
+    <Controller>LocationController</Controller>
+    <IsAuthenticated>TRUE</IsAuthenticated>
+    <IsAbstract>FALSE</IsAbstract>
+    <ShowMenuNav>FALSE</ShowMenuNav>
+    <ShowStats>FALSE</ShowStats>
+  </AppState>
+  <AppState>
+    <Name>Hunts</Name>
+    <State>app.admin.hunts</State>
+    <Description>A list of hunts, taking place in some city</Description>
+    <Url>/hunts</Url>
+    <StateType>AdminState</StateType>
+    <TemplateUrl>templates/hunts.html</TemplateUrl>
+    <Controller>HuntsController</Controller>
+    <IsAuthenticated>TRUE</IsAuthenticated>
+    <IsAbstract>FALSE</IsAbstract>
+    <ShowMenuNav>FALSE</ShowMenuNav>
+    <ShowStats>FALSE</ShowStats>
+  </AppState>
+  <AppState>
+    <Name>Hunt</Name>
+    <State>app.admin.hunts.hunt</State>
+    <Description>A hunt taking place in a city</Description>
+    <Url>/:hunt</Url>
+    <StateType>AdminState</StateType>
+    <TemplateUrl>templates/hunt.html</TemplateUrl>
+    <Controller>HuntController</Controller>
+    <IsAuthenticated>TRUE</IsAuthenticated>
+    <IsAbstract>FALSE</IsAbstract>
+    <ShowMenuNav>FALSE</ShowMenuNav>
+    <ShowStats>FALSE</ShowStats>
+  </AppState>
+  <AppState>
+    <Name>HuntPlanner</Name>
+    <State>app.admin.hunts.hunt.huntplanner</State>
+    <Description>A hunt planner which allows one to easily add/edit puzzles for a hunt</Description>
+    <Url>/huntplanner</Url>
+    <StateType>AdminState</StateType>
+    <TemplateUrl>templates/huntplanner.html</TemplateUrl>
+    <Controller>HuntPlannerController</Controller>
+    <IsAuthenticated>TRUE</IsAuthenticated>
+    <IsAbstract>FALSE</IsAbstract>
+    <ShowMenuNav>FALSE</ShowMenuNav>
+    <ShowStats>FALSE</ShowStats>
+  </AppState>
+  <AppState>
+    <Name>Users</Name>
+    <State>app.admin.users</State>
+    <Description>A list of users planing the game (and all their associated meta data)</Description>
+    <Url>/users</Url>
+    <StateType>AdminState</StateType>
+    <TemplateUrl>templates/users.html</TemplateUrl>
+    <Controller>UsersController</Controller>
+    <IsAuthenticated>TRUE</IsAuthenticated>
+    <IsAbstract>FALSE</IsAbstract>
+    <ShowMenuNav>FALSE</ShowMenuNav>
+    <ShowStats>FALSE</ShowStats>
+  </AppState>
+  <AppState>
+    <Name>User</Name>
+    <State>app.admin.users.user</State>
+    <Description>A hunt taking place in a city</Description>
+    <Url>/:user</Url>
+    <StateType>AdminState</StateType>
+    <TemplateUrl>templates/user.html</TemplateUrl>
+    <Controller>UserController</Controller>
     <IsAuthenticated>TRUE</IsAuthenticated>
     <IsAbstract>FALSE</IsAbstract>
     <ShowMenuNav>FALSE</ShowMenuNav>

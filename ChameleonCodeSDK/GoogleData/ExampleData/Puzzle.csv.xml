@@ -1,7 +1,7 @@
 <Puzzles>
   <Puzzle>
     <HuntId>1</HuntId>
-    <PuzzleId>1</PuzzleId>
+    <Id>1</Id>
     <LocationName>Front Room</LocationName>
     <Hint>Pizza was served here</Hint>
     <Photo>hunt_data/Hunt1/PuzzleImages/TestPuzzle1.jpg</Photo>
@@ -12,7 +12,7 @@
   </Puzzle>
   <Puzzle>
     <HuntId>1</HuntId>
-    <PuzzleId>2</PuzzleId>
+    <Id>2</Id>
     <LocationName>3D Printer Room</LocationName>
     <Hint>You can print a prosthetic here</Hint>
     <Photo>hunt_data/Hunt1/PuzzleImages/TestPuzzle2.jpg</Photo>
@@ -23,7 +23,7 @@
   </Puzzle>
   <Puzzle>
     <HuntId>1</HuntId>
-    <PuzzleId>3</PuzzleId>
+    <Id>3</Id>
     <LocationName>Computer Lab</LocationName>
     <Hint>Dell sponsored this room</Hint>
     <Photo>hunt_data/Hunt1/PuzzleImages/TestPuzzle3.jpg</Photo>
