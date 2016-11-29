@@ -1,26 +1,27 @@
-Name,State,Description,Url,StateType,TemplateUrl,Controller,IsAuthenticated,IsAbstract,ShowMenuNav,ShowStats
-App,app,Abstract App Root,/app,AbstractState,templates/menu.html,AppController,FALSE,TRUE,FALSE,FALSE
-Login,app.login,"Login for the first time, or log in as returning user",/login,GameState,templates/login.html,LoginController,TRUE,FALSE,FALSE,FALSE
-Story,app.story,The narrative that sets up the treasure hunt,/story,GameState,templates/story.html,StoryController,TRUE,FALSE,FALSE,FALSE
-Newuser,app.newuser,Choose a character to play through the hunt,/newuser,GameState,templates/newuser.html,NewUserController,TRUE,FALSE,FALSE,FALSE
-Puzzle,app.puzzle,"Contains photo, hint, and ""I found it!"" button",/puzzle,GameState,templates/puzzle.html,PuzzleController,TRUE,FALSE,FALSE,TRUE
-Treat,app.treat,"Upon completion of puzzle, user receives treat (increased discount) and earns points for leaderboard",/treat,GameState,templates/treat.html,TreatController,TRUE,FALSE,FALSE,TRUE
-Gameover,app.gameover,Congratulations! You finished the hunt. You were the nth finisher. ,/gameover,GameState,templates/gameover.html,GameOverController,TRUE,FALSE,FALSE,FALSE
-Leaderboard,app.leaderboard,Lists usernames and points earned for the player's hunt.,/leaderboard,GameState,templates/leaderboard.html,LeaderboardController,TRUE,FALSE,FALSE,FALSE
-Lifecode,app.lifecode,Enter code from vendor to gain a new life,/lifecode,GameState,templates/lifecode.html,LifecodeController,TRUE,FALSE,FALSE,TRUE
-Redeem,app.redeem,Redeem discount code at vendor.  The vendor can see the coupon - and validate it with a mobile device - if they choose.,/redeem,GameState,templates/redeem.html,RedeemController,TRUE,FALSE,FALSE,FALSE
-Dashboard,app.dashboard,User home page - lists possible hunts?,/dashboard,SystemState,templates/dashboard.html,DashboardController,TRUE,FALSE,FALSE,TRUE
-Settings,app.settings,User preferences and settings,/settings,SystemState,templates/settings.html,SettingsController,TRUE,FALSE,FALSE,FALSE
-Logout,app.logout,Logout,/logout,SystemState,templates/logout.html,LogoutController,TRUE,FALSE,FALSE,FALSE
-Admin,app.admin,Abstract Admin Root,/admin,AbstractState,templates/admin-menu.html,AdminController,FALSE,TRUE,FALSE,FALSE
-Cities,app.admin.cities,A list of cities where hunts are ,/cities,AdminState,templates/cities.html,CitiesController,TRUE,FALSE,FALSE,FALSE
-City,app.admin.cities.city,A city in which a hunt may (or may not) take place.,/:city,AdminState,templates/city.html,CityController,TRUE,FALSE,FALSE,FALSE
-Characters,app.admin.characters,A list of charcter templates used,/characters,AdminState,templates/chracters.html,CharactersController,TRUE,FALSE,FALSE,FALSE
-Character,app.admin.characters.character,A character available in a hunt,/:character,AdminState,templates/chracter.html,CharacterController,TRUE,FALSE,FALSE,FALSE
-Locations,app.admin.locations,A list of locations a hunt might happen in,/locations,AdminState,templates/locations.html,LocationsController,TRUE,FALSE,FALSE,FALSE
-Location,app.admin.locations.location,A location within a city.,/:location,AdminState,templates/location.html,LocationController,TRUE,FALSE,FALSE,FALSE
-Hunts,app.admin.hunts,"A list of hunts, taking place in some city",/hunts,AdminState,templates/hunts.html,HuntsController,TRUE,FALSE,FALSE,FALSE
-Hunt,app.admin.hunts.hunt,A hunt taking place in a city,/:hunt,AdminState,templates/hunt.html,HuntController,TRUE,FALSE,FALSE,FALSE
-HuntPlanner,app.admin.hunts.hunt.huntplanner,A hunt planner which allows one to easily add/edit puzzles for a hunt,/huntplanner,AdminState,templates/huntplanner.html,HuntPlannerController,TRUE,FALSE,FALSE,FALSE
-Users,app.admin.users,A list of users planing the game (and all their associated meta data),/users,AdminState,templates/users.html,UsersController,TRUE,FALSE,FALSE,FALSE
-User,app.admin.users.user,A hunt taking place in a city,/:user,AdminState,templates/user.html,UserController,TRUE,FALSE,FALSE,FALSE
+Name,AppState,IonIcon,IsMenuItem,IsPublic,DisplayName,Description,Url,StateType,TemplateUrl,Controller,IsAuthenticated,IsAbstract,ShowMenuNav,ShowStats,IsAdminFunction
+App,app,,,,,Abstract App Root,/app,AbstractState,templates/menu.html,AppController,FALSE,TRUE,FALSE,FALSE,FALSE
+Home,app.home,ion-home,TRUE,FALSE,Dashboard,User home page - lists possible hunts?,/home,SystemState,templates/dashboard.html,DashboardController,TRUE,FALSE,TRUE,TRUE,FALSE
+Login,app.login,ion-login,TRUE,TRUE,Login,"Login for the first time, or log in as returning user",/login,GameState,templates/login.html,LoginController,TRUE,FALSE,FALSE,FALSE,FALSE
+Story,app.story,ion-document-text,TRUE,FALSE,Story,The narrative that sets up the treasure hunt,/story,GameState,templates/story.html,StoryController,TRUE,FALSE,TRUE,FALSE,FALSE
+Newuser,app.newuser,ion-user,FALSE,FALSE,Newuser,Choose a character to play through the hunt,/newuser,GameState,templates/newuser.html,NewUserController,TRUE,FALSE,FALSE,FALSE,FALSE
+Puzzle,app.puzzle,ion-compass,TRUE,FALSE,Puzzle,"Contains photo, hint, and ""I found it!"" button",/puzzle,GameState,templates/puzzle.html,PuzzleController,TRUE,FALSE,FALSE,TRUE,FALSE
+Treat,app.treat,ion-cash,FALSE,FALSE,Treat,"Upon completion of puzzle, user receives treat (increased discount) and earns points for leaderboard",/treat,GameState,templates/treat.html,TreatController,TRUE,FALSE,FALSE,TRUE,FALSE
+Gameover,app.gameover,ion-close,FALSE,FALSE,Gameover,Congratulations! You finished the hunt. You were the nth finisher. ,/gameover,GameState,templates/gameover.html,GameOverController,TRUE,FALSE,FALSE,FALSE,FALSE
+Leaderboard,app.leaderboard,ion-android-list,TRUE,FALSE,Leaderboard,Lists usernames and points earned for the player's hunt.,/leaderboard,GameState,templates/leaderboard.html,LeaderboardController,TRUE,FALSE,TRUE,FALSE,FALSE
+Lifecode,app.lifecode,ion-ios-barcode,TRUE,FALSE,Lifecode,Enter code from vendor to gain a new life,/lifecode,GameState,templates/lifecode.html,LifecodeController,TRUE,FALSE,TRUE,TRUE,FALSE
+Redeem,app.redeem,ion-flag,TRUE,FALSE,Redeem,Redeem discount code at vendor.  The vendor can see the coupon - and validate it with a mobile device - if they choose.,/redeem,GameState,templates/redeem.html,RedeemController,TRUE,FALSE,TRUE,FALSE,FALSE
+Settings,app.settings,ion-settings,TRUE,FALSE,Settings,User preferences and settings,/settings,SystemState,templates/settings.html,SettingsController,TRUE,FALSE,TRUE,FALSE,FALSE
+Logout,app.logout,ion-logout,TRUE,FALSE,Logout,Logout,/logout,SystemState,templates/logout.html,LogoutController,TRUE,FALSE,TRUE,FALSE,FALSE
+Admin,app.admin,,,FALSE,Admin,Abstract Admin Root,/admin,AbstractState,templates/admin-menu.html,AdminController,FALSE,TRUE,FALSE,FALSE,TRUE
+AdminHome,app.admin.home,ion-home,TRUE,FALSE,Admin Home,Administrative home page,/home,AdminState,,,,,,,
+Users,app.admin.users,ion-users,TRUE,FALSE,Users,A list of users planing the game (and all their associated meta data),/users,AdminState,templates/users.html,UsersController,TRUE,FALSE,TRUE,FALSE,TRUE
+User,app.admin.users.user,,FALSE,FALSE,User,A hunt taking place in a city,/:user,AdminState,templates/user.html,UserController,TRUE,FALSE,FALSE,FALSE,TRUE
+Hunts,app.admin.hunts,ion-compass,TRUE,FALSE,Hunts,"A list of hunts, taking place in some city",/hunts,AdminState,templates/hunts.html,HuntsController,TRUE,FALSE,TRUE,FALSE,TRUE
+Hunt,app.admin.hunts.hunt,,FALSE,FALSE,Hunt,A hunt taking place in a city,/:hunt,AdminState,templates/hunt.html,HuntController,TRUE,FALSE,FALSE,FALSE,TRUE
+HuntPlanner,app.admin.hunts.hunt.huntplanner,ion-android-compass,TRUE,FALSE,HuntPlanner,A hunt planner which allows one to easily add/edit puzzles for a hunt,/huntplanner,AdminState,templates/huntplanner.html,HuntPlannerController,TRUE,FALSE,FALSE,FALSE,TRUE
+Cities,app.admin.cities,ion-map,TRUE,FALSE,Cities,A list of cities where hunts are ,/cities,AdminState,templates/cities.html,CitiesController,TRUE,FALSE,TRUE,FALSE,TRUE
+City,app.admin.cities.city,,FALSE,FALSE,City,A city in which a hunt may (or may not) take place.,/:city,AdminState,templates/city.html,CityController,TRUE,FALSE,FALSE,FALSE,TRUE
+Characters,app.admin.characters,ion-ios-body,TRUE,FALSE,Characters,A list of charcter templates used,/characters,AdminState,templates/chracters.html,CharactersController,TRUE,FALSE,TRUE,FALSE,TRUE
+Character,app.admin.characters.character,,FALSE,FALSE,Character,A character available in a hunt,/:character,AdminState,templates/chracter.html,CharacterController,TRUE,FALSE,FALSE,FALSE,TRUE
+Locations,app.admin.locations,ion-location,TRUE,FALSE,Locations,A list of locations a hunt might happen in,/locations,AdminState,templates/locations.html,LocationsController,TRUE,FALSE,TRUE,FALSE,TRUE
+Location,app.admin.locations.location,,FALSE,FALSE,Location,A location within a city.,/:location,AdminState,templates/location.html,LocationController,TRUE,FALSE,FALSE,FALSE,TRUE

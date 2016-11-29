@@ -62,7 +62,7 @@
         "Puzzles": [
           {
             "HuntId": "1",
-            "PuzzleId": "1",
+            "Id": "1",
             "LocationName": "Front Room",
             "Hint": "Pizza was served here",
             "Photo": "hunt_data/Hunt1/PuzzleImages/TestPuzzle1.jpg",
@@ -73,7 +73,7 @@
           },
           {
             "HuntId": "1",
-            "PuzzleId": "2",
+            "Id": "2",
             "LocationName": "3D Printer Room",
             "Hint": "You can print a prosthetic here",
             "Photo": "hunt_data/Hunt1/PuzzleImages/TestPuzzle2.jpg",
@@ -84,7 +84,7 @@
           },
           {
             "HuntId": "1",
-            "PuzzleId": "3",
+            "Id": "3",
             "LocationName": "Computer Lab",
             "Hint": "Dell sponsored this room",
             "Photo": "hunt_data/Hunt1/PuzzleImages/TestPuzzle3.jpg",

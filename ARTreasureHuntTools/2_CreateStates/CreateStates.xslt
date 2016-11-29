@@ -28,8 +28,8 @@
 function configureStates($stateProvider) 
 {
    $stateProvider
-<xsl:for-each select="$app-states//AppState">
-   .state('<xsl:value-of select="State" />', {    // <xsl:value-of select="Description" />
+<xsl:for-each select="$app-states//AppStates/AppState">
+   .state('<xsl:value-of select="AppState" />', {    // <xsl:value-of select="Description" />
       url: '<xsl:value-of select="Url" />',
       <xsl:choose>
       <xsl:when test="normalize-space(IsAbstract) = 'TRUE'">
@@ -57,7 +57,7 @@ function configureStates($stateProvider)
 }
             </xsl:element>
         </FileSetFile>
-          <xsl:for-each select="$app-states//AppState">
+          <xsl:for-each select="$app-states//AppStates/AppState[StateType = 'GameState' or StateType = 'SystemState']">
               <FileSetFile>
                   <RelativePath>
                       <xsl:value-of select="$sdk-root"  /><xsl:text>../ARTreasureHunt/www/</xsl:text><xsl:value-of select="TemplateUrl" />
