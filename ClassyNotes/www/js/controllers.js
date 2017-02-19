@@ -3,7 +3,7 @@ angular.module('starter.controllers', [])
 .controller('AppController', function($scope) {
 })
 
-.controller('MenuController', ['$scope', '$state','$ionicModal', 'User', function($scope, $state, $ionicModal, User) {
+.controller('MenuController', ['$scope', '$state', 'User', function($scope, $state, User) {
   User.then(function(data) {
     $scope.auth = data.auth;
     $scope.settings = data.settings;
@@ -22,27 +22,6 @@ angular.module('starter.controllers', [])
       });
     }
   }
-
-
-
-$ionicModal.fromTemplateUrl('templates/custom-gif.html', {
-    scope: $scope,
-    animation: 'slide-in-up'
-  }).then(function(modal) {
-    $scope.modal = modal;
-  });
-  $scope.openModal = function() {
-    $scope.modal.show();
-  };
-  // Reset modal on hide
-  $scope.$on('modal.hidden', function() {
-    $scope.customGif = { imgUrl: '', tags: [], failed: false };
-  });
-  // Cleanup the modal when we're done with it!
-  $scope.$on('$destroy', function() {
-    $scope.modal.remove();
-  });
-
 
 
 }])
@@ -83,12 +62,18 @@ $ionicModal.fromTemplateUrl('templates/custom-gif.html', {
       var downloadURL = uploadTask.snapshot.downloadURL;
       // Remove token from the url
       downloadURL = downloadURL.substring(0, downloadURL.indexOf('&token'));
-
+      console.log();
       // TODO: Save url without auth, maybe it expires?
+
+      var avatarURLs = ['http://i.imgur.com/PyPhSCs.png','http://i.imgur.com/lPDwzaX.png','http://i.imgur.com/muJxeDj.png','http://i.imgur.com/M6dH3fT.png','http://i.imgur.com/HUpFsdW.png'];
+      var itemAvatarURL = avatarURLs[Math.floor(Math.random()*avatarURLs.length)];
+
+
       var notes = {
         url: downloadURL,
         filename: name, 
-        votes : 0
+        votes : 0,
+        avatarURL: itemAvatarURL
       }
 
       $scope.files = [];
@@ -169,11 +154,64 @@ $ionicModal.fromTemplateUrl('templates/custom-gif.html', {
 }])
 
 
+
+
+
+
+
+.controller('openNoteController', ['$scope', '$state', 'User', function($scope, $state, User) {
+  User.then(function(data) {
+    $scope.settings = data.settings;
+  });
+
+  $scope.users = [
+    {
+      "name": "User 3",
+      "characterName": "Anna Rodriguez",
+      "image": "hunt_data/Hunt2/AvatarIcons/AnnaRodriguez.svg",
+      "points": 25
+    },
+    {
+      "name": "User 1",
+      "characterName": "Hal White",
+      "image": "hunt_data/Hunt2/AvatarIcons/HalWhite.svg",
+      "points": 20
+    },
+    {
+      "name": "User 5",
+      "characterName": "George Beaufort",
+      "image": "hunt_data/Hunt2/AvatarIcons/GeorgeBeaufort.svg",
+      "points": 15
+    },
+    {
+      "name": "User 4",
+      "characterName": "Diamond Jones",
+      "image": "hunt_data/Hunt2/AvatarIcons/DiamondJones.svg",
+      "points": 10
+    },
+    {
+      "name": "User 2",
+      "characterName": "Danny Chang",
+      "image": "hunt_data/Hunt2/AvatarIcons/DannyChang.svg",
+      "points": 5
+    }
+  ]
+}])
+
+
+
+
+
+
+
+
 .controller('documentsController', ['$scope', '$state','$ionicModal', 'User', function($scope, $state,$ionicModal, User) {
   User.then(function(data) {
     $scope.settings = data.settings;
     $scope.classes = data.classes.class123.notes;
     $scope.classes2 = data.classes;
+    //$scope.preview = previewData;
+    $scope.customimg = { imgUrl: $scope.classes2.class123.notes[0].url, tags: [], failed: false };
   });
 
   //var refTemp = $scope.classes.class123;
@@ -185,15 +223,16 @@ $ionicModal.fromTemplateUrl('templates/custom-gif.html', {
       $scope.upvote = function(tempFileName)
       {
         console.log("Awesome voting to happen here" + tempFileName);
-        for (var i=1;i<$scope.classes2.class123.notes.length-1;i++)
+        for (var i=0;i<$scope.classes2.class123.notes.length;i++)
         {
-          console.log("This iterator is working" + tempFileName);
+          console.log("This iterator is working " + tempFileName + " This filename is " + $scope.classes2.class123.notes[i].filename);
+           
           
           if(tempFileName == $scope.classes2.class123.notes[i].filename)
           {
+            console.log("Coming inside to vote");
             $scope.classes[i].votes++;
             $scope.classes2.class123.notes[i].votes++;
-
           }
           $scope.classes2.$save();
 
@@ -207,22 +246,20 @@ $ionicModal.fromTemplateUrl('templates/custom-gif.html', {
     animation: 'slide-in-up'
   }).then(function(modal) {
     $scope.modal = modal;
+    //$scope.classes2 = data.classes;
+    
   });
   $scope.openModal = function() {
     $scope.modal.show();
   };
   // Reset modal on hide
   $scope.$on('modal.hidden', function() {
-    $scope.customGif = { imgUrl: '', tags: [], failed: false };
+    $scope.customimg = { imgUrl: $scope.classes2.class123.notes[0].url, tags: [], failed: false };
   });
   // Cleanup the modal when we're done with it!
   $scope.$on('$destroy', function() {
     $scope.modal.remove();
   });
-
-
-
-
 
 
   $scope.users = [
@@ -296,7 +333,7 @@ $ionicModal.fromTemplateUrl('templates/custom-gif.html', {
     };
 
     $scope.settings.$save();
-    $state.go('app.dashboard');
+    $state.go('app.openNote');
   }
 
   $scope.select = function(index) {

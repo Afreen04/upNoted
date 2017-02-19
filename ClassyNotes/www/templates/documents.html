@@ -1,29 +1,40 @@
 
 
-<ion-view title="Leaderboards">
+<ion-view title="Notes">
 
   <ion-nav-buttons side="left">
     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
 
   <ion-nav-buttons side="right">
-    <span ng-show="settings.user.points > 0" class="icon-label">{{settings.user.points}}</span><i ng-show="settings.user.points > 0" class="icon ion-trophy energized top-icon"></i>
+    <!--<span ng-show="settings.user.points > 0" class="icon-label">{{settings.user.points}}</span><i ng-show="settings.user.points > 0" class="icon ion-trophy energized top-icon"></i>
     <span ng-show="settings.user.discount > 0" class="icon-label">{{settings.user.discount}}%</span><i ng-show="settings.user.discount > 0" class="icon ion-cash balanced top-icon"></i>
     <span class="icon-label">{{settings.user.lives}}</span><i class="icon ion-heart assertive top-icon"></i>
+  -->
   </ion-nav-buttons>
 
   <ion-content class="has-header">
   
     <div ng-repeat="innerClassObj in classes | orderBy : '-votes' ">
-      <div class="row bottom-border">
+      <div class="row ">
         <div class="col col-33">
-          <img class="responsive-image" ng-click= "openModal()" ng-src="{{ innerClassObj.url }}" alt="note image">
+        <a href = "#/app/openNote">
+          <img class="responsive-image" ng-src="{{ innerClassObj.url }}" alt="note image">
+        </a>
         </div>
-          <div class="col">
-          <h4>Upvotes: {{ innerClassObj.votes }}</h4>
+          <div class="col"> 
+          <pre>
+
+          <div class = "row"><h2>Posted by </h2><img src="{{ innerClassObj.avatarURL }}" alt=" userN" class="img-thumbnail" width="40" height= "40"></div> 
+          </pre>
+          <div class="row">        
+          
           <button class="btn btn-default" ng-click="upvote(innerClassObj.filename )">
-            <img src="http://i.imgur.com/KO4PDWO.png" width="20" /> 
+            <img src="http://i.imgur.com/KO4PDWO.png" width="40" /> 
           </button>
+          <h2> {{ innerClassObj.votes }} </h2>
+          </div>
+          
           </div>
         <!--
         <div class="col">

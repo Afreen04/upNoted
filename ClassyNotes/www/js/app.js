@@ -111,6 +111,16 @@ var ionicApp = angular.module('starter', ['ionic', 'starter.controllers', 'start
       },
     })
 
+    .state('app.openNote', {
+      url: '/openNote',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/openNote.html',
+          controller: 'openNoteController'
+        }
+      },
+    })
+
     .state('app.upload', {
       url: '/upload',
       views: {
