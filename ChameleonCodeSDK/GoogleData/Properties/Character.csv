@@ -1,4 +1,0 @@
-Name,Description,SampleValue,IsOptional,DataType
-Name,A name for the character,Joe Coffee,FALSE,string
-Vice,A description of the vice for this character,Cofffee,FALSE,string
-Description,A description of the charcers,A high strung melenial,FALSE,string

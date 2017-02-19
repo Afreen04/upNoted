@@ -1,4 +1,0 @@
-HuntId,Id,LocationName,Hint,Photo,PhotoName,Question,Answer,Token
-1,1,Front Room,Pizza was served here,hunt_data/Hunt1/PuzzleImages/TestPuzzle1.jpg,TestPuzzle1.jpg,What color are the walls?,White,FrontRoom
-1,2,3D Printer Room,You can print a prosthetic here,hunt_data/Hunt1/PuzzleImages/TestPuzzle2.jpg,TestPuzzle2.jpg,Who's the best super here?,Iron Man,ThreeDPrinterRoom
-1,3,Computer Lab,Dell sponsored this room,hunt_data/Hunt1/PuzzleImages/TestPuzzle3.jpg,TestPuzzle3.jpg,What are the shelves made of?,Wood,ComputerLab

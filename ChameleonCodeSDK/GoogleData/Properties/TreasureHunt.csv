@@ -1,7 +1,0 @@
-Name,SampleValue,Description,IsOptional,DataType
-Name,MVP Test Hunt,A name for the hunt,FALSE,string
-City,Madison,A city that the hunt takes place in.,FALSE,string
-State,WI,A state where the hunt takes place,FALSE,string
-StartDate,11/19/2016,Date that the hunt starts,FALSE,datetime
-Prize,"$1,000",A description for the prize,FALSE,string
-Num_free_lives,3,Number of lives until you buy more,FALSE,integer
