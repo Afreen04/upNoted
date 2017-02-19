@@ -164,10 +164,19 @@ angular.module('starter.controllers', [])
     $scope.settings = data.settings;
   });
 
+  $scope.init = function(name, id)
+  {
+     $scope.id = id;
+    $scope.name = name; 
+    console.log("Init things here");
+  }
+
+  console.log($scope.param);
+
   $scope.users = [
     {
       "name": "User 3",
-      "characterName": "Anna Rodriguez",
+      "characterName": "Hannah Rodriguez",
       "image": "hunt_data/Hunt2/AvatarIcons/AnnaRodriguez.svg",
       "points": 25
     },
@@ -241,7 +250,7 @@ angular.module('starter.controllers', [])
 
 
 
-$ionicModal.fromTemplateUrl('templates/custom-gif.html', {
+$ionicModal.fromTemplateUrl('templates/imgTemplate.html', {
     scope: $scope,
     animation: 'slide-in-up'
   }).then(function(modal) {
@@ -249,12 +258,14 @@ $ionicModal.fromTemplateUrl('templates/custom-gif.html', {
     //$scope.classes2 = data.classes;
     
   });
-  $scope.openModal = function() {
+  $scope.openModal = function(imgURLName) {
+    console.log(imgURLName)
+    $scope.modalURL = imgURLName;
     $scope.modal.show();
   };
   // Reset modal on hide
   $scope.$on('modal.hidden', function() {
-    $scope.customimg = { imgUrl: $scope.classes2.class123.notes[0].url, tags: [], failed: false };
+    $scope.modalURL = "";//imgURLName;= { imgUrl: $scope.classes2.class123.notes[0].url, tags: [], failed: false };
   });
   // Cleanup the modal when we're done with it!
   $scope.$on('$destroy', function() {
